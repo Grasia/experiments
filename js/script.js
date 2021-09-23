@@ -666,7 +666,6 @@ final(monogatari, "finalhistoria");
 function encuesta(monogatari, etiqueta) {
   elemento = {};
   elemento[etiqueta] = [
-    "",
     "customform " + etiqueta,
     function () {
       monogatari.setContentToSend(monogatari.getFormResult(etiqueta));
