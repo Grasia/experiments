@@ -745,9 +745,9 @@ monogatari.script({
     "jump SanMartin",
   ],
   SanMartin: [
-    // "sendaction geoteruel yendo_sanmartin",
+    "sendaction geoteruel yendo_sanmartin",
     "call tercersitio",
-    // "sendaction geoteruel llegado_sanmartin",
+    "sendaction geoteruel llegado_sanmartin",
     "show scene sanmartin1",
     "chomon La Torre de San Martín se edificó entre 1315 y 1316.",
     "chomon Está adosada a la iglesia de San Martín, construida en 1706 y que sustituyó a la anterior mudéjar.",
