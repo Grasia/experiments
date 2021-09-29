@@ -100,8 +100,10 @@ monogatari.assets("scenes", {
   escalinata5: "escalinata5.jpg",
   mausoleo1: "mausoleo1.jpg",
   mausoleo2: "mausoleo2.jpg",
+  mausoleorampa: "mausoleorampa.jpg",
   salvador1: "salvador1.jpg",
   salvador2: "salvador2.jpg",
+  salvadorcartel: "salvadorcartel.jpg",
   sanmartin1: "sanmartin1.jpg",
   sanmartin3: "sanmartin3.jpg",
   torico1: "torico1.jpg",
@@ -218,7 +220,7 @@ monogatari.geolocations({
   catedral: { latitude: 40.3434725, longitude: -1.10762977806 },
   sanmartin: { latitude: 40.34411104, longitude: -1.10916616498 },
   salvador: { latitude: 40.342070164, longitude: -1.10798861773 },
-  escalinata: { latitude: 40.341260569, longitude: -1.10847370305 },
+  escalinata: { latitude: 40.341280199, longitude: -1.1082558826 },
   mausoleo: { latitude: 40.342515053, longitude: -1.10642294447 },
 });
 
@@ -560,38 +562,27 @@ monogatari.customForms({
     },
     view: "bootstrap-create",
   },
-});
-
-// using geolication with basic fail/success control
-/*monogatari.script({"NorthArea":['geolocate berlin 1000 100000 1',
-{'Conditional':{
-'Condition':function(){return monogatari.checkAndResetIfLastActionFailed()},
-'True':'nope, dude',
-'False':'alright, you got there'
-}
-},"Things that happen in the north area"]});*/
-
-// improved version to handle arrival to location or failure to do so within
-// the timeout
-monogatari.script({
-  NorthArea: [
-    {
-      ConditionalGeolocation: {
-        Condition: "geolocate berlin 1000 100000 0.001",
-        False: "nope, dude",
-        True: "alright, you got there",
+  otra: {
+    schema: {
+      type: "object",
+      properties: {
+        comment: {
+          type: "string",
+          title: "Comentanos tu opinión.",
+        },
       },
     },
-    "Things that happen in the north area",
-    "end",
-  ],
-});
-
-monogatari.script({
-  SouthArea: [
-    "geolocate southarea 10000 100 1",
-    "Things that happen in the south area",
-  ],
+    options: {
+      form: {
+        buttons: {
+          submit: {
+            title: "Enviar",
+          },
+        },
+      },
+    },
+    view: "bootstrap-create",
+  },
 });
 
 monogatari.script({
@@ -620,7 +611,7 @@ function sitioaux(monogatari, etiqueta, sitio) {
       ConditionalGeolocation: {
         Condition: "geolocate " + sitio + " 0.5 60 0.01",
         False: "call " + etiqueta,
-        True: "olé",
+        True: "Hemos llegado.",
       },
     },
     "return",
@@ -635,9 +626,9 @@ function sitio(monogatari, etiqueta, sitio) {
     "chomon Viajando al destino, toca o haz click en la pantalla para continuar",
     {
       ConditionalGeolocation: {
-        Condition: "geolocate " + sitio + " 0.5 60 0.01",
-        False: "call " + etiqueta + "aux",
-        True: "olé",
+        Condition: "geolocate " + sitio + " 0.5 600 0.01",
+        False: "call " + etiqueta,
+        True: "Hemos llegado.",
       },
     },
     "return",
@@ -688,6 +679,8 @@ encuesta(monogatari, "opinion3");
 encuesta(monogatari, "opinion4");
 encuesta(monogatari, "opinion5");
 
+encuesta(monogatari, "otra");
+
 monogatari.script({
   Start: [
     // _Introducción
@@ -710,6 +703,9 @@ monogatari.script({
     "sendaction geoteruel llegado_torico",
 
     // _Torico
+    "jump Torico",
+  ],
+  Torico: [
     "show scene torico1",
     "chomon La antigua plaza mayor fue siempre el centro neurálgico de la ciudad.",
     "chomon Su morfología responde al terreno donde está ubicada. Su forma tiene que ver con las pendientes naturales por donde discurría el agua de lluvia",
@@ -730,6 +726,9 @@ monogatari.script({
     "chomon La segunda vez en 2003 se volvió a bajar para una restauración.",
     // _Catedral
     "chomon El siguiente destino que vamos a visitar es la Catedral.",
+    "jump Catedral",
+  ],
+  Catedral: [
     "sendaction geoteruel yendo_catedral",
     "call segundositio",
     "sendaction geoteruel llegado_catedral",
@@ -743,9 +742,12 @@ monogatari.script({
     "chomon La torre, techumbre y cimborrio de la Catedral de Teruel fueron declarados Patrimonio de la Humanidad por la Unesco en 1986.",
     // _Torre de San Martín
     "chomon A continuación, te mostraré dos torres con una historia conectada, acompáñame.",
-    "sendaction geoteruel yendo_sanmartin",
+    "jump SanMartin",
+  ],
+  SanMartin: [
+    // "sendaction geoteruel yendo_sanmartin",
     "call tercersitio",
-    "sendaction geoteruel llegado_sanmartin",
+    // "sendaction geoteruel llegado_sanmartin",
     "show scene sanmartin1",
     "chomon La Torre de San Martín se edificó entre 1315 y 1316.",
     "chomon Está adosada a la iglesia de San Martín, construida en 1706 y que sustituyó a la anterior mudéjar.",
@@ -759,6 +761,9 @@ monogatari.script({
     "chomon Como en otros lugares de esta provincia esta torre tiene una leyenda sobre su construcción que, como no podía ser menos, es de amor.",
     // _Torre el Salvador
     "chomon Pero te la contaré a continuación, cuando vayamos a ver la torre de El Salvador.",
+    "jump Salvador",
+  ],
+  Salvador: [
     "sendaction geoteruel yendo_salvador",
     "call cuartositio",
     "sendaction geoteruel llegado_salvador",
@@ -774,17 +779,49 @@ monogatari.script({
     "chomon Unas semanas después, Abdalá finalizaba su torre, la de El Salvador.",
     "chomon Cuando el andamio fue retirado y los ciudadanos pudieron contemplar la nueva obra, se quedaron totalmente sorprendidos, las dos torres, salvo algunos detalles, eran muy parecidas.",
     "chomon Los motivos decorativos son muy parecidos a los que hemos visto antes en la torre de San Martín.",
+    "show scene salvador1",
     "show image sanmartin2 center with fadeIn",
     "chomon La torre es usada como campanario de la iglesia a la que está adosada, la Iglesia del Salvador.",
     "chomon Alberga en su interior el Centro de Interpretación de la Arquitectura Mudéjar Turolense.",
     "hide image sanmartin2 with fadeOut",
     "chomon La Torre El Salvador junto con la torre de San Martín, en 1986 fueron declarados Patrimonio de la Humanidad por la Unesco.",
+    "show scene salvadorcartel",
+    "chomon Para facilitar el acceso al contenido de este cartel.",
+    "chomon Si existiera una opción para la locución de la historia.",
+    "sendaction geoteruel inicio_encuesta",
+    {
+      Choice: {
+        Dialog: "chomon ¿Dónde te gustaría escucharla?.",
+        Class: "navigationBox",
+        salvadorMovil: {
+          Text: "En el móvil",
+          Do: "sendaction geoteruel movil",
+          Class: "salvadormovil",
+        },
+        salvadorAltavoz: {
+          Text: "En un altavoz",
+          Do: "sendaction geoteruel altavoz",
+          Class: "salvadoraltavoz",
+        },
+        salvadorOtra: {
+          Text: "Otra",
+          Do: "call otra",
+          Class: "salvadorotra",
+        },
+      },
+    },
+    "chomon Gracias por tu respuesta.",
     // _Escalinata
     "chomon Cerca de esta torre, vamos a ver uno de los monumentos más emblemáticos de Teruel.",
+    "jump Escalinata",
+  ],
+  Escalinata: [
     "sendaction geoteruel yendo_escalinata",
     "call quintositio",
     "sendaction geoteruel llegado_escalinata",
     "show scene escalinata4",
+    "chomon Para tener una mejor visión de la escalinata te recomendamos verla desde la parte de abajo",
+    "chomon Puedes usar las escaleras o el ascensor",
     "chomon La construcción de la escalinata se inspiró en elementos intrínsecos a la ciudad como la arquitectura mudéjar, el gótico y el modernismo.",
     "chomon Es obra del ingeniero turolense José Torán de la Rad.",
     "chomon Se construyó a comienzo de los años veinte, para salvar el desnivel existente entre la estación de ferrocarril y el Casco Histórico de la ciudad.",
@@ -799,11 +836,65 @@ monogatari.script({
     "hide image escalinata2 with fadeOut",
     "chomon Tras un primer tramo recto, y más o menos a la mitad de su altura, se divide en dos tramos curvos hasta alcanzar la altura máxima, llegando al Paseo del Óvalo",
     "chomon En total habremos subido 140 escalones de una forma suave y agradable.",
+    "chomon Las personas con movilidad reducida no pueden acceder al frontal de los amantes.",
+    "chomon Si se pudiera adaptar la parte superior de las escaleras.",
+    "sendaction geoteruel inicio_encuesta",
+    {
+      Choice: {
+        Dialog: "chomon ¿Cuál crees que sería mejor opción?.",
+        Class: "navigationBox",
+        escalinataRampa: {
+          Text: "Una rampa",
+          Do: "sendaction geoteruel rampa",
+          Class: "escalinatarampa",
+        },
+        escalinataPlataforma: {
+          Text: "Una plataforma elevadora salvaescaleras",
+          Do: "sendaction geoteruel plataforma",
+          Class: "escalinataplataforma",
+        },
+        escalinataOtra: {
+          Text: "Otra",
+          Do: "call otra",
+          Class: "escalinataotra",
+        },
+      },
+    },
+    "chomon Gracias por tu respuesta.",
     //_ Mausoleo
     "chomon Para conocer más de la historia de los amantes, vamos a dirigirnos al sitio perfecto, acompáñame a este último destino.",
+    "jump Mausoleo",
+  ],
+  Mausoleo: [
     "sendaction geoteruel yendo_mausoleo",
     "call sextositio",
     "sendaction geoteruel llegado_mausoleo",
+    "show scene mausoleorampa",
+    "chomon Para acceder a esta ubicación, solo hay una entrada para personas con movilidad reducida.",
+    "chomon Si se pudiera poner una rampa.",
+    "sendaction geoteruel inicio_encuesta",
+    {
+      Choice: {
+        Dialog: "chomon ¿Dónde crees que estaría mejor?.",
+        Class: "navigationBox",
+        mausoleoIzquierda: {
+          Text: "",
+          Do: "sendaction geoteruel izquierda",
+          Class: "mausoleoizquierda",
+        },
+        mausoleoDerecha: {
+          Text: "",
+          Do: "sendaction geoteruel derecha",
+          Class: "mausoleoderecha",
+        },
+        mausoleoOtra: {
+          Text: "Otra",
+          Do: "call otra",
+          Class: "mausoleootra",
+        },
+      },
+    },
+    "chomon Gracias por tu respuesta.",
     "show scene mausoleo1",
     "chomon En septiembre de 2005 se inaugura el actual Mausoleo de los Amantes. ",
     "chomon El proyecto del edificio, diseñado por el arquitecto Alejandro Cañada, dispone de diferentes salas expositivas que pretenden acercar la Historia de los Amantes al visitante.",
@@ -816,6 +907,9 @@ monogatari.script({
     "chomon En esta zona y a través de una serie de paneles se explica cómo se llevó a cabo el hallazgo de las momias, así como el emplazamiento que ha tenido a lo largo del tiempo.",
 
     //_Final
+    "jump Final",
+  ],
+  Final: [
     "show scene panoramica2",
     "show character chomon normal2 at right with fadeIn end-fadeOut",
     "Este es el final del recorrido",
