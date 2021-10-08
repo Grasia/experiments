@@ -97,7 +97,6 @@ button:hover {
 
 /* Text Box styling */
 [data-component="text-box"] {
-
 }
 
 /* Character Name Style */
@@ -211,122 +210,71 @@ input[type=range]::-ms-fill-upper {
 	max-width: 100%;
 }
 
-.salvadoraltavoz {
-    color: white;
-	background-color: #0954d5;
-	border: 5px solid #093f9c;
+.button1 {
+	background-color: #3DD1E7;
+	border: 0 solid #E5E7EB;
+	box-sizing: border-box;
+	color: #000000;
+	transform: rotate(-2deg);
     position: absolute;
-    top: 40%;
-    left: 20%;
-    height: 20%;
-    width: 22%;
+    top: 15%;
+    left: 0%;
+	width: 30%;
 	margin: 0px;
 	overflow:hidden;
 }
+.button1:after {
+	content: '';
+	position: absolute;
+	border: 1px solid #000000;
+	bottom: 4px;
+	left: 4px;
+	width: calc(100% - 1px);
+	height: calc(100% - 1px);
+}
 
-.salvadormovil {
-	color: white;
-	background-color: #0954d5;
-	border: 5px solid #093f9c;
+.button2 {
+	background-color: #3DD1E7;
+	border: 0 solid #E5E7EB;
+	box-sizing: border-box;
+	color: #000000;
+	transform: rotate(-2deg);
     position: absolute;
-    top: 40%;
-    right: 10%;
-    height: 20%;
-    width: 22%;
+    top: 30%;
+    left: 0%;
+	width: 30%;
 	margin: 0px;
 	overflow:hidden;
 }
+.button2:after {
+	content: '';
+	position: absolute;
+	border: 1px solid #000000;
+	bottom: 4px;
+	left: 4px;
+	width: calc(100% - 1px);
+	height: calc(100% - 1px);
+}
 
-.salvadorotra {
-	color: white;
-	background-color: #0954d5;
-	border: 5px solid #093f9c;
+.button3 {
+	background-color: #3DD1E7;
+	border: 0 solid #E5E7EB;
+	box-sizing: border-box;
+	color: #000000;
+	transform: rotate(-2deg);
     position: absolute;
-	top: 5%;
-    right: 0%;
-    height: 10%;
-    width: 22%;
+    top: 45%;
+    left: 0%;
+	width: 30%;
 	margin: 0px;
 	overflow:hidden;
 }
-
-.escalinatarampa {
-    color: white;
-	background-color: #0954d5;
-	border: 5px solid #093f9c;
-    position: absolute;
-    top: 40%;
-    left: 20%;
-    height: 20%;
-    width: 22%;
-	margin: 0px;
-	overflow:hidden;
-}
-
-.escalinataplataforma {
-	color: white;
-	background-color: #0954d5;
-	border: 5px solid #093f9c;
-    position: absolute;
-    top: 40%;
-    right: 20%;
-    height: 20%;
-    width: 22%;
-	margin: 0px;
-	overflow:hidden;
-}
-
-.escalinataotra {
-	color: white;
-	background-color: #0954d5;
-	border: 5px solid #093f9c;
-    position: absolute;
-	top: 5%;
-    right: 0%;
-    height: 10%;
-    width: 22%;
-	margin: 0px;
-	overflow:hidden;
-}
-
-.mausoleoizquierda {
-	background: url(leftArrow.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-    position: absolute;
-    position: absolute;
-    top: 48%;
-    left: 5%;
-    height: 20%;
-    width: 22%;
-	margin: 0px;
-	overflow:hidden;
-}
-
-.mausoleoderecha {
-    background: url(forward.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-    position: absolute;
-    top: 35%;
-    right: 40%;
-    height: 15%;
-    width: 20%;
-	margin: 0px;
-	overflow:hidden;
-}
-
-.mausoleootra {
-	color: white;
-	background-color: #0954d5;
-	border: 5px solid #093f9c;
-    position: absolute;
-	top: 5%;
-    right: 0%;
-    height: 10%;
-    width: 22%;
-	margin: 0px;
-	overflow:hidden;
+.button3:after {
+	content: '';
+	position: absolute;
+	border: 1px solid #000000;
+	bottom: 4px;
+	left: 4px;
+	width: calc(100% - 1px);
+	height: calc(100% - 1px);
 }

@@ -82,8 +82,8 @@ monogatari.assets("videos", {});
 
 // Define the images used in the game.
 monogatari.assets("images", {
-  escalinata2: "escalinata2.jpg",
-  sanmartin2: "sanmartin2.jpg",
+  escalinatamural: "escalinatamural.jpg",
+  campanas: "campanas.jpg",
   torico3: "torico3.jpg",
 });
 
@@ -95,12 +95,20 @@ monogatari.assets("scenes", {
   catedral2: "catedral2.jpg",
   catedral3: "catedral3.jpg",
   escalinata1: "escalinata1.jpg",
+  escalinata2: "escalinata2.jpg",
   escalinata3: "escalinata3.jpg",
   escalinata4: "escalinata4.jpg",
   escalinata5: "escalinata5.jpg",
+  escalinataabajo: "escalinata_abajo.jpg",
+  escalinataarriba: "escalinata_arriba.jpg",
+  escalinataaclaracion: "escalinata_aclaracion.jpg",
+  escalinatarampa: "escalinata_modif1.jpg",
+  escalinatasalva: "escalinata_modif2.jpg",
   mausoleo1: "mausoleo1.jpg",
   mausoleo2: "mausoleo2.jpg",
-  mausoleorampa: "mausoleorampa.jpg",
+  mausoleomodifder: "mausoleo_modif_der.jpg",
+  mausoleomodifizq: "mausoleo_modif_izq.jpg",
+  mausoleomodifambas: "mausoleo_modif_ambas.jpg",
   salvador1: "salvador1.jpg",
   salvador2: "salvador2.jpg",
   salvadorcartel: "salvadorcartel.jpg",
@@ -780,33 +788,43 @@ monogatari.script({
     "chomon Cuando el andamio fue retirado y los ciudadanos pudieron contemplar la nueva obra, se quedaron totalmente sorprendidos, las dos torres, salvo algunos detalles, eran muy parecidas.",
     "chomon Los motivos decorativos son muy parecidos a los que hemos visto antes en la torre de San Martín.",
     "show scene salvador1",
-    "show image sanmartin2 center with fadeIn",
+    "show image campanas center with fadeIn",
     "chomon La torre es usada como campanario de la iglesia a la que está adosada, la Iglesia del Salvador.",
     "chomon Alberga en su interior el Centro de Interpretación de la Arquitectura Mudéjar Turolense.",
-    "hide image sanmartin2 with fadeOut",
+    "hide image campanas with fadeOut",
     "chomon La Torre El Salvador junto con la torre de San Martín, en 1986 fueron declarados Patrimonio de la Humanidad por la Unesco.",
     "show scene salvadorcartel",
-    "chomon Para facilitar el acceso al contenido de este cartel.",
-    "chomon Si existiera una opción para la locución de la historia.",
     "sendaction geoteruel inicio_encuesta",
     {
       Choice: {
-        Dialog: "chomon ¿Dónde te gustaría escucharla?.",
+        Dialog:
+          "chomon ¿Crees que la locución de la historia te facilitaría el acceso al contenido de este cartel?",
+        Class: "navigationBox",
+        locucionSi: {
+          Text: "Sí",
+          Do: "sendaction geoteruel locucion_si",
+          Class: "button1",
+        },
+        locucionNo: {
+          Text: "No",
+          Do: "sendaction geoteruel locucion_no",
+          Class: "button2",
+        },
+      },
+    },
+    {
+      Choice: {
+        Dialog: "chomon ¿Dónde te gustaría escuchar la historia?.",
         Class: "navigationBox",
         salvadorMovil: {
-          Text: "En el móvil",
+          Text: "En mi móvil",
           Do: "sendaction geoteruel movil",
-          Class: "salvadormovil",
+          Class: "button1",
         },
         salvadorAltavoz: {
           Text: "En un altavoz",
           Do: "sendaction geoteruel altavoz",
-          Class: "salvadoraltavoz",
-        },
-        salvadorOtra: {
-          Text: "Otra",
-          Do: "call otra",
-          Class: "salvadorotra",
+          Class: "button2",
         },
       },
     },
@@ -819,49 +837,204 @@ monogatari.script({
     "sendaction geoteruel yendo_escalinata",
     "call quintositio",
     "sendaction geoteruel llegado_escalinata",
-    "show scene escalinata4",
-    "chomon Para tener una mejor visión de la escalinata te recomendamos verla desde la parte de abajo",
-    "chomon Puedes usar las escaleras o el ascensor",
-    "chomon La construcción de la escalinata se inspiró en elementos intrínsecos a la ciudad como la arquitectura mudéjar, el gótico y el modernismo.",
-    "chomon Es obra del ingeniero turolense José Torán de la Rad.",
-    "chomon Se construyó a comienzo de los años veinte, para salvar el desnivel existente entre la estación de ferrocarril y el Casco Histórico de la ciudad.",
-    "chomon Por Decreto del Gobierno de Aragón, la Escalinata de Teruel fue declarada Bien de Interés Cultural, en la categoría de Monumento.",
     "show scene escalinata1",
-    "chomon La Escalinata es en definitiva la imagen resumida de Teruel para el viajero que llegaba a la ciudad y en la actualidad constituye la obra clave del neomudéjar turolense.",
-    "chomon Su desarrollo es perpendicular al Paseo del Óvalo y salva los 26 metros de desnivel existente.",
-    "chomon El recorrido de la Escalinata se estructura en tres partes bien diferenciadas, articuladas entre sí por dos pequeñas plazas.",
-    "show image escalinata2 center with fadeIn",
-    "chomon Situado en el frontal de la placeta principal, entre el escudo de la ciudad y la fuente se encuentra el altorrelieve de Los Amantes de Teruel obra del escultor segoviano Aniceto Marinas.",
-    "show scene escalinata3",
-    "hide image escalinata2 with fadeOut",
-    "chomon Tras un primer tramo recto, y más o menos a la mitad de su altura, se divide en dos tramos curvos hasta alcanzar la altura máxima, llegando al Paseo del Óvalo",
-    "chomon En total habremos subido 140 escalones de una forma suave y agradable.",
-    "chomon Las personas con movilidad reducida no pueden acceder al frontal de los amantes.",
-    "chomon Si se pudiera adaptar la parte superior de las escaleras.",
+    "chomon Ya hemos llegado a la escalinata.",
+    "chomon Que bonito se vería desde abajo, dejame que te lo enseñe.",
+    "show scene escalinata4",
+    "chomon Se construyó a comienzo de los años veinte, para salvar el desnivel existente entre la estación de ferrocarril y el Casco Histórico de la ciudad.",
+    "chomon La zona de la escalinata está adaptada con un ascensor para que personas con movilidad reducida superen ese desnivel.",
+    "show scene escalinataaclaracion",
+    "chomon Para bajar puedes usar las escaleras o el ascensor.",
+    "chomon Aquí puedes ver donde se encuentran.",
+    "show scene escalinata2",
     "sendaction geoteruel inicio_encuesta",
     {
       Choice: {
-        Dialog: "chomon ¿Cuál crees que sería mejor opción?.",
+        Dialog: "chomon ¿Vas a bajar?.",
         Class: "navigationBox",
-        escalinataRampa: {
-          Text: "Una rampa",
-          Do: "sendaction geoteruel rampa",
-          Class: "escalinatarampa",
+        escalinataSi: {
+          Text: "Sí",
+          Do: "sendaction geoteruel bajar_si",
+          Class: "button1",
+          onChosen: function () {
+            this.storage().bajar_escalinata = true;
+            this.storage().pregunta_escalinata = "¿Por dónde vas a bajar?";
+          },
         },
-        escalinataPlataforma: {
-          Text: "Una plataforma elevadora salvaescaleras",
-          Do: "sendaction geoteruel plataforma",
-          Class: "escalinataplataforma",
-        },
-        escalinataOtra: {
-          Text: "Otra",
-          Do: "call otra",
-          Class: "escalinataotra",
+        escalinataNo: {
+          Text: "No",
+          Do: "sendaction geoteruel bajar_no",
+          Class: "button2",
+          onChosen: function () {
+            this.storage().bajar_escalinata = false;
+            this.storage().pregunta_escalinata = "¿Por dónde bajarías?";
+          },
         },
       },
     },
-    "chomon Gracias por tu respuesta.",
+    {
+      Choice: {
+        Dialog: "{{pregunta_escalinata}}",
+        Class: "navigationBox",
+        escalinataEscaleras: {
+          Text: "Escaleras",
+          Do: "sendaction geoteruel escaleras",
+          Class: "button1",
+          onChosen: function () {
+            this.storage().escalinata_donde = "escaleras";
+          },
+        },
+        escalinataAscensor: {
+          Text: "Ascensor",
+          Do: "chomon enviar ascensor",
+          Do: "sendaction geoteruel ascensor",
+          Class: "button2",
+          onChosen: function () {
+            this.storage().escalinata_donde = "ascensor";
+          },
+        },
+      },
+    },
+    {
+      Conditional: {
+        Condition: function () {
+          return this.storage().bajar_escalinata;
+        },
+        True: "show scene escalinata4",
+        False: "show scene escalinata3",
+      },
+    },
+    "chomon La construcción de la escalinata se inspiró en elementos intrínsecos a la ciudad como la arquitectura mudéjar, el gótico y el modernismo.",
+    "chomon Es obra del ingeniero turolense José Torán de la Rad.",
+    "chomon Por Decreto del Gobierno de Aragón, la Escalinata de Teruel fue declarada Bien de Interés Cultural, en la categoría de Monumento.",
+    "show scene escalinata4",
+    "chomon La Escalinata es en definitiva la imagen resumida de Teruel para el viajero que llegaba a la ciudad y en la actualidad constituye la obra clave del neomudéjar turolense.",
+    "chomon Su desarrollo es perpendicular al Paseo del Óvalo y salva los 26 metros de desnivel existente.",
+    "chomon El recorrido de la Escalinata se estructura en tres partes bien diferenciadas, articuladas entre sí por dos pequeñas plazas.",
+    "show image escalinatamural center with fadeIn",
+    "chomon Situado en el frontal de la placeta principal, entre el escudo de la ciudad y la fuente se encuentra el altorrelieve de Los Amantes de Teruel obra del escultor segoviano Aniceto Marinas.",
+    "show scene escalinata3",
+    "hide image escalinatamural with fadeOut",
+    "chomon Tras un primer tramo recto, y más o menos a la mitad de su altura, se divide en dos tramos curvos hasta alcanzar la altura máxima, llegando al Paseo del Óvalo",
+    "chomon En total habremos subido 140 escalones de una forma suave y agradable.",
+    "sendaction geoteruel inicio_encuesta",
+    {
+      Choice: {
+        Dialog:
+          "chomon Las personas con movilidad reducida no pueden acceder al frontal de los amantes. ¿Cómo crees que se podría adaptar mejor?",
+        Class: "navigationBox",
+        escalinataRampa: {
+          Text: "Una rampa",
+          Do: "sendaction geoteruel modif_rampa",
+          Class: "button1",
+          onChosen: function () {
+            this.storage().modif_escalinata = "rampa";
+          },
+        },
+        escalinataSalvaescaleras: {
+          Text: "Un salvaescaleras",
+          Do: "sendaction geoteruel modif_salvaescaleras",
+          Class: "button2",
+          onChosen: function () {
+            this.storage().modif_escalinata = "salvaescaleras";
+          },
+        },
+      },
+    },
+    {
+      Conditional: {
+        Condition: function () {
+          return this.storage().modif_escalinata == "rampa";
+        },
+        True: "show scene escalinatarampa",
+        False: "show scene escalinatasalva",
+      },
+    },
+    {
+      Choice: {
+        Dialog:
+          "chomon Esta es una simulación de como quedaría. ¿Todavía crees que estaría bien que se modifique?",
+        Class: "navigationBox",
+        escalinataRampa: {
+          Text: "Sí",
+          Do: "sendaction geoteruel escalinata_modif_si",
+          Class: "button1",
+        },
+        escalinataSalvaescaleras: {
+          Text: "No",
+          Do: "sendaction geoteruel escalinata_modif_no",
+          Class: "button2",
+        },
+      },
+    },
+    {
+      Choice: {
+        Dialog:
+          "chomon De todas formas, te queremos ofrecer otra opción. Reconstruir el mural en otro sitio al que se pueda acceder sin problemas. Elige un sitio.",
+        Class: "navigationBox",
+        muralArriba: {
+          Text: "Parte de arriba",
+          Do: "sendaction geoteruel mural_arriba",
+          Class: "button1",
+          onChosen: function () {
+            this.storage().posicion_cartel = "arriba";
+          },
+        },
+        muralAbajo: {
+          Text: "Parte de abajo",
+          Do: "sendaction geoteruel mural_abajo",
+          Class: "button2",
+          onChosen: function () {
+            this.storage().posicion_cartel = "abajo";
+          },
+        },
+      },
+    },
+    {
+      Conditional: {
+        Condition: function () {
+          return this.storage().posicion_cartel == "arriba";
+        },
+        True: "show scene escalinataarriba",
+        False: "show scene escalinataabajo",
+      },
+    },
+    {
+      Choice: {
+        Dialog: "chomon ¿Crees que está bien el mural en esta posición?",
+        Class: "navigationBox",
+        muralSi: {
+          Text: "Sí",
+          Do: "sendaction geoteruel mural_si",
+          Class: "button1",
+        },
+        muralNo: {
+          Text: "No",
+          Do: "sendaction geoteruel mural_no",
+          Class: "button2",
+        },
+      },
+    },
+    {
+      Choice: {
+        Dialog:
+          "chomon ¿Te parece mejor opción que la de modificar la escalinata?",
+        Class: "navigationBox",
+        muralSi: {
+          Text: "Sí",
+          Do: "sendaction geoteruel mural_mejor",
+          Class: "button1",
+        },
+        muralNo: {
+          Text: "No",
+          Do: "sendaction geoteruel mural_peor",
+          Class: "button2",
+        },
+      },
+    },
+    "chomon Gracias por tus respuestas.",
     //_ Mausoleo
+    "show scene escalinata1",
     "chomon Para conocer más de la historia de los amantes, vamos a dirigirnos al sitio perfecto, acompáñame a este último destino.",
     "jump Mausoleo",
   ],
@@ -869,33 +1042,67 @@ monogatari.script({
     "sendaction geoteruel yendo_mausoleo",
     "call sextositio",
     "sendaction geoteruel llegado_mausoleo",
-    "show scene mausoleorampa",
-    "chomon Para acceder a esta ubicación, solo hay una entrada para personas con movilidad reducida.",
-    "chomon Si se pudiera poner una rampa.",
+    "show scene mausoleo1",
+    "chomon Para acceder a esta ubicación, solo hay una entrada para personas con movilidad reducida. Te vamos a mostrar dos propuestas.",
+    "show scene mausoleomodifder",
     "sendaction geoteruel inicio_encuesta",
     {
       Choice: {
-        Dialog: "chomon ¿Dónde crees que estaría mejor?.",
+        Dialog: "chomon ¿Crees que está bien adaptada?.",
         Class: "navigationBox",
-        mausoleoIzquierda: {
-          Text: "",
-          Do: "sendaction geoteruel izquierda",
-          Class: "mausoleoizquierda",
+        mausoleoModif1Si: {
+          Text: "Sí",
+          Do: "sendaction geoteruel mausoleo_modif1_nsi",
+          Class: "button1",
         },
-        mausoleoDerecha: {
-          Text: "",
-          Do: "sendaction geoteruel derecha",
-          Class: "mausoleoderecha",
-        },
-        mausoleoOtra: {
-          Text: "Otra",
-          Do: "call otra",
-          Class: "mausoleootra",
+        mausoleoModif1No: {
+          Text: "No",
+          Do: "sendaction geoteruel mausoleo_modif1_no",
+          Class: "button2",
         },
       },
     },
-    "chomon Gracias por tu respuesta.",
+    "show scene mausoleomodifizq",
+    {
+      Choice: {
+        Dialog: "chomon ¿Crees que está bien adaptada?.",
+        Class: "navigationBox",
+        mausoleoModif2Si: {
+          Text: "Sí",
+          Do: "sendaction geoteruel mausoleo_modif2_si",
+          Class: "button1",
+        },
+        mausoleoModif2No: {
+          Text: "No",
+          Do: "sendaction geoteruel mausoleo_modif2_no",
+          Class: "button2",
+        },
+      },
+    },
+    "show scene mausoleomodifambas",
+    {
+      Choice: {
+        Dialog: "chomon ¿Cuál te parece la mejor opción?.",
+        Class: "navigationBox",
+        mausoleoIzquierda: {
+          Text: "Izquierda",
+          Do: "sendaction geoteruel mausoleo_modif_izquierda",
+          Class: "button1",
+        },
+        mausoleoAmbas: {
+          Text: "Ambas",
+          Do: "sendaction geoteruel mausoleo_modif_ambas",
+          Class: "button2",
+        },
+        mausoleoDerecha: {
+          Text: "Derecha",
+          Do: "sendaction geoteruel mausoleo_modif_derecha",
+          Class: "button3",
+        },
+      },
+    },
     "show scene mausoleo1",
+    "chomon Gracias por tu respuesta.",
     "chomon En septiembre de 2005 se inaugura el actual Mausoleo de los Amantes. ",
     "chomon El proyecto del edificio, diseñado por el arquitecto Alejandro Cañada, dispone de diferentes salas expositivas que pretenden acercar la Historia de los Amantes al visitante.",
     "chomon Desde el punto de vista conceptual, la organización del recorrido expositivo se articula en torno a cuatro sectores:",
@@ -916,13 +1123,13 @@ monogatari.script({
     "Espero que te haya resultado interesante conocer más de la historia de Teruel",
     "Ahora, te pediría que rellenases un pequeño cuestionario de satisfacción para ayudarnos a mejorar la guía.",
     "sendaction geoteruel inicio_encuesta",
-    "¡Hasta pronto!",
     "show scene panoramica2",
     "call opinion1",
     "call opinion2",
     "call opinion3",
     "call opinion4",
     "call opinion5",
+    "¡Hasta pronto!",
     "call finalhistoria",
     "end",
   ],
