@@ -1,0 +1,56 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#hero {
+    padding-top: 90px;
+    min-height: 700px;
+}
+
+#nav-title {
+    padding-top: 90px;
+    min-height: 100px;
+    font-size: 40px; 
+    font-weight: bold; 
+    line-height: 80px;
+}
+
+ion-icon {
+    margin-bottom: -3px;
+}
+
+h1 { font-size: 60px; font-weight: bold; line-height: 80px }
+h2 { font-size: 42px; margin-bottom: 15px }
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+section {
+    padding: 10px 0 0 0;
+}
+
+.content-center {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+.title{
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.content-justify {
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+    text-align: justify;
+}
+
+.content-demos {
+    max-width: 1000px;
+    margin: 0 auto 20 auto;
+    text-align: justify;
+}
