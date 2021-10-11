@@ -2,7 +2,7 @@
   "name": "my-game",
   "productName": "My Game",
   "version": "0.1.0",
-  "main": "engine/electron/index.js",
+  "main": "../sample/engine/electron/index.js",
   "description": "A description of your game",
   "author": "Your Name",
   "license": "MIT",
@@ -22,8 +22,8 @@
       ],
       "type": "distribution",
       "icon": "assets/icons/icon.icns",
-      "entitlements": "engine/electron/entitlements.mac.plist",
-      "entitlementsInherit": "engine/electron/entitlements.mac.plist",
+      "entitlements": "../sample/engine/electron/entitlements.mac.plist",
+      "entitlementsInherit": "../sample/engine/electron/entitlements.mac.plist",
       "hardenedRuntime": true,
       "gatekeeperAssess": false
     },
@@ -36,7 +36,7 @@
       "description": "A more detailed description of your game"
     },
     "icon": "assets/icons/512x512.png",
-    "afterSign": "engine/electron/notarize.js"
+    "afterSign": "../sample/engine/electron/notarize.js"
   },
   "scripts": {
     "serve": "parcel serve index.html --open",
