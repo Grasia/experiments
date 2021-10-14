@@ -7,7 +7,13 @@ Grab a copy of the game engine
 
 	https://github.com/Grasia/experiments/tree/main/sample 
 
-And start using the new functions
+And start using the new functions. There are the following examples:
+- guerra: it reproduces places from the spanish civil war in the Universidad Complutense with geolocation
+- guerravirt: same as guerra but without gelocation
+- pabgob: history of the Pabellon de Gobierno building from the Universidad Complutense with geolocation
+- pabgobvirt:same as pabgob, but without geolocation
+- teruel: a guide through Teruel city that includes a survey to obtain high quality answers
+- teruelgeo: same as teruel but with geolocation
 
 Basic Geolocation
 ==
