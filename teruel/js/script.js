@@ -674,12 +674,12 @@ monogatari.script({
                 Class: "navigationBox",
                 locucionSi: {
                     Text: "Sí",
-                    Do: "sendaction geoteruel locucion_si",
+                    Do: "sendaction teruel locucion_si",
                     Class: "button1",
                 },
                 locucionNo: {
                     Text: "No",
-                    Do: "sendaction geoteruel locucion_no",
+                    Do: "sendaction teruel locucion_no",
                     Class: "button2",
                 },
             },
@@ -690,12 +690,12 @@ monogatari.script({
                 Class: "navigationBox",
                 salvadorMovil: {
                     Text: "En mi móvil",
-                    Do: "sendaction geoteruel movil",
+                    Do: "sendaction teruel movil",
                     Class: "button1",
                 },
                 salvadorAltavoz: {
                     Text: "En un altavoz",
-                    Do: "sendaction geoteruel altavoz",
+                    Do: "sendaction teruel altavoz",
                     Class: "button2",
                 },
             },
@@ -739,7 +739,7 @@ monogatari.script({
                 Class: "navigationBox",
                 escalinataRampa: {
                     Text: "Una rampa",
-                    Do: "sendaction geoteruel modif_rampa",
+                    Do: "sendaction teruel modif_rampa",
                     Class: "button1",
                     onChosen: function() {
                         this.storage().modif_escalinata = "rampa";
@@ -747,7 +747,7 @@ monogatari.script({
                 },
                 escalinataSalvaescaleras: {
                     Text: "Un salvaescaleras",
-                    Do: "sendaction geoteruel modif_salvaescaleras",
+                    Do: "sendaction teruel modif_salvaescaleras",
                     Class: "button2",
                     onChosen: function() {
                         this.storage().modif_escalinata = "salvaescaleras";
@@ -770,12 +770,12 @@ monogatari.script({
                 Class: "navigationBox",
                 escalinataRampa: {
                     Text: "Sí",
-                    Do: "sendaction geoteruel escalinata_modif_si",
+                    Do: "sendaction teruel escalinata_modif_si",
                     Class: "button1",
                 },
                 escalinataSalvaescaleras: {
                     Text: "No",
-                    Do: "sendaction geoteruel escalinata_modif_no",
+                    Do: "sendaction teruel escalinata_modif_no",
                     Class: "button2",
                 },
             },
@@ -786,7 +786,7 @@ monogatari.script({
                 Class: "navigationBox",
                 muralArriba: {
                     Text: "Parte de arriba",
-                    Do: "sendaction geoteruel mural_arriba",
+                    Do: "sendaction teruel mural_arriba",
                     Class: "button1",
                     onChosen: function() {
                         this.storage().posicion_cartel = "arriba";
@@ -794,7 +794,7 @@ monogatari.script({
                 },
                 muralAbajo: {
                     Text: "Parte de abajo",
-                    Do: "sendaction geoteruel mural_abajo",
+                    Do: "sendaction teruel mural_abajo",
                     Class: "button2",
                     onChosen: function() {
                         this.storage().posicion_cartel = "abajo";
@@ -817,12 +817,12 @@ monogatari.script({
                 Class: "navigationBox",
                 muralSi: {
                     Text: "Sí",
-                    Do: "sendaction geoteruel mural_si",
+                    Do: "sendaction teruel mural_si",
                     Class: "button1",
                 },
                 muralNo: {
                     Text: "No",
-                    Do: "sendaction geoteruel mural_no",
+                    Do: "sendaction teruel mural_no",
                     Class: "button2",
                 },
             },
@@ -833,12 +833,12 @@ monogatari.script({
                 Class: "navigationBox",
                 muralSi: {
                     Text: "Sí",
-                    Do: "sendaction geoteruel mural_mejor",
+                    Do: "sendaction teruel mural_mejor",
                     Class: "button1",
                 },
                 muralNo: {
                     Text: "No",
-                    Do: "sendaction geoteruel mural_peor",
+                    Do: "sendaction teruel mural_peor",
                     Class: "button2",
                 },
             },
@@ -855,19 +855,19 @@ monogatari.script({
         // "sendaction teruel llegado_mausoleo",
         "chomon Para acceder a esta ubicación, solo hay una entrada para personas con movilidad reducida. Te vamos a mostrar dos propuestas.",
         "show scene mausoleomodifder",
-        "sendaction geoteruel inicio_encuesta_modif_mausoleo",
+        "sendaction teruel inicio_encuesta_modif_mausoleo",
         {
             Choice: {
                 Dialog: "chomon ¿Crees que está bien adaptada?.",
                 Class: "navigationBox",
                 mausoleoModif1Si: {
                     Text: "Sí",
-                    Do: "sendaction geoteruel mausoleo_modif1_nsi",
+                    Do: "sendaction teruel mausoleo_modif1_nsi",
                     Class: "button1",
                 },
                 mausoleoModif1No: {
                     Text: "No",
-                    Do: "sendaction geoteruel mausoleo_modif1_no",
+                    Do: "sendaction teruel mausoleo_modif1_no",
                     Class: "button2",
                 },
             },
@@ -879,12 +879,12 @@ monogatari.script({
                 Class: "navigationBox",
                 mausoleoModif2Si: {
                     Text: "Sí",
-                    Do: "sendaction geoteruel mausoleo_modif2_si",
+                    Do: "sendaction teruel mausoleo_modif2_si",
                     Class: "button1",
                 },
                 mausoleoModif2No: {
                     Text: "No",
-                    Do: "sendaction geoteruel mausoleo_modif2_no",
+                    Do: "sendaction teruel mausoleo_modif2_no",
                     Class: "button2",
                 },
             },
@@ -896,17 +896,17 @@ monogatari.script({
                 Class: "navigationBox",
                 mausoleoIzquierda: {
                     Text: "Izquierda",
-                    Do: "sendaction geoteruel mausoleo_modif_izquierda",
+                    Do: "sendaction teruel mausoleo_modif_izquierda",
                     Class: "button1",
                 },
                 mausoleoAmbas: {
                     Text: "Ambas",
-                    Do: "sendaction geoteruel mausoleo_modif_ambas",
+                    Do: "sendaction teruel mausoleo_modif_ambas",
                     Class: "button2",
                 },
                 mausoleoDerecha: {
                     Text: "Derecha",
-                    Do: "sendaction geoteruel mausoleo_modif_derecha",
+                    Do: "sendaction teruel mausoleo_modif_derecha",
                     Class: "button3",
                 },
             },
