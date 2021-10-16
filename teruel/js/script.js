@@ -567,7 +567,7 @@ monogatari.script({
         "Tienes que saber que no se van a recoger tus datos personales y que lo que vas a ver a continuación tiene un proposito de investigación.",
         "sendaction teruel inicio_encuesta_usuario",
         "hide character chomon",
-        // "call caracterizacion1",
+        "call caracterizacion1",
         "show character chomon lookright at left with fadeIn end-fadeOut",
         // "Para comenzar necesito que te dirijas al siguiente destino",
         "show scene torico1",
