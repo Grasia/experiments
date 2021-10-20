@@ -40,6 +40,14 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
+                  href="software.html"
+                  >Software</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
                   active
                   href="tutorial.html"
                   >Tutorial</a
@@ -57,14 +65,6 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="software.html"
-                  >Software</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
                   href="contact.html"
                   >Contact</a
                 >
@@ -76,16 +76,282 @@
     </header>
     <section id="hero">
       <div class="container-fluid">
-        <div class="title"></div>
-        <div class="content-justify">
-          <p></p>
+        <div class="title">
+          <h2>
+            TUTORIAL
+          </h2>
         </div>
-      </div>
-    </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <div class="content-justify">
+          <p>
+            This is a localized version of Monogatari regularly synchronized
+            with the original work from Hyuchia. For instructions on how to work
+            with Monogatari, check
+            <a href="https://monogatari.io/">https://monogatari.io</a>
+                            </p>
+
+                            <div class="title">
+                                <h4>How to start?</h4>
+                            </div>
+                            <p>
+                                First you have to configure the work environment. For this we recommend consulting the
+                                <a href="software.html">software / prerequisites section</a>. Okay, now that you have the environment set up, you have an idea of ​​what the files you have are for, so how can you start developing your game? Try the game
+                                first, open the index.html file inside the directory you just unzipped and play the sample game. Once you've played it once, open the directory (the one you unzipped) with your chosen editor to start making changes. Open
+                                the script.js file with your editor, find the variable named script, as you will see, all the dialogs you just saw are just a simple list there. You can find more information in the documentation. Change one of the dialog
+                                boxes, save the file, and reload the game (just like reloading a website). Play it again and you will see that the dialog box changed just the way it did. Now try adding more dialog boxes and you will quickly get how things
+                                are done. Once you've gotten used to adding dialogue, add a scene as a challenge, that means you'll have to add your image file to the image.
+                            </p>
+                            <div class="title">
+                                <h4>Basic Geolocalization</h4>
+                            </div>
+                            <p>
+                                The goal is to indicate in the novel that a location has to be visited to continue.
+                            </p>
+                            <p>
+                                First, choose the locations in google maps. For each location, select "what's here" to get latitude and longitude. Copy those coordinates somewhere.
+                            </p>
+
+                            <img src="https://user-images.githubusercontent.com/3056482/137270296-f328252b-9b2e-4424-80a8-a5376ec730f6.png" />
+                            <br />
+                            <br />
+                            <p>
+                                Then, in the file js/script.js of the release, proceed to the line where geolocation is defined. For each pair of coordinates, define a name and associate the coordinates to that name.
+                            </p>
+                            <pre>
+                              <code>
+    monogatari.geolocations({ 
+      "place1":{latitude:40.437542, longitude:-3.724985}, 
+      "place2": {latitude:40.437912, longitude:-3.724768}, 
+      "berlin":{latitude:52.520007,longitude:13.404954} 
+    });
+                              </code>
+                            </pre>
+                            <p>
+                                When defining the game. You can give the player 60 seconds to reach the destination with 100 meters precision.
+                            </p>
+
+                            <pre>
+                              <code>
+    {
+      'ConditionalGeolocation': {
+        'Condition':"geolocate place1 1 60 0.1",
+        'False':'nope, dude',
+        'True':'alright, you got there'
+      }
+    }
+                              </code>
+                            </pre>
+                            <p>
+                                The geolocation commmand has this format
+                            </p>
+
+                            <pre>
+                              <code>
+    geolocate LOCATION_NAME REFRESH_PERIOD_SECONDS TIMEOUT_SECONDS PRECISION_KM
+                              </code>
+                            </pre>
+                            <p>
+                                It may be needed to give the player more time. To interact with the player in the meantime, this code can help:
+                            </p>
+                            <pre>
+                              <code>
+    function randomInt(min, max) {
+      return min + Math.floor((max - min) * Math.random());
+    };
+                              </code>
+                            </pre>
+                            <pre>
+                              <code>
+    monogatari.script({
+      "randommessage":[	
+        {'Conditional': {    
+              'Condition': function(){
+                  return randomInt(1,4)+"";
+              },
+              '1': 'move!!!',
+              '2': 'what are you waiting for?',
+              '3': 'do not be lazy',
+              '4': 'turtles are faster than you'
+          }
+        },
+        "return"
+      ]
+    });
+                              </code>
+                            </pre>
+                            <pre>
+                              <code>
+    monogatari.script({
+      "firstplace":[
+        {
+          'ConditionalGeolocation':{
+            'Condition':"geolocate place1 1 60 0.01",
+            'False':"call randommessage",
+            'True':'finally got here'
+          }
+        },
+        "call firstplace"
+      ]
+    });
+                              </code>
+                            </pre>
+                            <pre>
+                              <code>
+    monogatari.script ({	
+      'Start':[
+        "call firstplace",
+        "you made it!!"
+      ]
+    });
+                              </code>
+                            </pre>
+
+                            <h6>Advices:</h6>
+                            <ul>
+                                <li>Do not aim for precision lower than 50 m (0.05 km)</li>
+                                <li>
+                                    Do not set a too low timeout for reaching the destination. The GPS takes at least 2 to 5 seconds to get a position
+                                </li>
+                                <li>
+                                    There maybe jumps in the GPS location. It is preconfigured a high precision gps location, but not all phones may achieve it
+                                </li>
+                                <li>Try waypoints to be more than 100 meters away (0.1 km)</li>
+                            </ul>
+                            <h4>Forms</h4>
+                            <p>
+                                Forms are used to capture data from the user. It is useful to run surveys in the middle of the novel.
+                            </p>
+                            <pre>
+                              <code>
+    monogatari.customForms({
+      "opinion":{
+        "schema": {
+          "title":"User Feedback1",
+          "description":"What do you think about Alpaca?",
+          "type":"object",
+          "properties": {
+            "name": {
+              "type":"string",
+              "title":"Name"
+            },
+            "ranking": {
+              "type":"string",
+              "title":"Ranking",
+              "enum":['excellent','ok','so so']
+            }
+          }
+        },
+        "options": {
+          "form":{
+            "buttons":{
+              "submit":{
+                "title": "Enviar"
+              }
+            }
+          }
+        },
+        "view" : "bootstrap-create"
+      }
+    });
+                              </code>
+                            </pre>
+                            <pre>
+                              <code>
+    monogatari.script ({	
+      'Start': [
+        "customform opinion",
+        function(){
+          monogatari.setContentToSend(monogatari.getFormResult("opinion"));
+          return true;
+        },
+        "sendaction pabgob opinion",
+      ]
+    });
+                              </code>
+                            </pre>
+                            <h4>Sending data</h4>
+                            <p>
+                                Data deliver to a server. The server is preconfigured. This helps to create checkpoints in the novel and determine where the user stopped following the story.
+                            </p>
+                            <pre>
+                              <code>
+    "sendaction pabgob delivered",
+                              </code>
+                            </pre>
+                            <h4>Characters</h4>
+                            <p>Warning, move animation does not work.</p>
+                            <pre>
+                              <code>
+    "show character sylvie normal at left with fadeIn end-fadeOut",
+                              </code>
+                            </pre>
+                            <h4>Call/return</h4>
+                            <p>
+                                Monogatari adds basic goto functionality. To reuse pieces of your novel, this command enables to jump to labels and return back. For example, the following code issues a random message generated by a script. It reuses a label that has a choice within.
+                            </p>
+                            <pre>
+                              <code>
+    function randomInt(min, max) {
+      return min + Math.floor((max - min) * Math.random());
+    };
+                              </code>
+                            </pre>
+                            <pre>
+                              <code>
+    monogatari.script({
+      "randommessage":[	
+        {
+          'Conditional': {
+            'Condition': function(){
+                return randomInt(1,4)+"";
+            },
+            '1': 'move now',
+            '2': 'what are you waiting for?',
+            '3': 'don't be lazy',
+            '4': 'a stone move way more than you'
+          }
+        },
+        "return"
+      ]
+    });
+                              </code>
+                            </pre>
+                            <pre>
+                              <code>
+    monogatari.script ({ 
+      'Start': [ 
+        "call randommessage", 
+        "first call",
+        "call randommessage", 
+        "second call", 
+        "end" 
+      ] 
+    });
+                              </code>
+                            </pre>
+                            <h4>Panoramas</h4>
+                            <p>
+                                These are 3D constructions that can be seen in an inmersive way with the movile. It uses Panolens.
+                            </p>
+                            <pre>
+                              <code>
+    "panorama cubemap panorama/cube/dibu png -4774.9 474.16 -1375.02 waving.gif",
+                              </code>
+                            </pre>
+                            <pre>
+                              <code>
+    {
+      'ConditionalPanorama':{
+      'Condition':"panorama equi panorama/pano png -4774.9 474.16 -1375.02 hand.png",
+      'False':"Has fallado",
+      'True': "Lo conseguiste"
+      }
+    },
+                              </code>
+                            </pre>
+            </div>
+            </div>
+            </section>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
 </html>

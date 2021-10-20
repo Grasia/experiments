@@ -29,8 +29,7 @@ h2 {
 }
 
 p {
-    line-height: 1.8;
-    margin-bottom: 0;
+    line-height: 1.5;
 }
 
 section {
@@ -49,7 +48,7 @@ section {
 
 .title {
     max-width: 800px;
-    margin: 0 auto 30px auto;
+    margin: 10 auto 20px auto;
 }
 
 .content-justify {
@@ -62,4 +61,11 @@ section {
     max-width: 1000px;
     margin: 0 auto 20 auto;
     text-align: justify;
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    margin-bottom: 0px;
 }
