@@ -484,13 +484,13 @@ monogatari.script({
 function sitioaux(monogatari, etiqueta, sitio) {
     elemento = {};
     elemento[etiqueta] = [
-        "call randommessage",
-        "chomon Viajando al destino, toca o haz click en la pantalla para continuar",
+        'call randommessage',
+        'chomon Viajando al destino, toca o haz click en la pantalla para continuar',
         {
-            ConditionalGeolocation: {
-                Condition: "geolocate " + sitio + " 0.5 60 0.01",
-                False: "call " + etiqueta,
-                True: "Hemos llegado.",
+            'ConditionalGeolocation': {
+                'Condition': "geolocate " + sitio + " 0.5 600 0.01",
+                'False': "call " + etiqueta,
+                'True': "Hemos llegado.",
             },
         },
         "return",
@@ -500,14 +500,14 @@ function sitioaux(monogatari, etiqueta, sitio) {
 
 function sitio(monogatari, etiqueta, sitio) {
     elemento = {};
-    sitioaux(monogatari, etiqueta + "aux", sitio);
+    // sitioaux(monogatari, etiqueta + "aux", sitio);
     elemento[etiqueta] = [
-        "chomon Viajando al destino, toca o haz click en la pantalla para continuar",
+        'chomon Viajando al destino, toca o haz click en la pantalla para continuar',
         {
-            ConditionalGeolocation: {
-                Condition: "geolocate " + sitio + " 0.5 600 0.01",
-                False: "call " + etiqueta,
-                True: "Hemos llegado.",
+            'ConditionalGeolocation': {
+                'Condition': "geolocate " + sitio + " 0.5 600 0.01",
+                'False': "call " + etiqueta + "aux",
+                'True': 'Hemos llegado.',
             },
         },
         "return",
