@@ -486,7 +486,7 @@ monogatari.script({
                 Class: "navigationBox",
                 mausoleoModif1Si: {
                     Text: "Sí",
-                    Do: "sendaction teruelcentro mausoleo_modif1_nsi",
+                    Do: "sendaction teruelcentro mausoleo_modif1_si",
                     Class: "button1",
                 },
                 mausoleoModif1No: {

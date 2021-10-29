@@ -668,7 +668,7 @@ monogatari.script({
         "hide image sanmartin2 with fadeOut",
         "chomon La Torre El Salvador junto con la torre de San Martín, en 1986 fueron declarados Patrimonio de la Humanidad por la Unesco.",
         "show scene salvadorcartel",
-        "sendaction geoteruel inicio_encuesta",
+        "sendaction geoteruel inicio_encuesta_locucion",
         {
             Choice: {
                 Dialog: "chomon ¿Crees que la locución de la historia te facilitaría el acceso al contenido de este cartel?",
@@ -691,12 +691,12 @@ monogatari.script({
                 Class: "navigationBox",
                 salvadorMovil: {
                     Text: "En mi móvil",
-                    Do: "sendaction geoteruel movil",
+                    Do: "sendaction geoteruel locucion_movil",
                     Class: "button1",
                 },
                 salvadorAltavoz: {
                     Text: "En un altavoz",
-                    Do: "sendaction geoteruel altavoz",
+                    Do: "sendaction geoteruel locucion_altavoz",
                     Class: "button2",
                 },
             },
@@ -751,7 +751,7 @@ monogatari.script({
                 Class: "navigationBox",
                 escalinataEscaleras: {
                     Text: "Escaleras",
-                    Do: "sendaction geoteruel escaleras",
+                    Do: "sendaction geoteruel bajar_escaleras",
                     Class: "button1",
                     onChosen: function() {
                         this.storage().escalinata_donde = "escaleras";
@@ -759,8 +759,7 @@ monogatari.script({
                 },
                 escalinataAscensor: {
                     Text: "Ascensor",
-                    Do: "chomon enviar ascensor",
-                    Do: "sendaction geoteruel ascensor",
+                    Do: "sendaction geoteruel bajar_ascensor",
                     Class: "button2",
                     onChosen: function() {
                         this.storage().escalinata_donde = "ascensor";
@@ -921,7 +920,7 @@ monogatari.script({
                 Class: "navigationBox",
                 mausoleoModif1Si: {
                     Text: "Sí",
-                    Do: "sendaction geoteruel mausoleo_modif1_nsi",
+                    Do: "sendaction geoteruel mausoleo_modif1_si",
                     Class: "button1",
                 },
                 mausoleoModif1No: {
@@ -997,7 +996,7 @@ monogatari.script({
         "Este es el final del recorrido",
         "Espero que te haya resultado interesante conocer más de la historia de Teruel",
         "Ahora, te pediría que rellenases un pequeño cuestionario de satisfacción para ayudarnos a mejorar la guía.",
-        "sendaction geoteruel inicio_encuesta",
+        "sendaction geoteruel inicio_encuesta_opinion",
         "show scene panoramica2",
         "call opinion1",
         "call opinion2",

@@ -504,12 +504,12 @@ monogatari.script({
                 Class: "navigationBox",
                 salvadorMovil: {
                     Text: "En mi móvil",
-                    Do: "sendaction terueltorres movil",
+                    Do: "sendaction terueltorres locucion_movil",
                     Class: "button1",
                 },
                 salvadorAltavoz: {
                     Text: "En un altavoz",
-                    Do: "sendaction terueltorres altavoz",
+                    Do: "sendaction terueltorres locucion_altavoz",
                     Class: "button2",
                 },
             },

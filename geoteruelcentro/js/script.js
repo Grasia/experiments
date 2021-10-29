@@ -494,7 +494,7 @@ monogatari.script({
                 Class: "navigationBox",
                 mausoleoModif1Si: {
                     Text: "Sí",
-                    Do: "sendaction geoteruelcentro mausoleo_modif1_nsi",
+                    Do: "sendaction geoteruelcentro mausoleo_modif1_si",
                     Class: "button1",
                 },
                 mausoleoModif1No: {
@@ -570,7 +570,7 @@ monogatari.script({
         "Este es el final del recorrido",
         "Espero que te haya resultado interesante conocer más de la historia de Teruel",
         "Ahora, te pediría que rellenases un pequeño cuestionario de satisfacción para ayudarnos a mejorar la guía.",
-        "sendaction geoteruelcentro inicio_encuesta",
+        "sendaction geoteruelcentro inicio_encuesta_opinion",
         "show scene panoramica2",
         "call opinion1",
         "call opinion2",

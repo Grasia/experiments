@@ -690,12 +690,12 @@ monogatari.script({
                 Class: "navigationBox",
                 salvadorMovil: {
                     Text: "En mi móvil",
-                    Do: "sendaction teruel movil",
+                    Do: "sendaction teruel locucion_movil",
                     Class: "button1",
                 },
                 salvadorAltavoz: {
                     Text: "En un altavoz",
-                    Do: "sendaction teruel altavoz",
+                    Do: "sendaction teruel locucion_altavoz",
                     Class: "button2",
                 },
             },
@@ -862,7 +862,7 @@ monogatari.script({
                 Class: "navigationBox",
                 mausoleoModif1Si: {
                     Text: "Sí",
-                    Do: "sendaction teruel mausoleo_modif1_nsi",
+                    Do: "sendaction teruel mausoleo_modif1_si",
                     Class: "button1",
                 },
                 mausoleoModif1No: {
