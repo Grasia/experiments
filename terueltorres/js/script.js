@@ -662,7 +662,6 @@ monogatari.script({
         },
         "chomon Gracias por tu respuesta.",
         //_Final
-        "chomon Para conocer más de la historia de los amantes, vamos a ver el sitio perfecto.",
         "jump Final",
     ],
     Final: [
