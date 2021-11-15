@@ -465,18 +465,19 @@ monogatari.script({
         "chomon En el siglo XIV Omar y Abdalá que eran constructores.",
         "chomon Se enamoraron de la misma mujer.",
         "chomon El padre de la joven les dijo que el primero que terminase su torre se casaría con su hija.",
-        "chomon Omar fue el primero que anunció que había terminado.",
+        "show image sanmartin2 center with fadeIn",
+        "chomon Omar fue el primero que anunció que había terminado la suya, la de San Martín.",
         "chomon Pero cuando quedó totalmente descubierta se dio cuenta que la torre estaba ligeramente torcida.",
         "chomon Subió a lo más alto y se arrojó al vacío.",
+        "hide image sanmartin2 with fadeOut",
         "show scene salvador2",
         "chomon Cuando Abdala finalizó la suya, la del Salvador, se dieron cuenta que las dos torres eran muy parecidas.",
-        "show image sanmartin2 center with fadeIn",
         "chomon Es usada de campanario de la Iglesia del Salvador a la que está adosada.",
         "chomon En su interior está el centro de interpretación de la Arquitectura Mudéjar Turolense.",
-        "hide image sanmartin2 with fadeOut",
         "chomon En 1986 fueron declarados patrimonio de la humanidad por la Unesco.",
         "show scene salvador1",
         "show scene salvadorcartel",
+        "chomon Localiza el cartel de la imagen que está a debajo de la torre.",
         "sendaction geoterueltorres inicio_encuesta_locucion",
         {
             Choice: {
@@ -659,7 +660,7 @@ monogatari.script({
         },
         {
             Choice: {
-                Dialog: "chomon De todas formas, te queremos ofrecer otra opción. Reconstruir el mural en otro sitio al que se pueda acceder sin problemas. Elige un sitio.",
+                Dialog: "chomon De todas formas, te queremos ofrecer otra opción. Elige dónde construir una réplica del mural donde se pueda acceder sin problemas.",
                 Class: "navigationBox",
                 muralArriba: {
                     Text: "Parte de arriba",
