@@ -445,7 +445,7 @@ monogatari.script({
         "jump SanMartin",
     ],
     SanMartin: [
-        "chomon Se edificó entre 1315 y 1316.",
+        "chomon La Torre de San Martín se edificó entre 1315 y 1316.",
         "chomon Adosada a la iglesia de San Martín que se construyó en 1706 y que sustituyó a la anterior mudéjar.",
         "chomon Al lado está la Cuesta de la Andaquilla, relacionada con la Historia de los Amantes.",
         "chomon Posee dos torres que entre pasillos y escaleras llevan a un campanario.",
