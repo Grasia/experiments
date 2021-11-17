@@ -485,17 +485,17 @@ monogatari.script({
                 Class: "navigationBox",
                 locucionSi: {
                     Text: "Sí",
-                    Do: "sendaction terueltorres locucion_si",
+                    Do: "sendaction geoterueltorres locucion_si",
                     Class: "button1",
                 },
                 locucionNo: {
                     Text: "No",
-                    Do: "sendaction terueltorres locucion_no",
+                    Do: "sendaction geoterueltorres locucion_no",
                     Class: "button2",
                 },
                 locucionNSNC: {
                     Text: "No me veo capaz de opinar",
-                    Do: "sendaction terueltorres locucion_nsnc",
+                    Do: "sendaction geoterueltorres locucion_nsnc",
                     Class: "button3",
                 },
             },
@@ -506,17 +506,17 @@ monogatari.script({
                 Class: "navigationBox",
                 salvadorMovil: {
                     Text: "En mi móvil",
-                    Do: "sendaction terueltorres locucion_movil",
+                    Do: "sendaction geoterueltorres locucion_movil",
                     Class: "button1",
                 },
                 salvadorAltavoz: {
                     Text: "En un altavoz",
-                    Do: "sendaction terueltorres locucion_altavoz",
+                    Do: "sendaction geoterueltorres locucion_altavoz",
                     Class: "button2",
                 },
                 salvadorDondeNSNC: {
                     Text: "No me veo capaz de opinar",
-                    Do: "sendaction terueltorres locucion_donde_nsnc",
+                    Do: "sendaction geoterueltorres locucion_donde_nsnc",
                     Class: "button3",
                 },
             },
@@ -643,17 +643,17 @@ monogatari.script({
                 Class: "navigationBox",
                 escalinataRampa: {
                     Text: "Sí",
-                    Do: "sendaction terueltorres escalinata_modif_si",
+                    Do: "sendaction geoterueltorres escalinata_modif_si",
                     Class: "button1",
                 },
                 escalinataSalvaescaleras: {
                     Text: "No",
-                    Do: "sendaction terueltorres escalinata_modif_no",
+                    Do: "sendaction geoterueltorres escalinata_modif_no",
                     Class: "button2",
                 },
                 escalinataModifNSNC: {
                     Text: "No me veo capaz de opinar",
-                    Do: "sendaction terueltorres escalinata_modif_nsnc",
+                    Do: "sendaction geoterueltorres escalinata_modif_nsnc",
                     Class: "button3",
                 },
             },
@@ -695,17 +695,17 @@ monogatari.script({
                 Class: "navigationBox",
                 muralSi: {
                     Text: "Sí",
-                    Do: "sendaction terueltorres mural_si",
+                    Do: "sendaction geoterueltorres mural_si",
                     Class: "button1",
                 },
                 muralNo: {
                     Text: "No",
-                    Do: "sendaction terueltorres mural_no",
+                    Do: "sendaction geoterueltorres mural_no",
                     Class: "button2",
                 },
                 muralNSNC: {
                     Text: "No me veo capaz de opinar",
-                    Do: "sendaction terueltorres mural_nsnc",
+                    Do: "sendaction geoterueltorres mural_nsnc",
                     Class: "button3",
                 },
             },
