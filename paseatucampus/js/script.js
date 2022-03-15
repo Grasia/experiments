@@ -118,6 +118,7 @@ monogatari.assets ('scenes', {
 "paseotilos":"paseotilos.png",
 "prytoparaninfo":"prytoparaninfo.jpg",
 "railesmoncloa":"railesmoncloa.png",
+"railesmoncloa2":"railesmoncloa2.jpg",
 "tranviaviejo1":"tranviaviejo1.jpg",
 "tranviaviejo1":"tranviaviejo1.png",
 "tranviaviejo2":"tranviaviejo2.png",
@@ -358,7 +359,9 @@ monogatari.script ({	'Start': [
 "show scene abeto",
 "En el recorrido destacan los grandes cedros del Himalaya o cedros del Líbano (Cedrus deodara). Son árboles muy longevos, que pueden llegar al milenio. Su madera es muy apreciada desde la antigüedad. De ella se extrae un agradable aroma que reconforta y tranquiliza.",
 "show scene railesmoncloa",
-"Si avanzas un poco, puedes ver las vías del antiguo tranvía en Moncloa.", "Esta vía la recorría el tranvía que unía Moncloa con la Ciudad Universitaria, que desde 1945 hasta 1967 han sido diariamente utilizados por la comunidad universitaria. La prensa de la época decía que a estos trenes se les llamaba pepes, pacos o miles.",
+"Si avanzas un poco, puedes ver las vías del antiguo tranvía en Moncloa.",
+"show scene railesmoncloa2",
+ "Esta vía la recorría el tranvía que unía Moncloa con la Ciudad Universitaria, que desde 1945 hasta 1967 han sido diariamente utilizados por la comunidad universitaria. La prensa de la época decía que a estos trenes se les llamaba pepes, pacos o miles.",
 //"call primersitio",
 //"¡Ya hemos llegado!",
 
@@ -373,21 +376,21 @@ monogatari.script ({	'Start': [
 
 "show scene tranviaviejo2",
 "La prensa de la época decía que a estos trenes se les llamaba pepes, pacos o miles",
+
 "show scene flor2",
 "En la parada de Farmacia, descubrimos la plaza de Ramón y Cajal, coronada por la estatua de los portadores de la antorcha, rodeada del ciruelo japonés o ciruelo rojo (Prunus cerasifera).",
-"show scene flor1",
 
+"show scene flor1",
 "Esté árbol destaca por su temprana floración y sus hojas de color púrpura, ofreciendo una explosión de color a finales del invierno. Sus frutos son comestibles, maduran en verano y tienen muy buen sabor. Se emplea para la elaboración de mermeladas y jaleas.",
 
 "show scene tranviejo5",
-
-"y este es un tranvía viejo",
+"En la foto se ve al fondo la facultad de farmacia.",
 
 "show scene tranviaviejo4",
-"y otro",
+"En el pasado, también los estudiantes se metían como podían en el tranvía. Hay cosas que no cambian.",
 
 "show scene arbol2",
-
+"Y así llegamos a una pequeña pradera",
 "Este espacio, también conocido como la pradera de paraninfo, está presidido por la estatua de Alfonso XIII, regente que a principios del siglo XVIII impulsó el proyecto de construcción de la Ciudad Universitaria", 
 
 "Recibe su nombre gracias al proyecto inicial de la junta constructora, donde quedaba prevista la construcción del edificio Paraninfo en esta localización, coronando la avenida Complutense. ",
@@ -410,10 +413,12 @@ monogatari.script ({	'Start': [
 
 "clara Y este es el final del recorrido.",
 "clara Espero que te haya resultado interesante conocer más de la historia de la UCM.",
+
 "clara Ahora, te pediría que rellenases un pequeño cuestionario de satisfacción para ayudarnos a mejorar la guía.",
 "clara ¡Hasta pronto!",
 "customform opinion",
-"sendaction pabgob rellenada",
+
+"sendaction paseatucampus rellenada",
 function(){
 monogatari.setContentToSend(monogatari.getFormResult("opinion"));
 return true;
