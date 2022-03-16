@@ -375,7 +375,7 @@ monogatari.script ({	'Start': [
 "La prensa de la época decía que a estos trenes se les llamaba pepes, pacos o miles",
 
 "Ahora recorreremos este camino para llegar a la plaza de farmacia",
-"call farmacia",
+"call plaza",
 "¡Ya hemos llegado!",
 
 "show scene flor2",
