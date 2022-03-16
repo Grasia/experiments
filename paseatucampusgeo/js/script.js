@@ -279,7 +279,7 @@ monogatari.script({"randommessage":[
 			'call randommessage','clara Viajando al destino, toca o haz click en la pantalla para continuar', {'ConditionalGeolocation':{
 				'Condition':"geolocate "+sitio+" 0.5 60 0.01",
 				'False':"call "+etiqueta,
-				'True':'olé'}
+				'True':'Destino alcanzado'}
 			},"return"];
 			monogatari.script(elemento);
 		}
