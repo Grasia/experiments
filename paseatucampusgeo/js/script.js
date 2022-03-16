@@ -357,6 +357,10 @@ monogatari.script ({	'Start': [
 "Si avanzas un poco, puedes ver las vías del antiguo tranvía en Moncloa.",
 "show scene railesmoncloa2",
  "Esta vía la recorría el tranvía que unía Moncloa con la Ciudad Universitaria, que desde 1945 hasta 1967 han sido diariamente utilizados por la comunidad universitaria. La prensa de la época decía que a estos trenes se les llamaba pepes, pacos o miles.",
+  "show scene tranviaviejo1",
+"Esta vía la recorría el tranvía que unía Moncloa con la Ciudad Universitaria, que desde 1945 hasta 1967 han sido diariamente utilizados por la comunidad universitaria",
+"show scene tranviaviejo2",
+"La prensa de la época decía que a estos trenes se les llamaba pepes, pacos o miles",
 
 "Andemos un poco hacia el paseo de los tilos.",
 "call tilos",
@@ -368,34 +372,29 @@ monogatari.script ({	'Start': [
 "El tilo es un árbol caducifolio con grandes hojas que proporciona una buena sombra en verano. Tiene unas hojas anchas y redondeadas",
 " Bien son conocidas las propiedades de la tila como sedante que se obtiene de sus flores. ",
 
-"show scene tranviaviejo1",
-"Esta vía la recorría el tranvía que unía Moncloa con la Ciudad Universitaria, que desde 1945 hasta 1967 han sido diariamente utilizados por la comunidad universitaria",
-
-"show scene tranviaviejo2",
-"La prensa de la época decía que a estos trenes se les llamaba pepes, pacos o miles",
-
-"Ahora recorreremos este camino para llegar a la plaza de farmacia",
+"Ahora sigamos por este camino para llegar a la plaza Ramón y Cajal, donde están la mayoría de facultades de Ciencias de la Salud",
 "call plaza",
-"¡Ya hemos llegado!",
-
-"show scene flor2",
-"En la parada de Farmacia, descubrimos la plaza de Ramón y Cajal, coronada por la estatua de los portadores de la antorcha, rodeada del ciruelo japonés o ciruelo rojo (Prunus cerasifera).",
-
-"show scene flor1",
-"Esté árbol destaca por su temprana floración y sus hojas de color púrpura, ofreciendo una explosión de color a finales del invierno. Sus frutos son comestibles, maduran en verano y tienen muy buen sabor. Se emplea para la elaboración de mermeladas y jaleas.",
+"¡Ya hemos llegado a la plaza!",
 
 "show scene tranviejo5",
-"En la foto se ve al fondo la facultad de farmacia.",
+"Los estudiantes llegaban a la plaza como hoy llegan en autobús. En la foto se ve al fondo la facultad de farmacia.",
 
 "show scene tranviaviejo4",
 "En el pasado, también los estudiantes se metían como podían en el tranvía. Hay cosas que no cambian.",
 
-"Ahora subiremos por la avenida",
+"show scene flor2",
+"La plaza de Ramón y Cajal está coronada por la estatua de los portadores de la antorcha, rodeada del ciruelo japonés o ciruelo rojo (Prunus cerasifera).",
+
+"show scene flor1",
+"Esté árbol destaca por su temprana floración y sus hojas de color púrpura, ofreciendo una explosión de color a finales del invierno. Sus frutos son comestibles, maduran en verano y tienen muy buen sabor. Se emplea para la elaboración de mermeladas y jaleas.",
+
+
+"Ahora subiremos por la avenida complutense",
 "call jardin",
 "¡Ya hemos llegado!",
 
 "show scene arbol2",
-"Y así llegamos a una pequeña pradera",
+"Esta es una pequeña pradera en la parte sur del campus norte de deportes",
 "Este espacio, también conocido como la pradera de paraninfo, está presidido por la estatua de Alfonso XIII, regente que a principios del siglo XVIII impulsó el proyecto de construcción de la Ciudad Universitaria", 
 
 "Recibe su nombre gracias al proyecto inicial de la junta constructora, donde quedaba prevista la construcción del edificio Paraninfo en esta localización, coronando la avenida Complutense. ",
@@ -413,7 +412,7 @@ monogatari.script ({	'Start': [
 "show scene prytoparaninfo",
 "Se presentaron diferentes proyectos, claro está que no llegaron a consolidar, los cuales situaban el Paraninfo en esta localización, ocupando este jardín y el área ocupada por el complejo deportivo Paraninfo Norte).",
 
-"Actualmente, el Paraninfo se sitúa, junto con la Biblioteca Histórica “Marqués de Valdecilla”, en la calle San Bernardo",
+"Actualmente, el Paraninfo se sitúa, junto con la Biblioteca Histórica Marqués de Valdecilla, en la calle San Bernardo",
 
 
 "clara Y este es el final del recorrido.",
