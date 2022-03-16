@@ -213,7 +213,7 @@ setTimeout(function(){monogatari.sendEvent("northarea");alert("Hello!");},10000)
 // check google maps to obtain coordinates by right clicking anyplace in the map
 // and choosing "what's here"
 monogatari.geolocations({
-	"pabellon":{latitude:40.43853, longitude:-3.72412},
+	"pabellon":{latitude:40.436451, longitude:-3.719610},
 "vias":{latitude:40.43723, longitude:-3.72137},
 "tilos": {latitude:40.43851, longitude:-3.72406},
 "plaza":{latitude:40.443770, longitude:-3.726279},
