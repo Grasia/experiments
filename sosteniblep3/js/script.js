@@ -211,13 +211,13 @@ monogatari.customForms({
 				},
 				"estudios": {
 					"type":"string",
-					"title":"¿Piensas que la sostenibilidad en una universidad es importante?",
+					"title":"¿Cómo valoras que la UCM sea inclusiva?",
 					"enum":["nada importante","poco importante","importante", "muy importante","esencial"]
 				},
 				"opinionucm1": {
 					"type":"string",
-					"title":"Sobre la Complutense, ¿qué opinas?",
-					"enum":["no me gusta nada","no está mal","me gusta","es genial"]
+					"title":"¿Te animarías a montar una empresa sostenible?",
+					"enum":["No, sólo quiero estudiar", "sí, me gustaría hacerlo", "No lo sé aún"]
 				}
 			}
 		},
@@ -246,6 +246,7 @@ monogatari.customForms({
 
 
 monogatari.script ({	'Start': [
+	"camelia Esta es la Parte 3 de las Guías en Sostenibilidad",
 "camelia Mientras realizas esta guía, recogeremos datos anónimos sobre cómo la usas (el tiempo que tardas en pulsar la pantalla, cuestionarios y decisiones que tomas) que se usarán para investigar y para hacer estadísticas",
 {'Choice': {
     'Sí': {

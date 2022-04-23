@@ -216,8 +216,8 @@ monogatari.customForms({
 				},
 				"opinionucm1": {
 					"type":"string",
-					"title":"Sobre la Complutense, ¿qué opinas?",
-					"enum":["no me gusta nada","no está mal","me gusta","es genial"]
+					"title":"Sobre la Complutense, ¿crees que es positivo que sea grande o es un problema?",
+					"enum":["Prefiero una universidad más pequeña","Me parece positivo que sea grande","Me da igual, no lo considero relevante"]
 				}
 			}
 		},
@@ -246,6 +246,7 @@ monogatari.customForms({
 
 
 monogatari.script ({	'Start': [
+	"camelia Esta es la Parte 1 de las Guías en Sostenibilidad",
 "camelia Mientras realizas esta guía, recogeremos datos anónimos sobre cómo la usas (el tiempo que tardas en pulsar la pantalla, cuestionarios y decisiones que tomas) que se usarán para investigar y para hacer estadísticas",
 {'Choice': {
     'Sí': {
@@ -266,7 +267,7 @@ monogatari.script ({	'Start': [
 "show scene campuses",
 "camelia:smile Para que te hagas una idea, la Complutense tiene 5.220.461 m2 de campus: Somosaguas, Moncloa y Chamberi",
 "show scene verde",
-"camelia:bigsmile De esos cinco millones de metros cuadrados, "
+"camelia:bigsmile De esos cinco millones de metros cuadrados, ",
 "camelia:bigsmile hay 705.050 m2 de bosque y 668.474 m2 de área cubierta por vegetación",
 "show scene areanoasfaltada",
 "camelia:smile Y 1.373.524 m2 de area no asfaltada o construida",
@@ -278,7 +279,7 @@ monogatari.script ({	'Start': [
 
 "sendaction sostenibilidadp1 parte2",
 "show scene estudiantesytrabajadores",
-"camelia:smile Somos muchos. Cada año alojamos muchos estudiantes. La última vez fueron 72061 estudiantes."
+"camelia:smile Somos muchos. Cada año alojamos muchos estudiantes. La última vez fueron 72061 estudiantes.",
 "camelia:smile 10.799 trabajadores se encargan de que todo funcione bien y que se pueda investigar y dar clase,  ",
 "show scene asociaciones",
 "camelia:smile Y los estudiantes tienen a su disposición 103 asociaciones de estudiantes",
@@ -294,7 +295,7 @@ monogatari.script ({	'Start': [
 "show scene hospitalvet",
 "camelia:smile Y en el ámbito de la salud, nuestro Hospital veterinario es de los mejores del mundo",
 "show scene clinicas",
-"camelia:smile No sólo eso, tenemos varias clínicas. Hay clínicas para análisis sanitarios, "
+"camelia:smile No sólo eso, tenemos varias clínicas. Hay clínicas para análisis sanitarios, ",
 "camelia:smile odontología, optometría, podología, psicología, logopedia",
 "show scene hospitales",
 "camelia:smile Y si estudias medicina aquí, tienes 7 hospitales para prácticas médicas,",
@@ -302,7 +303,7 @@ monogatari.script ({	'Start': [
 
 "sendaction sostenibilidadp1 parte5",
 "show scene greenmetric",
-"camelia:bigsmile Gracias a estas cosas, hemos llegado a ser "
+"camelia:bigsmile Gracias a estas cosas, hemos llegado a ser ",
 "camelia:bigsmile la universidad número 38 del mundo en el Ranking GreenMetric, que mide la sostenibilidad",
 
 "sendaction sostenibilidadp1 finished",

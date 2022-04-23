@@ -211,13 +211,18 @@ monogatari.customForms({
 				},
 				"estudios": {
 					"type":"string",
-					"title":"¿Piensas que la sostenibilidad en una universidad es importante?",
+					"title":"La biodiversidad es algo que pienso es:",
 					"enum":["nada importante","poco importante","importante", "muy importante","esencial"]
 				},
 				"opinionucm1": {
 					"type":"string",
-					"title":"Sobre la Complutense, ¿qué opinas?",
-					"enum":["no me gusta nada","no está mal","me gusta","es genial"]
+					"title":"¿Te presentarías voluntario a recoger residuos?",
+					"enum":["Nunca","Por supuesto","No lo sé"]
+				},
+				"opinionucm1": {
+					"type":"string",
+					"title":"¿Te apuntarías a un curso de sostenibilidad?",
+					"enum":["Nunca","Por supuesto","No lo sé"]
 				}
 			}
 		},
@@ -246,6 +251,7 @@ monogatari.customForms({
 
 
 monogatari.script ({	'Start': [
+"camelia Esta es la Parte 2 de las Guías en Sostenibilidad",
 "camelia Mientras realizas esta guía, recogeremos datos anónimos sobre cómo la usas (el tiempo que tardas en pulsar la pantalla, cuestionarios y decisiones que tomas) que se usarán para investigar y para hacer estadísticas",
 {'Choice': {
     'Sí': {
@@ -275,7 +281,7 @@ monogatari.script ({	'Start': [
 "camelia:bigsmile La electricidad renovable alimenta también el servicio de bicicletas eléctricas",
 "camelia:bigsmile y cuando no es posible usar transporte público ni bicicletas, recomendamos usar el coche compartido",
 "show scene huella",
-"camelia:bigsmile Pero nuestra actividad no deja de tener impacto. "
+"camelia:bigsmile Pero nuestra actividad no deja de tener impacto. ",
 "camelia:bigsmile Tenemos registrada nuestra huella de carbono en el Ministerio de Transición Ecológica",
 "camelia:bigsmile Es decreciente desde 2018, hasta 2020, pero es alta",
 
@@ -291,13 +297,13 @@ monogatari.script ({	'Start': [
 "camelia:serious por todos los edificios. Aparte, tenemos 7 máquinas de reciclaje digital",
 "camelia:serious Si falla todo, podemos contar con los voluntarios. En 2018 recogieron 50kg en 2018 y 89 kg en 2019",
 "show scene 4r",
-"camelia:bigsmile Es necesario aplicar el 4R: Recoger, Reducir, Reciclar, Reusar"
+"camelia:bigsmile Es necesario aplicar el 4R: Recoger, Reducir, Reciclar, Reusar",
 "camelia:bigsmile El 4R se realiza en colaboración con el Foro de Empresas del Ayuntamiento de Madrid",
 "camelia:bigsmile Al igual que el proyecto FoodWave que persigue una alimentación más justa y de proximidad",
 
 "sendaction sostenibilidadp2 parte3",
 "show scene biodiversidad",
-"camelia:smile La biodiversidad también se trabaja. Hay más de 50 cajas nido para pájaros y unos 40 hoteles de insectos"
+"camelia:smile La biodiversidad también se trabaja. Hay más de 50 cajas nido para pájaros y unos 40 hoteles de insectos",
 "show scene mariposario",
 "camelia:smile También tenemos un mariposario y un refugio de fauna pequeña",
 "camelia:smile instalados en colaboración con el Consorcio de Ciudad Universitaria",
@@ -313,9 +319,8 @@ monogatari.script ({	'Start': [
 
 "sendaction sostenibilidadp2 parte4",
 "show scene greenmetric",
-"camelia:bigsmile Gracias a estas cosas, hemos llegado a ser "
+"camelia:bigsmile Gracias a estas cosas, hemos llegado a ser ",
 "camelia:bigsmile la universidad número 38 del mundo en el Ranking GreenMetric, que mide la sostenibilidad",
-
 
 "sendaction sostenibilidadp2 finished",
 "camelia Ahora, te pediría que rellenases un pequeño cuestionario de satisfacción para ayudarnos a mejorar la guía.",
