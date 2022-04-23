@@ -293,7 +293,7 @@ monogatari.script ({	'Start': [
 
 "sendaction sostenibilidadp3 parte5",
 "show scene greenmetric",
-"camelia:bigsmile Gracias a estas cosas, hemos llegado a ser "
+"camelia:bigsmile Gracias a estas cosas, hemos llegado a ser ",
 "camelia:bigsmile la universidad número 38 del mundo en el Ranking GreenMetric, que mide la sostenibilidad",
 
 "sendaction sostenibilidadp3 finished",
