@@ -271,7 +271,7 @@ monogatari.script ({	'Start': [
 "sendaction sostenibilidadp2 parte1",
 "show scene renovable",
 "camelia:bigsmile Vamos a hablar de energía, porque la Complutense necesita mucha electricidad",
-"camelia:bigsmile Necesitamos 49 GWh al año. Esto es lo que consumen 4.900 pisos en un año."
+"camelia:bigsmile Necesitamos 49 GWh al año. Esto es lo que consumen 4.900 pisos en un año.",
 "camelia:bigsmile Pero esta energía es 100% energía renovable certificada en origen. ",
 "camelia:bigsmile Significa que viene de placas solares o de aerogeneradores o de turbinas. ",
 "show scene florsolar",
