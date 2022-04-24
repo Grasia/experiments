@@ -282,14 +282,14 @@ monogatari.script ({	'Start': [
 "sendaction sostenibilidadp3 parte3",
 "show scene emprendimiento",
 "camelia:smile Investigación y formación da como resultado que los estudiantes y profesores",
-"camelia:smile se lancen en el emprendimeinto sostenible. Más de 15 empresas de nueva creación",
+"camelia:smile se lancen en el emprendimiento sostenible. Más de 15 empresas de nueva creación",
 "camelia:smile en la UCM están relacionadas con el emprendimiento sostenible",
 
 "sendaction sostenibilidadp3 parte4",
 "show scene adaptadaeinclusiva",
 "camelia:bigsmile La sostenibilidad también alcanza a las personas.",
 "camelia:bigsmile Tener una educación inclusiva y adaptada es algo posible en la UCM",
-"camelia:bigsmile Nuestros programas de becas y la unidad de diversidad e inclusión se encargan de ello",
+"camelia:bigsmile Nuestros vicerrectorado de estudiantes, con sus programas de becas, y la unidad de diversidad e inclusión se encargan de ello",
 
 "sendaction sostenibilidadp3 parte5",
 "show scene greenmetric",
