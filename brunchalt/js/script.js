@@ -245,7 +245,6 @@ monogatari.customForms({
 
 
 monogatari.script ({	'Start': [
-"customform opinion",
 "rosa Mientras realizas esta guía, recogeremos datos anónimos sobre cómo la usas (el tiempo que tardas en pulsar la pantalla, cuestionarios y decisiones que tomas) que se usarán para investigar y para hacer estadísticas",
 {'Choice': {
     'Sí': {
