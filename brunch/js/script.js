@@ -198,18 +198,24 @@ monogatari.customForms({
 			"properties": {
 				"sobreguia": {
 					"type":"string",
+					"required":true,
+					"default":"NSNC",
 					"title":"Esta guía me ha gustado",
-					"enum":['poco','regular','mucho','una barbaridad']
+					"enum":['poco','regular','mucho','una barbaridad','NSNC']
 				},
 				"estudios": {
 					"type":"string",
+					"required":true,
+					"default":"NSNC",
 					"title":"¿Qué quieres estudiar?",
-					"enum":['humanidades','ciencias sociales','ciencias experimentales', 'ingenierías', 'ciencias de la salud']
+					"enum":['humanidades','ciencias sociales','ciencias experimentales', 'ingenierías', 'ciencias de la salud','NSNC']
 				},
 				"opinionucm1": {
 					"type":"string",
+					"required":true,
+					"default":"NSNC",
 					"title":"Sobre la Complutense, ¿qué opinas?",
-					"enum":['No me gusta como universidad','No tiene lo que busco', 'Ojalá que pueda ser admitido',"Me encanta y voy a entrar"]
+					"enum":['No me gusta como universidad','No tiene lo que busco', 'Ojalá que pueda ser admitido',"Me encanta y voy a entrar",'NSNC']
 				}
 			}
 		},
