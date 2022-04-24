@@ -353,14 +353,30 @@ monogatari.script({"randommessage":[
 },"call primersitio"]});
 */
 
-monogatari.script ({	'Start': [
+monogatari.script ({	
+'Start': [
+"clara Mientras realizas esta guía, recogeremos datos anónimos sobre cómo la usas (el tiempo que tardas en pulsar la pantalla, cuestionarios y decisiones que tomas) que se usarán para investigar y para hacer estadísticas",
+{'Choice': {
+    'Sí': {
+        'Text': 'Acepto y quiero continuar.',
+        'Do': 'jump historia'
+    },
+    'No': {
+        'Text': 'No acepto, prefiero no hacer la guía',
+        'Do': "call finalhistoria"
+    }
+}}],
+
+'historia': [
 "show scene aereo",
 "show character clara normal2 at right with fadeIn end-fadeOut",
+"sendaction paseatucampus parte1",
 "Hola",
 "clara Soy Clara Campoamor y quiero enseñarte los espacios verdes que tenemos en la Complutense",
 "show character clara normal1 at left with fadeIn end-fadeOut",
 "hemos preparado una serie de puntos estratégicos que puedes seleccionar en el mapa y preparar tu paseo por el campus.",
 "show character clara lookright at left with fadeIn end-fadeOut",
+
 "¿Estás listo? ¡Que empezamos!",
 "show scene tranviejo3",
 "clara El recorrido comienza en el Pabellón de Gobierno. El edificio fue construido en 1931, a cargo de Manuel Sanchéz Arcas, para albergar a la Junta Constructora. Más tarde se convertiría en el Pabellón de Gobierno de la UCM. ",
@@ -373,24 +389,28 @@ monogatari.script ({	'Start': [
 //"call primersitio",
 //"¡Ya hemos llegado!",
 
+"sendaction paseatucampus parte2",
 "show scene paseotilos",
 "clara En primavera o verano puedes pasear bajo la sombra los tilos (Tilia platyphyllos). El tilo es un árbol caducifolio con hojas anchas y redondeadas que proporciona una buena sombra. Bien son conocidas las propiedades de la tila como sedante que se obtiene de sus flores.", 
 "show scene hojatilos",
 "clara El tilo es un árbol caducifolio con grandes hojas que proporciona una buena sombra en verano. Tiene unas hojas anchas y redondeadas",
 "clara Bien son conocidas las propiedades de la tila como sedante que se obtiene de sus flores. ",
 
+"sendaction paseatucampus parte3",
 "show scene tranviaviejo1",
 "clara Esta vía la recorría el tranvía que unía Moncloa con la Ciudad Universitaria, que desde 1945 hasta 1967 han sido diariamente utilizados por la comunidad universitaria",
 
 "show scene tranviaviejo2",
 "clara La prensa de la época decía que a estos trenes se les llamaba pepes, pacos o miles",
 
+"sendaction paseatucampus parte4",
 "show scene flor2",
 "clara En la parada de Farmacia, descubrimos la plaza de Ramón y Cajal, coronada por la estatua de los portadores de la antorcha, rodeada del ciruelo japonés o ciruelo rojo (Prunus cerasifera).",
 
 "show scene flor1",
 "clara Esté árbol destaca por su temprana floración y sus hojas de color púrpura, ofreciendo una explosión de color a finales del invierno. Sus frutos son comestibles, maduran en verano y tienen muy buen sabor. Se emplea para la elaboración de mermeladas y jaleas.",
 
+"sendaction paseatucampus parte5",
 "show scene tranviejo5",
 "clara En la foto se ve al fondo la facultad de farmacia.",
 
@@ -401,6 +421,7 @@ monogatari.script ({	'Start': [
 "clara Y así llegamos a una pequeña pradera",
 "clara Este espacio, también conocido como la pradera de paraninfo, está presidido por la estatua de Alfonso XIII, regente que a principios del siglo XVIII impulsó el proyecto de construcción de la Ciudad Universitaria", 
 
+"sendaction paseatucampus parte6",
 "clara Recibe su nombre gracias al proyecto inicial de la junta constructora, donde quedaba prevista la construcción del edificio Paraninfo en esta localización, coronando la avenida Complutense. ",
 
 "show scene flor3",
@@ -413,6 +434,7 @@ monogatari.script ({	'Start': [
 "show scene paraninfo",
 "clara La plaza del Paraninfo debe su nombre al planeamiento inicial de la Ciudad Universitaria a principios de siglo, cuando la junta de Ciudad Universitaria comenzó con la construcción de las instalaciones de la Universidad en los terrenos cedidos por el monarca Alfonso XIII.",
 
+"sendaction paseatucampus parte7",
 "show scene prytoparaninfo",
 "clara Se presentaron diferentes proyectos, claro está que no llegaron a consolidar, los cuales situaban el Paraninfo en esta localización, ocupando este jardín y el área ocupada por el complejo deportivo Paraninfo Norte).",
 
@@ -421,16 +443,17 @@ monogatari.script ({	'Start': [
 
 "clara Y este es el final del recorrido.",
 "clara Espero que te haya resultado interesante conocer más de la historia de la UCM.",
+"sendaction paseatucampus finished",
 
 "clara Ahora, te pediría que rellenases un pequeño cuestionario de satisfacción para ayudarnos a mejorar la guía.",
 "clara ¡Hasta pronto!",
-"customform opinion",
 
-"sendaction paseatucampus rellenada",
+
+"customform opinion",
 function(){
 monogatari.setContentToSend(monogatari.getFormResult("opinion"));
 return true;
 },
-"sendaction pabgob opinion",
+"sendaction paseatucampus rellenada",
 "call finalhistoria",
 "end"]});
