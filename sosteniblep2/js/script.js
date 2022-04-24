@@ -206,23 +206,31 @@ monogatari.customForms({
 			"properties": {
 				"sobreguia": {
 					"type":"string",
+					"required":true,
+					"default":"NSNC",
 					"title":"Esta guía me ha gustado",
-					"enum":['poco','regular','mucho','una barbaridad']
+					"enum":['poco','regular','mucho','una barbaridad',"NSNC"]
 				},
 				"estudios": {
 					"type":"string",
+					"required":true,
+					"default":"NSNC",
 					"title":"La biodiversidad es algo que pienso es:",
-					"enum":["nada importante","poco importante","importante", "muy importante","esencial"]
+					"enum":["nada importante","poco importante","importante", "muy importante","esencial","NSNC"]
 				},
 				"opinionucm1": {
 					"type":"string",
+					"required":true,
+					"default":"NSNC",
 					"title":"¿Te presentarías voluntario a recoger residuos?",
-					"enum":["Nunca","Por supuesto","No lo sé"]
+					"enum":["Nunca","Por supuesto","No lo sé","NSNC"]
 				},
 				"opinionucm1": {
 					"type":"string",
+					"required":true,
+					"default":"NSNC",
 					"title":"¿Te apuntarías a un curso de sostenibilidad?",
-					"enum":["Nunca","Por supuesto","No lo sé"]
+					"enum":["Nunca","Por supuesto","No lo sé","NSNC"]
 				}
 			}
 		},

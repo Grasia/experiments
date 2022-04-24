@@ -223,23 +223,31 @@ monogatari.customForms({
 		"schema": {
 			"title":"Opinión",
 			"description":"¿Qué opinas de la guía?",
+"required":true,
+					"default":"NSNC",
 			"type":"object",
 			"properties": {
 				"satisfaccion": {
 					"type":"string",
+"required":true,
+					"default":"NSNC",
 					"title":"Me ha gustado",
-					"enum":['poco','regular','mucho','una barbaridad']
+					"enum":['poco','regular','mucho','una barbaridad',"NSNC"]
 				},
 				"andar": {
 					"type":"string",
 					"title":"El andar me ha resultado",
-					"enum":['desagradable','lo aguanto','no me importa','ayuda a entender la guía']
+"required":true,
+					"default":"NSNC",
+					"enum":['desagradable','lo aguanto','no me importa','ayuda a entender la guía',"NSNC"]
 				}
 				,
 				"hacerotra": {
 					"type":"string",
 					"title":"¿Harías más guías como esta?",
-					"enum":['ni muerto','si me obligan, vale','ok, si insistes','deseando estoy']
+"required":true,
+					"default":"NSNC",
+					"enum":['ni muerto','si me obligan, vale','ok, si insistes','deseando estoy',"NSNC"]
 				}
 			}
 		},

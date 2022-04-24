@@ -206,18 +206,24 @@ monogatari.customForms({
 			"properties": {
 				"sobreguia": {
 					"type":"string",
+					"required":true,
+					"default":"NSNC",
 					"title":"Esta guía me ha gustado",
-					"enum":['poco','regular','mucho','una barbaridad']
+					"enum":['poco','regular','mucho','una barbaridad',"NSNC"]
 				},
 				"estudios": {
 					"type":"string",
+					"required":true,
+					"default":"NSNC",
 					"title":"¿Piensas que la sostenibilidad en una universidad es importante?",
-					"enum":["nada importante","poco importante","importante", "muy importante","esencial"]
+					"enum":["nada importante","poco importante","importante", "muy importante","esencial","NSNC"]
 				},
 				"opinionucm1": {
 					"type":"string",
+					"required":true,
+					"default":"NSNC",
 					"title":"Sobre la Complutense, ¿crees que es positivo que sea grande o es un problema?",
-					"enum":["Prefiero una universidad más pequeña","Me parece positivo que sea grande","Me da igual, no lo considero relevante"]
+					"enum":["Prefiero una universidad más pequeña","Me parece positivo que sea grande","Me da igual, no lo considero relevante","NSNC"]
 				}
 			}
 		},
