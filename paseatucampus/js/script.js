@@ -355,60 +355,60 @@ monogatari.script ({	'Start': [
 "show character clara lookright at left with fadeIn end-fadeOut",
 "¿Estás listo? ¡Que empezamos!",
 "show scene tranviejo3",
-"El recorrido comienza en el Pabellón de Gobierno. El edificio fue construido en 1931, a cargo de Manuel Sanchéz Arcas, para albergar a la Junta Constructora. Más tarde se convertiría en el Pabellón de Gobierno de la UCM. ",
+"clara El recorrido comienza en el Pabellón de Gobierno. El edificio fue construido en 1931, a cargo de Manuel Sanchéz Arcas, para albergar a la Junta Constructora. Más tarde se convertiría en el Pabellón de Gobierno de la UCM. ",
 "show scene abeto",
-"En el recorrido destacan los grandes cedros del Himalaya o cedros del Líbano (Cedrus deodara). Son árboles muy longevos, que pueden llegar al milenio. Su madera es muy apreciada desde la antigüedad. De ella se extrae un agradable aroma que reconforta y tranquiliza.",
+"clara En el recorrido destacan los grandes cedros del Himalaya o cedros del Líbano (Cedrus deodara). Son árboles muy longevos, que pueden llegar al milenio. Su madera es muy apreciada desde la antigüedad. De ella se extrae un agradable aroma que reconforta y tranquiliza.",
 "show scene railesmoncloa",
-"Si avanzas un poco, puedes ver las vías del antiguo tranvía en Moncloa.",
+"clara Si avanzas un poco, puedes ver las vías del antiguo tranvía en Moncloa.",
 "show scene railesmoncloa2",
- "Esta vía la recorría el tranvía que unía Moncloa con la Ciudad Universitaria, que desde 1945 hasta 1967 han sido diariamente utilizados por la comunidad universitaria. La prensa de la época decía que a estos trenes se les llamaba pepes, pacos o miles.",
+ "clara Esta vía la recorría el tranvía que unía Moncloa con la Ciudad Universitaria, que desde 1945 hasta 1967 han sido diariamente utilizados por la comunidad universitaria. La prensa de la época decía que a estos trenes se les llamaba pepes, pacos o miles.",
 //"call primersitio",
 //"¡Ya hemos llegado!",
 
 "show scene paseotilos",
-"En primavera o verano puedes pasear bajo la sombra los tilos (Tilia platyphyllos). El tilo es un árbol caducifolio con hojas anchas y redondeadas que proporciona una buena sombra. Bien son conocidas las propiedades de la tila como sedante que se obtiene de sus flores.", 
+"clara En primavera o verano puedes pasear bajo la sombra los tilos (Tilia platyphyllos). El tilo es un árbol caducifolio con hojas anchas y redondeadas que proporciona una buena sombra. Bien son conocidas las propiedades de la tila como sedante que se obtiene de sus flores.", 
 "show scene hojatilos",
-"El tilo es un árbol caducifolio con grandes hojas que proporciona una buena sombra en verano. Tiene unas hojas anchas y redondeadas",
-" Bien son conocidas las propiedades de la tila como sedante que se obtiene de sus flores. ",
+"clara El tilo es un árbol caducifolio con grandes hojas que proporciona una buena sombra en verano. Tiene unas hojas anchas y redondeadas",
+"clara Bien son conocidas las propiedades de la tila como sedante que se obtiene de sus flores. ",
 
 "show scene tranviaviejo1",
-"Esta vía la recorría el tranvía que unía Moncloa con la Ciudad Universitaria, que desde 1945 hasta 1967 han sido diariamente utilizados por la comunidad universitaria",
+"clara Esta vía la recorría el tranvía que unía Moncloa con la Ciudad Universitaria, que desde 1945 hasta 1967 han sido diariamente utilizados por la comunidad universitaria",
 
 "show scene tranviaviejo2",
-"La prensa de la época decía que a estos trenes se les llamaba pepes, pacos o miles",
+"clara La prensa de la época decía que a estos trenes se les llamaba pepes, pacos o miles",
 
 "show scene flor2",
-"En la parada de Farmacia, descubrimos la plaza de Ramón y Cajal, coronada por la estatua de los portadores de la antorcha, rodeada del ciruelo japonés o ciruelo rojo (Prunus cerasifera).",
+"clara En la parada de Farmacia, descubrimos la plaza de Ramón y Cajal, coronada por la estatua de los portadores de la antorcha, rodeada del ciruelo japonés o ciruelo rojo (Prunus cerasifera).",
 
 "show scene flor1",
-"Esté árbol destaca por su temprana floración y sus hojas de color púrpura, ofreciendo una explosión de color a finales del invierno. Sus frutos son comestibles, maduran en verano y tienen muy buen sabor. Se emplea para la elaboración de mermeladas y jaleas.",
+"clara Esté árbol destaca por su temprana floración y sus hojas de color púrpura, ofreciendo una explosión de color a finales del invierno. Sus frutos son comestibles, maduran en verano y tienen muy buen sabor. Se emplea para la elaboración de mermeladas y jaleas.",
 
 "show scene tranviejo5",
-"En la foto se ve al fondo la facultad de farmacia.",
+"clara En la foto se ve al fondo la facultad de farmacia.",
 
 "show scene tranviaviejo4",
-"En el pasado, también los estudiantes se metían como podían en el tranvía. Hay cosas que no cambian.",
+"clara En el pasado, también los estudiantes se metían como podían en el tranvía. Hay cosas que no cambian.",
 
 "show scene arbol2",
-"Y así llegamos a una pequeña pradera",
-"Este espacio, también conocido como la pradera de paraninfo, está presidido por la estatua de Alfonso XIII, regente que a principios del siglo XVIII impulsó el proyecto de construcción de la Ciudad Universitaria", 
+"clara Y así llegamos a una pequeña pradera",
+"clara Este espacio, también conocido como la pradera de paraninfo, está presidido por la estatua de Alfonso XIII, regente que a principios del siglo XVIII impulsó el proyecto de construcción de la Ciudad Universitaria", 
 
-"Recibe su nombre gracias al proyecto inicial de la junta constructora, donde quedaba prevista la construcción del edificio Paraninfo en esta localización, coronando la avenida Complutense. ",
+"clara Recibe su nombre gracias al proyecto inicial de la junta constructora, donde quedaba prevista la construcción del edificio Paraninfo en esta localización, coronando la avenida Complutense. ",
 
 "show scene flor3",
 
-"La pradera está formada por césped (Lolium perenne) con trébol blanco (Trifolium repens) y margaritas (Bellis perennis), con una serie de árboles significativos, entre los que destacamos en el centro de la superficie, un pequeño bosquete de castaños de indias (Aesculus hippocastanum).",
+"clara La pradera está formada por césped (Lolium perenne) con trébol blanco (Trifolium repens) y margaritas (Bellis perennis), con una serie de árboles significativos, entre los que destacamos en el centro de la superficie, un pequeño bosquete de castaños de indias (Aesculus hippocastanum).",
 
 "show scene flor4",
-"El castaño es una frondosa caducifolia de copa redondeada que, en primavera, despliega sus grandes inflorescencias blancas. También, son característicos sus frutos, una falsa castaña no comestible con envoltura espinosa.",
+"clara El castaño es una frondosa caducifolia de copa redondeada que, en primavera, despliega sus grandes inflorescencias blancas. También, son característicos sus frutos, una falsa castaña no comestible con envoltura espinosa.",
 
 "show scene paraninfo",
-"La plaza del Paraninfo debe su nombre al planeamiento inicial de la Ciudad Universitaria a principios de siglo, cuando la junta de Ciudad Universitaria comenzó con la construcción de las instalaciones de la Universidad en los terrenos cedidos por el monarca Alfonso XIII.",
+"clara La plaza del Paraninfo debe su nombre al planeamiento inicial de la Ciudad Universitaria a principios de siglo, cuando la junta de Ciudad Universitaria comenzó con la construcción de las instalaciones de la Universidad en los terrenos cedidos por el monarca Alfonso XIII.",
 
 "show scene prytoparaninfo",
-"Se presentaron diferentes proyectos, claro está que no llegaron a consolidar, los cuales situaban el Paraninfo en esta localización, ocupando este jardín y el área ocupada por el complejo deportivo Paraninfo Norte).",
+"clara Se presentaron diferentes proyectos, claro está que no llegaron a consolidar, los cuales situaban el Paraninfo en esta localización, ocupando este jardín y el área ocupada por el complejo deportivo Paraninfo Norte).",
 
-"Actualmente, el Paraninfo se sitúa, junto con la Biblioteca Histórica “Marqués de Valdecilla”, en la calle San Bernardo",
+"clara Actualmente, el Paraninfo se sitúa, junto con la Biblioteca Histórica “Marqués de Valdecilla”, en la calle San Bernardo",
 
 
 "clara Y este es el final del recorrido.",
