@@ -274,12 +274,12 @@ monogatari.script ({	'Start': [
 "show scene edificios",
 "camelia:bigsmile Para trabajar, disponemos de 2.284.687 m2 construidos en edificios que ocupan 839.242 m2",
 "show scene aparcamiento",
-"camelia:smile Y necesitamos mucho espacio para aparcar. Hay 29230 m2 de aparcamiento en los tres campuses",
+"camelia:smile Y necesitamos mucho espacio para aparcar. Hay 29.230 m2 de aparcamiento en los tres campuses",
 "camelia:smile Pero siempre recomendamos usar el transporte público o la alternativa menos contaminante",
 
 "sendaction sostenibilidadp1 parte2",
 "show scene estudiantesytrabajadores",
-"camelia:smile Somos muchos. Cada año alojamos muchos estudiantes. La última vez fueron 72061 estudiantes.",
+"camelia:smile Somos muchos. La cantidad varía año a año, pero la última vez fueron 72061 estudiantes.",
 "camelia:smile 10.799 trabajadores se encargan de que todo funcione bien y que se pueda investigar y dar clase,  ",
 "show scene asociaciones",
 "camelia:smile Y los estudiantes tienen a su disposición 103 asociaciones de estudiantes",
@@ -299,7 +299,7 @@ monogatari.script ({	'Start': [
 "camelia:smile odontología, optometría, podología, psicología, logopedia",
 "show scene hospitales",
 "camelia:smile Y si estudias medicina aquí, tienes 7 hospitales para prácticas médicas,",
-"camelia:smile destacando el Clínico, San Carlos situado en el campus de Moncloa",
+"camelia:smile destacando el Clínico San Carlos, situado en el campus de Moncloa",
 
 "sendaction sostenibilidadp1 parte5",
 "show scene greenmetric",
