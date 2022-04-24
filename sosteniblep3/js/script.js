@@ -124,11 +124,11 @@ monogatari.characters ({
 			smile: 'cameliasmile.png',
 
 		},
-			default_expression: 'cameliasmile.png',
+		default_expression: 'cameliasmile-sm.png',
 		expressions: { // Side images identifiers to show on dialogs
-			bigsmile: 'cameliabigsmile.png',
-			serious: 'cameliaserious.png',
-			smile: 'cameliasmile.png'
+			bigsmile: 'cameliabigsmile-sm.png',
+			serious: 'cameliaserious-sm.png',
+			smile: 'cameliasmile-sm.png'
 		}
 	},
 	'clara': {

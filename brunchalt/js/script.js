@@ -117,10 +117,11 @@ monogatari.characters ({
 			smile: 'cameliasmile.png',
 
 		},
+				default_expression: 'cameliasmile-sm.png',
 		expressions: { // Side images identifiers to show on dialogs
-			bigsmile: 'cameliabigsmile.png',
-			serious: 'cameliaserious.png',
-			smile: 'cameliasmile.png'
+			bigsmile: 'cameliabigsmile-sm.png',
+			serious: 'cameliaserious-sm.png',
+			smile: 'cameliasmile-sm.png'
 		}
 	},
 	'clara': {
@@ -172,10 +173,10 @@ monogatari.characters ({
 		normal2: 'rosa5.png',
 
 	},
-	default_expression: 'rosa4.png',
+	default_expression: 'rosadefault.png',
 	expressions: { // Side images identifiers to show on dialogs
 		normal1: 'rosa4.png',
-				normal2: 'rosa5.png'
+		normal2: 'rosa5.png'
 	}
 },
 
@@ -271,7 +272,8 @@ monogatari.script ({	'Start': [
 "rosa La Casa del Estudiante está para ayudarte en tu estancia y será centro de tu vida universitaria",
 "show character rosa normal2 at left with fadeIn end-fadeOut",
 "show scene hiperaula",
-"rosa Disponemos de muchas instalaciones novedosas, como la hiperaula, donde profesores de toda la comunidad de madrid vienen a aprender nuevos métodos docentes",
+"Disponemos de muchas instalaciones novedosas, como la hiperaula, donde profesores de toda la comunidad de madrid vienen a aprender nuevos métodos docentes",
+"hide character rosa",
 "show scene rugby",
 "rosa Estamos muy orgullosos de nuestras ligas de deportes",
 "show scene inclusividad",
@@ -279,8 +281,9 @@ monogatari.script ({	'Start': [
 
 "sendaction brunchalt parte2",
 "show scene ciencia",
-"show character rosa lookright at left with fadeIn end-fadeOut",
+"show character rosa normal1 at left with fadeIn end-fadeOut",
 "En la Complutense podrás desarrollar tu potencial",
+"hide character rosa",
 "show scene labotech",
 "rosa No importa de donde vengas o qué quieras hacer",
 "show scene zambrano",
@@ -292,10 +295,10 @@ monogatari.script ({	'Start': [
 "sendaction brunchalt parte3",
 "show scene huertos",
 "show character rosa normal1 at right with fadeIn end-fadeOut",
-"rosa También podrás crecer como persona",
+"También podrás crecer como persona",
 "show scene cooperacion",
 "show character rosa normal at left with fadeIn end-fadeOut",
-"rosa y aprender qué significa ser un ciudadano del mundo",
+"y aprender qué significa ser un ciudadano del mundo",
 
 "sendaction brunchalt parte4",
 "show scene erasmusplus",
