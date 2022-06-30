@@ -72,7 +72,9 @@ monogatari.assets("gallery", {});
 monogatari.assets("music", {});
 
 // Define the voice files used in the game.
-monogatari.assets("voices", {});
+monogatari.assets("voices", {
+    despedida: "despedida.mp3",
+});
 
 // Define the sounds used in the game.
 monogatari.assets("sounds", {});
@@ -565,18 +567,19 @@ monogatari.script({
         "Para ello vamos a ver varios lugares emblemáticos en la historia de Teruel.",
         "Pero antes, me gustaría que rellenases un cuestionario para saber un poco más de tí.",
         "Tienes que saber que no se van a recoger tus datos personales y que lo que vas a ver a continuación tiene un proposito de investigación.",
-        "sendaction teruel inicio_encuesta_usuario",
+        // "sendaction teruel inicio_encuesta_usuario",
         "hide character chomon",
-        "call caracterizacion1",
+        // "call caracterizacion1",
         "show character chomon lookright at left with fadeIn end-fadeOut",
+        "play voice despedida",
         // "Para comenzar necesito que te dirijas al siguiente destino",
         "show scene torico1",
-        "sendaction teruel empezando_torico",
+        // "sendaction teruel empezando_torico",
         // "call primersitio",
         // "sendaction teruel llegado_torico",
 
         // _Torico
-        "jump Torico",
+        // "jump Torico",
     ],
     Torico: [
         "chomon La antigua plaza mayor fue siempre el centro neurálgico de la ciudad.",
