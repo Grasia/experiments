@@ -279,3 +279,121 @@ input[type=range]::-ms-fill-upper {
 	width: calc(100% - 1px);
 	height: calc(100% - 1px);
 }
+
+.wrap {
+    background-color: rgb(222, 222, 222);
+	width: calc(100vh * 2);
+	height: calc(100vw * 0.625);
+    overflow: hidden;
+	max-height: 70%;
+	max-width: 100%;
+}
+
+.buttonTorico {
+	background: #3DD1E7 url("../assets/scenes/torico2.jpg") no-repeat left;
+	background-size: 60%;
+	border: 0 solid #E5E7EB;
+	box-sizing: border-box;
+	color: #000000;
+    position: absolute;
+	text-align: right;
+    top: 25%;
+    left: 2%;
+	width: 47%;
+	margin: 0px;
+	overflow:hidden;
+}
+
+.buttonCatedral{
+	background: #3DD1E7 url("../assets/scenes/catedral1.jpg") no-repeat left;
+	background-size: 60%;
+	border: 0 solid #E5E7EB;
+	box-sizing: border-box;
+	color: #000000;
+    position: absolute;
+	text-align: right;
+    top: 50%;
+    left: 2%;
+	width: 47%;
+	margin: 0px;
+	overflow:hidden;
+}
+
+.buttonSanMartin{
+	background: #3DD1E7 url("../assets/scenes/sanmartin1.jpg") no-repeat left;
+	background-size: 60%;
+	border: 0 solid #E5E7EB;
+	box-sizing: border-box;
+	color: #000000;
+    position: absolute;
+	text-align: right;
+    top: 75%;
+    left: 2%;
+	width: 47%;
+	margin: 0px;
+	overflow:hidden;
+}
+
+.buttonSalvador{
+	background: #3DD1E7 url("../assets/scenes/salvador1.jpg") no-repeat right;
+	background-size: 60%;
+	border: 0 solid #E5E7EB;
+	box-sizing: border-box;
+	color: #000000;
+    position: absolute;
+	text-align: left;
+    top: 25%;
+    right: 2%;
+	width: 47%;
+	margin: 0px;
+	overflow:hidden;
+}
+
+.buttonEscalinata{
+	background: #3DD1E7 url("../assets/scenes/escalinata4.jpg") no-repeat right;
+	background-size: 60%;
+	border: 0 solid #E5E7EB;
+	box-sizing: border-box;
+	color: #000000;
+    position: absolute;
+	text-align: left;
+    top: 50%;
+    right: 2%;
+	width: 47%;
+	margin: 0px;
+	overflow:hidden;
+}
+
+.buttonMausoleo{
+	background: #3DD1E7 url("../assets/scenes/mausoleo2.jpg") no-repeat right;
+	background-size: 60%;
+	border: 0 solid #E5E7EB;
+	box-sizing: border-box;
+	color: #000000;
+    position: absolute;
+	text-align: left;
+    top: 75%;
+    right: 2%;
+	width: 47%;
+	margin: 0px;
+	overflow:hidden;
+}
+
+.buttonCancelar {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+	margin: 0px;
+	height: 15%;
+}
+
+.text {
+	background: transparent;
+	color: #000000;
+	position: absolute;
+    top: 2%;
+    left: 2%;
+	margin: 0px;
+	pointer-events: none;
+}
+
