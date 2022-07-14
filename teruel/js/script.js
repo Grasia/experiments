@@ -392,6 +392,149 @@ encuesta(monogatari, "opinion5");
 
 encuesta(monogatari, "otra");
 
+function changeOption(monogatari, etiqueta) {
+    elemento = {};
+    elemento[etiqueta] = [
+        function() {
+            switch (etiqueta) {
+                case "optionTorico":
+                    monogatari.storage().menuConocidas.torico = !monogatari.storage().menuConocidas.torico;                    
+                    break;
+                case "optionCatedral":
+                    monogatari.storage().menuConocidas.catedral = !monogatari.storage().menuConocidas.catedral;
+                    break;
+                case "optionSanMartin":
+                    monogatari.storage().menuConocidas.sanmartin = !monogatari.storage().menuConocidas.sanmartin;
+                    break;
+                case "optionSalvador":
+                    monogatari.storage().menuConocidas.salvador = !monogatari.storage().menuConocidas.salvador;
+                    break;
+                case "optionEscalinata":
+                    monogatari.storage().menuConocidas.escalinata = !monogatari.storage().menuConocidas.escalinata;
+                    break;
+                case "optionMausoleo":
+                    monogatari.storage().menuConocidas.mausoleo = !monogatari.storage().menuConocidas.mausoleo;
+                    break;
+                default:
+                    break;
+            }
+            return true;
+        },
+        "call menuConocidas",
+    ];
+    monogatari.script(elemento);
+}
+
+changeOption(monogatari, "optionTorico");
+changeOption(monogatari, "optionCatedral");
+changeOption(monogatari, "optionSanMartin");
+changeOption(monogatari, "optionSalvador");
+changeOption(monogatari, "optionEscalinata");
+changeOption(monogatari, "optionMausoleo");
+
+function menuConocidas(monogatari, etiqueta) {
+    elemento ={};
+    elemento[etiqueta] = [
+        {
+            "Choice":{
+                Class: "wrapMenu",
+                "text":{
+                    "Text": "¿Marca las partes que conocías?",
+                    Class: "text",
+                    "Clickable": function() {return},
+                },
+                "cancelar":{
+                    "Text": "Aceptar",
+                    "Do": "jump Final",
+                    Class: "buttonAceptar",
+                },
+                "torico":{
+                    "Text": "Torico",
+                    "Do": "call optionTorico",
+                    Class: "buttonTorico",
+                },
+                "catedral":{
+                    "Text": "Catedral",
+                    "Do": "call optionCatedral",
+                    Class: "buttonCatedral",
+                },
+                "sanMartin":{
+                    "Text": "San Martín",
+                    "Do": "call optionSanMartin",
+                    Class: "buttonSanMartin",
+                },
+                "salvador":{
+                    "Text": "Salvador",
+                    "Do": "call optionSalvador",
+                    Class: "buttonSalvador",
+                },
+                "escalinata":{
+                    "Text": "Escalinata",
+                    "Do": "call optionEscalinata",
+                    Class: "buttonEscalinata",
+                },
+                "mausoleo":{
+                    "Text": "Mausoleo",
+                    "Do": "call optionMausoleo",
+                    Class: "buttonMausoleo",
+                },
+                "checkTorico": {
+                    "Text": "",
+                    Class: "buttonCheckTorico",
+                    Clickable: function() {return},
+                    Condition: function () {
+                        return monogatari.storage().menuConocidas.torico; // The 'Player' option will only be shown if this returns true.
+                    },
+                },
+                "checkCatedral": {
+                    "Text": "",
+                    Class: "buttonCheckCatedral",
+                    Clickable: function() {return},
+                    Condition: function () {
+                        return monogatari.storage().menuConocidas.catedral; // The 'Player' option will only be shown if this returns true.
+                    }
+                },
+                "checkSanMartin": {
+                    "Text": "",
+                    Class: "buttonCheckSanMartin",
+                    Clickable: function() {return},
+                    Condition: function () {
+                        return monogatari.storage().menuConocidas.sanmartin; // The 'Player' option will only be shown if this returns true.
+                    }
+                },
+                "checkSalvador": {
+                    "Text": "",
+                    Class: "buttonCheckSalvador",
+                    Clickable: function() {return},
+                    Condition: function () {
+                        return monogatari.storage().menuConocidas.salvador; // The 'Player' option will only be shown if this returns true.
+                    }
+                },
+                "checkEscalinata": {
+                    "Text": "",
+                    Class: "buttonCheckEscalinata",
+                    Clickable: function() {return},
+                    Condition: function () {
+                        return monogatari.storage().menuConocidas.escalinata; // The 'Player' option will only be shown if this returns true.
+                    }
+                },
+                "checkMausoleo": {
+                    "Text": "",
+                    Class: "buttonCheckMausoleo",
+                    Clickable: function() {return},
+                    Condition: function () {
+                        return monogatari.storage().menuConocidas.mausoleo; // The 'Player' option will only be shown if this returns true.
+                    }
+                }
+            }
+        },
+        "return"
+    ]
+    monogatari.script(elemento);
+}
+
+menuConocidas(monogatari, "menuConocidas");
+
 /**
  * Pasar de milisegundos a min:seg
  * !Si al final solo se quiere guardar en segundos cambiar
@@ -451,7 +594,7 @@ function setTiempoInicial() {
  * También puede usarse para reiniciar el contador del tiempo, cuando 
  * queremos medir una parte concreta
  */
- function setTiempo() {
+function setTiempo() {
     this.storage().tiempo.anterior = Date.now();
     return true;
 }
@@ -477,53 +620,6 @@ monogatari.script({
     Start: [
         // _Introducción
         "play music mainTheme with loop volume 10",
-        {
-            "Choice":{
-                Class: "wrap",
-                "text":{
-                    "Text": "¿Donde quieres ir?",
-                    Class: "text",
-                    "Clickable": function(){
-                        return
-                    },
-                },
-                "cancelar":{
-                    "Text": "Cancelar",
-                    "Do": "jump Animations",
-                    Class: "buttonCancelar",
-                },
-                "torico":{
-                    "Text": "Torico",
-                    "Do": "jump Animations",
-                    Class: "buttonTorico",
-                },
-                "catedral":{
-                    "Text": "Catedral",
-                    "Do": "jump Media",
-                    Class: "buttonCatedral",
-                },
-                "sanMartin":{
-                    "Text": "San Martín",
-                    "Do": "jump Media",
-                    Class: "buttonSanMartin",
-                },
-                "salvador":{
-                    "Text": "Salvador",
-                    "Do": "jump Script",
-                    Class: "buttonSalvador",
-                },
-                "escalinata":{
-                    "Text": "Escalinata",
-                    "Do": "jump Playing",
-                    Class: "buttonEscalinata",
-                },
-                "mausoleo":{
-                    "Text": "Mausoleo",
-                    "Do": "jump Playing",
-                    Class: "buttonMausoleo",
-                }
-            }
-        },
         "show scene panoramica",
         setTiempoInicial,
         "show character chomon normal2 at right with fadeIn end-fadeOut",
@@ -587,6 +683,7 @@ monogatari.script({
         calcularTiempo,
         "chomon La segunda vez en 2003 se volvió a bajar para una restauración.",
         calcularTiempo,
+        "call menuConocidas",
         // _Catedral
         "chomon El siguiente destino es la Catedral.",
         "jump Catedral",
@@ -966,6 +1063,19 @@ monogatari.script({
         "show scene panoramica2",
         "show character chomon normal2 at right with fadeIn end-fadeOut",
         "Este es el final del recorrido",
+        function () {
+            monogatari.storage ({
+                menuConocidas: {
+                    cadena: JSON.stringify(monogatari.storage().menuConocidas)
+                },
+                secciones: {
+                    cadenaTiempos: JSON.stringify(monogatari.storage().secciones.tiempos)
+                }
+            });
+            return true;
+        },
+        "sendaction prueba {{menuConocidas.cadena}}",
+        "sendaction prueba {{secciones.cadenaTiempos}}",
         "Espero que te haya resultado interesante conocer más de la historia de Teruel",
         "Ahora, te pediría que rellenases un pequeño cuestionario de satisfacción para ayudarnos a mejorar la guía.",
         // "sendaction teruel inicio_encuesta_opinion",

@@ -19,5 +19,15 @@ monogatari.storage ({
         },
         orden: [],
         actual: "Start",
+        cadenaTiempos: "",
+    }, 
+    menuConocidas: {
+        torico: false,
+        catedral: false,
+        sanmartin: false,
+        salvador: false,
+        escalinata: false,
+        mausoleo: false,
+        cadena: "", 
     }
 });

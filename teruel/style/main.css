@@ -280,7 +280,9 @@ input[type=range]::-ms-fill-upper {
 	height: calc(100% - 1px);
 }
 
-.wrap {
+/* Botones para el menú de las secciones */
+
+.wrapMenu {
     background-color: rgb(222, 222, 222);
 	width: calc(100vh * 2);
 	height: calc(100vw * 0.625);
@@ -291,7 +293,7 @@ input[type=range]::-ms-fill-upper {
 
 .buttonTorico {
 	background: #3DD1E7 url("../assets/scenes/torico2.jpg") no-repeat left;
-	background-size: 60%;
+	background-size:50%;
 	border: 0 solid #E5E7EB;
 	box-sizing: border-box;
 	color: #000000;
@@ -299,14 +301,14 @@ input[type=range]::-ms-fill-upper {
 	text-align: right;
     top: 25%;
     left: 2%;
-	width: 47%;
+	width: 40%;
 	margin: 0px;
 	overflow:hidden;
 }
 
 .buttonCatedral{
 	background: #3DD1E7 url("../assets/scenes/catedral1.jpg") no-repeat left;
-	background-size: 60%;
+	background-size:50%;
 	border: 0 solid #E5E7EB;
 	box-sizing: border-box;
 	color: #000000;
@@ -314,14 +316,14 @@ input[type=range]::-ms-fill-upper {
 	text-align: right;
     top: 50%;
     left: 2%;
-	width: 47%;
+	width: 40%;
 	margin: 0px;
 	overflow:hidden;
 }
 
 .buttonSanMartin{
 	background: #3DD1E7 url("../assets/scenes/sanmartin1.jpg") no-repeat left;
-	background-size: 60%;
+	background-size:50%;
 	border: 0 solid #E5E7EB;
 	box-sizing: border-box;
 	color: #000000;
@@ -329,14 +331,14 @@ input[type=range]::-ms-fill-upper {
 	text-align: right;
     top: 75%;
     left: 2%;
-	width: 47%;
+	width: 40%;
 	margin: 0px;
 	overflow:hidden;
 }
 
 .buttonSalvador{
 	background: #3DD1E7 url("../assets/scenes/salvador1.jpg") no-repeat right;
-	background-size: 60%;
+	background-size:50%;
 	border: 0 solid #E5E7EB;
 	box-sizing: border-box;
 	color: #000000;
@@ -344,14 +346,14 @@ input[type=range]::-ms-fill-upper {
 	text-align: left;
     top: 25%;
     right: 2%;
-	width: 47%;
+	width: 40%;
 	margin: 0px;
 	overflow:hidden;
 }
 
 .buttonEscalinata{
 	background: #3DD1E7 url("../assets/scenes/escalinata4.jpg") no-repeat right;
-	background-size: 60%;
+	background-size:50%;
 	border: 0 solid #E5E7EB;
 	box-sizing: border-box;
 	color: #000000;
@@ -359,14 +361,14 @@ input[type=range]::-ms-fill-upper {
 	text-align: left;
     top: 50%;
     right: 2%;
-	width: 47%;
+	width: 40%;
 	margin: 0px;
 	overflow:hidden;
 }
 
 .buttonMausoleo{
 	background: #3DD1E7 url("../assets/scenes/mausoleo2.jpg") no-repeat right;
-	background-size: 60%;
+	background-size:50%;
 	border: 0 solid #E5E7EB;
 	box-sizing: border-box;
 	color: #000000;
@@ -374,7 +376,7 @@ input[type=range]::-ms-fill-upper {
 	text-align: left;
     top: 75%;
     right: 2%;
-	width: 47%;
+	width: 40%;
 	margin: 0px;
 	overflow:hidden;
 }
@@ -387,6 +389,18 @@ input[type=range]::-ms-fill-upper {
 	height: 15%;
 }
 
+.buttonAceptar {
+    position: absolute;
+	background: #3DD1E7;
+	color: #000000;
+	box-sizing: border-box;
+	text-align: center;
+    top: 2%;
+    right: 2%;
+	margin: 1px;
+	
+}
+
 .text {
 	background: transparent;
 	color: #000000;
@@ -397,3 +411,62 @@ input[type=range]::-ms-fill-upper {
 	pointer-events: none;
 }
 
+.buttonCheckTorico {
+	position: absolute;
+	background-color: #1d9932;
+    top: 30%;
+    left: 43%;
+	height: 5%;
+	margin: 0px;
+	pointer-events: none;
+}
+
+.buttonCheckCatedral {
+	position: absolute;
+	background-color: #1d9932;
+    top: 55%;
+    left: 43%;
+	height: 5%;
+	margin: 0px;
+	pointer-events: none;
+}
+
+.buttonCheckSanMartin {
+	position: absolute;
+	background-color: #1d9932;
+    top: 80%;
+    left: 43%;
+	height: 5%;
+	margin: 0px;
+	pointer-events: none;
+}
+
+.buttonCheckSalvador {
+	position: absolute;
+	background-color: #1d9932;
+    top: 30%;
+    right: 43%;
+	height: 5%;
+	margin: 0px;
+	pointer-events: none;
+}
+
+.buttonCheckEscalinata {
+	position: absolute;
+	background-color: #1d9932;
+    top: 55%;
+    right: 43%;
+	height: 5%;
+	margin: 0px;
+	pointer-events: none;
+}
+
+.buttonCheckMausoleo {
+	position: absolute;
+	background-color: #1d9932;
+    top: 80%;
+    right: 43%;
+	height: 5%;
+	margin: 0px;
+	pointer-events: none;
+}
