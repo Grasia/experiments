@@ -20,7 +20,7 @@ monogatari.storage ({
         orden: [],
         actual: "Start",
         cadenaTiempos: "",
-    }, 
+    },
     menuConocidas: {
         torico: false,
         catedral: false,

@@ -550,12 +550,15 @@ function millisToMinutesAndSeconds(millis) {
  * avanzar entre dos puntos, pueden ser dentro de una misma sección.
  */
 function calcularTiempo() {
-    // Guardamos el tiempo actual
-    this.storage().tiempo.actual = Date.now();
     //Obtenemos la sección en la que nos encontramos
     var seccion = this.storage().secciones.actual;
     // Hacemos un contador según la sección en la que estemos
     var cont = Object.keys(this.storage().secciones.tiempos[seccion]).length;
+    // Guardamos el tiempo actual y al anterior le ponemos el actual si no es la primera vez
+    if(cont > 0) {
+        this.storage().tiempo.anterior = this.storage().tiempo.actual;
+    }
+    this.storage().tiempo.actual = Date.now();
     // En el index guardaremos el id que será la sección + el número que le toque (cont)
     var index = 0;
     var orden = this.storage().secciones.orden;
@@ -580,6 +583,14 @@ function calcularTiempo() {
     return true;
 }
 
+function calcularAburrimiento () {
+    // En que sección estoy
+    var seccion = this.storage().secciones.actual;
+    // Ver los tres últimos tiempos
+    var tiempos = this.storage().secciones.tiempos[seccion];
+    // Compararlos y guardar varaiable para mostrar menu de aburrimiento
+    console.log(tiempos);
+}
 /**
  * Se guarda el tiempo inicial
  */
@@ -657,6 +668,7 @@ monogatari.script({
         calcularTiempo,
         "chomon Su forma tiene que ver con las pendientes naturales por donde discurría el agua de lluvia",
         calcularTiempo,
+        calcularAburrimiento,
         "chomon En el año 1858 tiene lugar un hecho significativo.",
         calcularTiempo,
         "chomon Se levanta la nueva fuente del Torico situada en una zona más céntrica que no entorpecía el tránsito de los carros por la plaza.",
@@ -1074,8 +1086,8 @@ monogatari.script({
             });
             return true;
         },
-        "sendaction prueba {{menuConocidas.cadena}}",
-        "sendaction prueba {{secciones.cadenaTiempos}}",
+        // "sendaction prueba {{menuConocidas.cadena}}",
+        // "sendaction prueba {{secciones.cadenaTiempos}}",
         "Espero que te haya resultado interesante conocer más de la historia de Teruel",
         "Ahora, te pediría que rellenases un pequeño cuestionario de satisfacción para ayudarnos a mejorar la guía.",
         // "sendaction teruel inicio_encuesta_opinion",
