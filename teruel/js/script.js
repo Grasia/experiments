@@ -611,6 +611,20 @@ function setTiempo() {
 }
 
 /**
+ * Se elige la siguiente sección a la que irá el usuario
+ */
+function changeSection() {
+    // Cuando no hay más secciones va al final
+    if(this.storage().secciones.orden.length == 0) {
+        this.storage().secciones.siguiente = "Final";
+    } else {
+        // Se obtiene el primer sitio y se elimina de la lista, asignandolo a siguienete sección
+        this.storage().secciones.siguiente = this.storage().secciones.orden.shift();
+    }
+    return true;
+}
+
+/**
   * Ejemplo de una función asyncrona con un Promise
   * _Por ahora no se usa
   */
@@ -643,19 +657,18 @@ monogatari.script({
         // "call caracterizacion1",
         "show character chomon lookright at left with fadeIn end-fadeOut",
         // "Para comenzar necesito que te dirijas al siguiente destino",
-        "show scene torico1",
         // "sendaction teruel empezando_torico",
         // "call primersitio",
         // "sendaction teruel llegado_torico",
-        
-        // _Torico
-        "jump Torico",
+        changeSection,
+        "jump {{secciones.siguiente}}",
     ],
     Torico: [
+        "show scene torico1",
         function () {
             monogatari.storage ({
                 secciones: {
-                    actual: "torico"
+                    actual: "Torico"
                 }
             });
             return true;
@@ -668,7 +681,7 @@ monogatari.script({
         calcularTiempo,
         "chomon Su forma tiene que ver con las pendientes naturales por donde discurría el agua de lluvia",
         calcularTiempo,
-        calcularAburrimiento,
+        // calcularAburrimiento,
         "chomon En el año 1858 tiene lugar un hecho significativo.",
         calcularTiempo,
         "chomon Se levanta la nueva fuente del Torico situada en una zona más céntrica que no entorpecía el tránsito de los carros por la plaza.",
@@ -695,16 +708,14 @@ monogatari.script({
         calcularTiempo,
         "chomon La segunda vez en 2003 se volvió a bajar para una restauración.",
         calcularTiempo,
-        "call menuConocidas",
-        // _Catedral
-        "chomon El siguiente destino es la Catedral.",
-        "jump Catedral",
+        changeSection,
+        "jump {{secciones.siguiente}}",
     ],
     Catedral: [
         function () {
             monogatari.storage ({
                 secciones: {
-                    actual: "catedral"
+                    actual: "Catedral"
                 }
             });
             return true;
@@ -713,24 +724,33 @@ monogatari.script({
         // "sendaction teruel empezando_catedral",
         // "call segundositio",
         // "sendaction teruel llegado_catedral",
+        setTiempo,
         "chomon La Catedral de Teruel tiene su origen en la iglesia de Santa María de Mediavilla.",
+        calcularTiempo,
         "chomon Que comenzó a edificarse en estilo románico en 1171 y se concluyó con la construcción de la torre mudéjar en 1257.",
+        calcularTiempo,
         "chomon En la segunda mitad del siglo XIII, se reestructura la antigua obra románica y se le añaden tres naves mudéjares de mampostería y ladrillo",
+        calcularTiempo,
         "chomon Que mejoran y elevan la estructura románica del siglo XII.",
+        calcularTiempo,
         "chomon En el mismo estilo gótico-mudéjar, se van realizando cambios en toda la iglesia.",
+        calcularTiempo,
         "chomon Ya en estilo plateresco-mudéjar, fue construido en 1538 el cimborrio de la nave central, obra de Martín de Montalbán.",
+        calcularTiempo,
         "show scene catedral3",
+        calcularTiempo,
         "chomon Más tarde, en 1587, con la creación de la diócesis de Teruel, fue promovida a Catedral y consagrada como tal.",
+        calcularTiempo,
         "chomon La torre, techumbre y cimborrio de la Catedral de Teruel fueron declarados Patrimonio de la Humanidad por la Unesco en 1986.",
-        // _Torre de San Martín
-        "chomon A continuación, te mostraré dos torres con una historia conectada.",
-        "jump SanMartin",
+        calcularTiempo,
+        changeSection,
+        "jump {{secciones.siguiente}}",
     ],
     SanMartin: [
         function () {
             monogatari.storage ({
                 secciones: {
-                    actual: "sanmartin"
+                    actual: "SanMartin"
                 }
             });
             return true;
@@ -739,27 +759,38 @@ monogatari.script({
         // "sendaction teruel empezando_sanmartin",
         // "call tercersitio",
         // "sendaction teruel llegado_sanmartin",
+        setTiempo,
         "chomon La Torre de San Martín se edificó entre 1315 y 1316.",
+        calcularTiempo,
         "chomon Está adosada a la iglesia de San Martín, construida en 1706 y que sustituyó a la anterior mudéjar.",
+        calcularTiempo,
         "chomon A los pies de esta torre discurre, la Cuesta de la Andaquilla, testigo de una de las escenas de la Historia de los Amantes.",
+        calcularTiempo,
         "chomon Es ejemplo de la tipología de torre alminar almohade.",
+        calcularTiempo,
         "chomon Siguiendo esta estructura posee dos torres concéntricas, separadas casi un metro, entre las que se desarrollan pasillos y escaleras.",
+        calcularTiempo,
         "chomon Que llevan a un campanario, cubiertos por bóveda de ladrillo.",
+        calcularTiempo,
         "chomon De planta cuadrada, da paso a una calle bajo su bóveda de cañón apuntado.",
+        calcularTiempo,
         "show scene sanmartin3",
+        calcularTiempo,
         "chomon El exterior, de ladrillo, aparece decorado con cerámica vidriada en verde y blanco y paños horizontales de distintas alturas.",
+        calcularTiempo,
         "chomon Presenta un gran repertorio decorativo.",
+        calcularTiempo,
         "chomon El motivo decorativo que predomina es el de estrellas de 8 puntas blancas y con orla verde.",
+        calcularTiempo,
         "chomon Como en otros lugares de esta provincia esta torre tiene una leyenda sobre su construcción que, como no podía ser menos, es de amor.",
-        // _Torre el Salvador
-        // "chomon Pero te la contaré a continuación, cuando vayamos a ver la torre de El Salvador.",
-        "jump Salvador",
+        changeSection,
+        "jump {{secciones.siguiente}}",
     ],
     Salvador: [
         function () {
             monogatari.storage ({
                 secciones: {
-                    actual: "salvador"
+                    actual: "Salvador"
                 }
             });
             return true;
@@ -769,26 +800,43 @@ monogatari.script({
         // "call cuartositio",
         // "sendaction teruel llegado_salvador",
         "chomon Allá por el siglo XIV los alarifes mudéjares, Omar y Abdalá, constructores de las torres de San Martín y El Salvador respectivamente.",
+        calcularTiempo,
         "chomon Estaban de paseo por la calle, de pronto, los dos amigos vieron una hermosa joven de la que ambos quedaron prendados, Zoraida se llamaba.",
+        calcularTiempo,
         "chomon Su amistad se convirtió en odio, y como ninguno quería perder a su amada, fueron por separado a visitar al padre.",
+        calcularTiempo,
         "chomon Éste, les dio a ambos la misma respuesta: la mano de Zoraida será para el primero que acabe su torre.",
+        calcularTiempo,
         "chomon Las obras comenzaron a los pocos días, sin apenas descansos.",
+        calcularTiempo,
         "chomon Cierto día, Omar, arquitecto de la torre de San Martín, anunció que su construcción había finalizado.",
+        calcularTiempo,
         "chomon Los habitantes de Teruel se reunieron en torno a ella, y, conforme iban retirando los andamios que cubrían la obra.",
+        calcularTiempo,
         "chomon Las gentes se quedaban maravilladas y su arquitecto se mostraba cada vez más orgulloso.",
+        calcularTiempo,
         "chomon Sin embargo, cuando quedo totalmente descubierta, Omar soltó un grito de horror. Algo había salido mal, su torre estaba ligeramente torcida.",
         "show scene salvador2",
+        calcularTiempo,
         "chomon Desesperado subió a lo más alto de la torre y ante las gentes de la ciudad se arrojó al vacío.",
+        calcularTiempo,
         "chomon Unas semanas después, Abdalá finalizaba su torre, la de El Salvador.",
+        calcularTiempo,
         "chomon Cuando el andamio fue retirado y los ciudadanos pudieron contemplar la nueva obra, se quedaron totalmente sorprendidos.",
+        calcularTiempo,
         "chomon Las dos torres, salvo algunos detalles, eran muy parecidas.",
+        calcularTiempo,
         "chomon Los motivos decorativos son muy parecidos a los que hemos visto antes en la torre de San Martín.",
         "show scene salvador1",
         "show image sanmartin2 center with fadeIn",
+        calcularTiempo,
         "chomon La torre es usada como campanario de la iglesia a la que está adosada, la Iglesia del Salvador.",
+        calcularTiempo,
         "chomon Alberga en su interior el Centro de Interpretación de la Arquitectura Mudéjar Turolense.",
         "hide image sanmartin2 with fadeOut",
+        calcularTiempo,
         "chomon La Torre El Salvador junto con la torre de San Martín, en 1986 fueron declarados Patrimonio de la Humanidad por la Unesco.",
+        calcularTiempo,
         "show scene salvadorcartel",
         // "sendaction teruel inicio_encuesta_locucion",
         // {
@@ -824,45 +872,61 @@ monogatari.script({
         //     },
         // },
         "chomon Gracias por tu respuesta.",
-        // _Escalinata
-        "chomon Ahora conoceremos uno de los monumentos más emblemáticos de Teruel.",
-        "jump Escalinata",
+        changeSection,
+        "jump {{secciones.siguiente}}",
     ],
     Escalinata: [
         function () {
             monogatari.storage ({
                 secciones: {
-                    actual: "escalinata"
+                    actual: "Escalinata"
                 }
             });
             return true;
         },
+        "chomon Ahora conoceremos uno de los monumentos más emblemáticos de Teruel.",
         "show scene escalinata1",
-        "sendaction teruel empezando_escalinata",
+        calcularTiempo,
+        // "sendaction teruel empezando_escalinata",
         // "call quintositio",
         // "sendaction teruel llegado_escalinata",
         "chomon Desde donde mejor se ve la escalinata es desde abajo, dejame que te lo enseñe.",
+        calcularTiempo,
         "show scene escalinata4",
         "chomon Se construyó a comienzo de los años veinte, para salvar el desnivel existente entre la estación de ferrocarril y el Casco Histórico de la ciudad.",
+        calcularTiempo,
         "chomon La zona de la escalinata está adaptada con un ascensor para que personas con movilidad reducida superen ese desnivel.",
+        calcularTiempo,
         "show scene escalinataaclaracion",
         "chomon Para bajar se pueden usar las escaleras o el ascensor.",
+        calcularTiempo,
         "chomon Aquí puedes ver donde se encuentran.",
+        calcularTiempo,
         "show scene escalinata2",
         "chomon La construcción de la escalinata se inspiró en elementos intrínsecos a la ciudad como la arquitectura mudéjar, el gótico y el modernismo.",
+        calcularTiempo,
         "chomon Es obra del ingeniero turolense José Torán de la Rad.",
+        calcularTiempo,
         "chomon Por Decreto del Gobierno de Aragón, la Escalinata de Teruel fue declara da Bien de Interés Cultural, en la categoría de Monumento.",
+        calcularTiempo,
         "show scene escalinata1",
         "chomon La Escalinata es en definitiva la imagen resumida de Teruel para el viajero que llegaba a la ciudad.",
+        calcularTiempo,
         "chomon En la actualidad constituye la obra clave del neomudéjar turolense.",
+        calcularTiempo,
         "chomon Su desarrollo es perpendicular al Paseo del Óvalo y salva los 26 metros de desnivel existente.",
+        calcularTiempo,
         "chomon El recorrido de la Escalinata se estructura en tres partes bien diferenciadas, articuladas entre sí por dos pequeñas plazas.",
+        calcularTiempo,
         "show image escalinata2 center with fadeIn",
         "chomon Situado en el frontal de la placeta principal, entre el escudo de la ciudad y la fuente se encuentra el altorrelieve de Los Amantes de Teruel obra del escultor segoviano Aniceto Marinas.",
+        calcularTiempo,
         "show scene escalinata3",
         "hide image escalinata2 with fadeOut",
         "chomon Tras un primer tramo recto, y más o menos a la mitad de su altura, se divide en dos tramos curvos hasta alcanzar la altura máxima, llegando al Paseo del Óvalo",
+        calcularTiempo,
         "chomon En total habremos subido 140 escalones de una forma suave y agradable.",
+        calcularTiempo,
         // "sendaction teruel inicio_encuesta_modif_escalinata",
         // {
         //     Choice: {
@@ -975,24 +1039,26 @@ monogatari.script({
         //     },
         // },
         "chomon Gracias por tu respuesta.",
-        //_ Mausoleo
-        "chomon Para conocer más de la historia de los amantes, vamos a ver el sitio perfecto.",
-        "jump Mausoleo",
+        changeSection,
+        "jump {{secciones.siguiente}}",
     ],
     Mausoleo: [
         function () {
             monogatari.storage ({
                 secciones: {
-                    actual: "mausoleo"
+                    actual: "Mausoleo"
                 }
             });
             return true;
         },
+        "chomon Para conocer más de la historia de los amantes, vamos a ver el sitio perfecto.",
+        calcularTiempo,
         "show scene mausoleo1",
         // "sendaction teruel empezando_mausoleo",
         // "call sextositio",
         // "sendaction teruel llegado_mausoleo",
         "chomon Para acceder a esta ubicación, solo hay una entrada para personas con movilidad reducida. Te vamos a mostrar dos propuestas.",
+        calcularTiempo,
         "show scene mausoleomodifder",
         // "sendaction teruel inicio_encuesta_modif_mausoleo",
         // {
@@ -1052,24 +1118,36 @@ monogatari.script({
         // },
         "show scene mausoleo1",
         "chomon Gracias por tu respuesta.",
+        calcularTiempo,
         "chomon En septiembre de 2005 se inaugura el actual Mausoleo de los Amantes. ",
+        calcularTiempo,
         "chomon El proyecto del edificio, diseñado por el arquitecto Alejandro Cañada.",
+        calcularTiempo,
         "chomon Dispone de diferentes salas expositivas que pretenden acercar la Historia de los Amantes al visitante.",
+        calcularTiempo,
         "chomon Desde el punto de vista conceptual, la organización del recorrido expositivo se articula en torno a cuatro sectores:",
+        calcularTiempo,
         "chomon En el primer sector se explican las características sociales, políticas y culturales.",
-        "Que rodearon los acontecimientos en el Teruel de principios del siglo XIII.",
+        calcularTiempo,
+        "chomon Que rodearon los acontecimientos en el Teruel de principios del siglo XIII.",
+        calcularTiempo,
         "show image mausoleointerior center with fadeIn",
         "chomon En el segundo sector se relatan los hechos que ocurrieron en 1217 en Teruel entre Juan Diego Martínez de Marcilla e Isabel de Segura.",
+        calcularTiempo,
         "chomon También se habla del debate histórico que este relato ha generado a través de los siglos.",
         "hide image mausoleointerior center with fadeOut",
+        calcularTiempo,
         "chomon El tercer sector está destinado a explicar la influencia de los Amantes en el mundo de las artes a lo largo de la historia.",
         "show scene mausoleo2",
+        calcularTiempo,
         "chomon Por último, en el cuarto sector se encuentra el Mausoleo de los Amantes, obra del escultor Juan de Ávalo.",
+        calcularTiempo,
         "chomon En esta zona y a través de una serie de paneles se explica cómo se llevó a cabo el hallazgo de las momias.",
+        calcularTiempo,
         "chomon Así como el emplazamiento que ha tenido a lo largo del tiempo.",
-
-        //_Final
-        "jump Final",
+        calcularTiempo,
+        changeSection,
+        "jump {{secciones.siguiente}}",
     ],
     Final: [
         "show scene panoramica2",

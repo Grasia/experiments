@@ -10,15 +10,23 @@ monogatari.storage ({
 	},
     secciones: {
         tiempos: {
-            torico: {},
-            catedral: {},
-            sanmartin: {},
-            salvador: {},
-            escalinata: {},
-            mausoleo: {},
+            Torico: {},
+            Catedral: {},
+            SanMartin: {},
+            Salvador: {},
+            Escalinata: {},
+            Mausoleo: {},
         },
-        orden: [],
+        orden: [
+            "Salvador",
+            "SanMartin",
+            "Mausoleo",
+            "Torico",
+            "Escalinata",
+            "Catedral"
+        ],
         actual: "Start",
+        siguiente: "",
         cadenaTiempos: "",
     },
     menuConocidas: {
