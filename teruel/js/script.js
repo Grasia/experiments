@@ -535,14 +535,26 @@ function menuConocidas(monogatari, etiqueta) {
 
 menuConocidas(monogatari, "menuConocidas");
 
+function menuAburrido(monogatari, etiqueta) {
+    elemento ={};
+    elemento[etiqueta] = [
+        
+        "return"
+    ]
+    monogatari.script(elemento);
+}
+
+menuAburrido(monogatari, "menuAburrido");
+
 /**
  * Pasar de milisegundos a min:seg
  * !Si al final solo se quiere guardar en segundos cambiar
  */
 function millisToMinutesAndSeconds(millis) {
     var minutes = Math.floor(millis / 60000);
-    var seconds = ((millis % 60000) / 1000).toFixed(0);
-    return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
+    // var seconds = ((millis % 60000) / 1000).toFixed(0);
+    // return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
+    return (millis / 1000).toFixed(0);
 }
 
 /**
@@ -572,7 +584,6 @@ function calcularTiempo() {
     this.storage().secciones.tiempos[seccion][index] = millisToMinutesAndSeconds(runTime);
     
     // Controlamos el orden en el que el usuario va viendo las secciones
-    // ? Repetir secciones
     if(orden != undefined) {
         if(orden.pop() != seccion || orden.lenght != 0) {
             this.storage().secciones.orden.push(seccion);
@@ -587,9 +598,18 @@ function calcularAburrimiento () {
     // En que sección estoy
     var seccion = this.storage().secciones.actual;
     // Ver los tres últimos tiempos
-    var tiempos = this.storage().secciones.tiempos[seccion];
-    // Compararlos y guardar varaiable para mostrar menu de aburrimiento
+    var tiempos = Object.values(this.storage().secciones.tiempos[seccion]).slice(-3);
+    // Compararlos y guardar variable para mostrar menu de aburrimiento
+    
+    if(tiempos[0] < 10 || tiempos[1] < 10 || tiempos[2] < 10) {
+        this.storage().aburrido = true;
+        this.storage().totalAburrido = this.storage().totalAburrido + 1;
+    } else {
+        // Siempre se reinicia
+        this.storage().aburrido = false;
+    }
     console.log(tiempos);
+    console.log(tiempos[0] < 10 || tiempos[1] < 10 || tiempos[2] < 10);
 }
 /**
  * Se guarda el tiempo inicial
@@ -623,6 +643,73 @@ function changeSection() {
     }
     return true;
 }
+
+function aburrimiento(monogatari, etiqueta) {
+    elemento = {};
+    elemento[etiqueta] = [
+        calcularAburrimiento,
+        {'Conditional': {
+            'Condition': 
+                function () {
+                    return this.storage().aburrido;
+                },
+                'True': {
+                    'Conditional': {
+                        'Condition': 
+                            function () {
+                                return this.storage().totalAburrido < 3;
+                            },
+                            'True': {
+                                "Choice":{
+                                    Class: "wrapMenu",
+                                    "text":{
+                                        "Text": "¿Marca las partes que conocías?",
+                                        Class: "text",
+                                        "Clickable": function() {return},
+                                    },               
+                                    "siaburrido":{
+                                        "Text": "Sí",
+                                        "Do": {
+                                            "Choice":{
+                                                Class: "wrapMenu",
+                                                "text":{
+                                                    "Text": "¿Marca las partes que conocías?",
+                                                    Class: "text",
+                                                    "Clickable": function() {return},
+                                                },               
+                                                "siaburrido":{
+                                                    "Text": "PEP",
+                                                    "Do": "return",
+                                                    Class: "buttonMenu1",
+                                                },
+                                                "noaburrido":{
+                                                    "Text": "NPOP",
+                                                    "Do": "return",
+                                                    Class: "buttonMenu2",
+                                                },
+                                            },
+                                        },
+                                        Class: "buttonMenu1",
+                                    },
+                                    "noaburrido":{
+                                        "Text": "No",
+
+                                        "Do": "return",
+                                        Class: "buttonMenu2",
+                                    },
+                                },
+                            },
+                            'False': 'jump Final',
+                        }
+                    },
+                'False': 'return',
+            }
+        },
+    ];
+    monogatari.script(elemento);
+}
+
+aburrimiento(monogatari, "aburrido?");
 
 /**
   * Ejemplo de una función asyncrona con un Promise
@@ -681,7 +768,7 @@ monogatari.script({
         calcularTiempo,
         "chomon Su forma tiene que ver con las pendientes naturales por donde discurría el agua de lluvia",
         calcularTiempo,
-        // calcularAburrimiento,
+        calcularAburrimiento,
         "chomon En el año 1858 tiene lugar un hecho significativo.",
         calcularTiempo,
         "chomon Se levanta la nueva fuente del Torico situada en una zona más céntrica que no entorpecía el tránsito de los carros por la plaza.",
@@ -799,18 +886,21 @@ monogatari.script({
         // "sendaction teruel empezando_salvador",
         // "call cuartositio",
         // "sendaction teruel llegado_salvador",
+        setTiempo,
         "chomon Allá por el siglo XIV los alarifes mudéjares, Omar y Abdalá, constructores de las torres de San Martín y El Salvador respectivamente.",
         calcularTiempo,
         "chomon Estaban de paseo por la calle, de pronto, los dos amigos vieron una hermosa joven de la que ambos quedaron prendados, Zoraida se llamaba.",
         calcularTiempo,
         "chomon Su amistad se convirtió en odio, y como ninguno quería perder a su amada, fueron por separado a visitar al padre.",
         calcularTiempo,
+        "call aburrido?",
         "chomon Éste, les dio a ambos la misma respuesta: la mano de Zoraida será para el primero que acabe su torre.",
         calcularTiempo,
         "chomon Las obras comenzaron a los pocos días, sin apenas descansos.",
-        calcularTiempo,
+        calcularTiempo,       
         "chomon Cierto día, Omar, arquitecto de la torre de San Martín, anunció que su construcción había finalizado.",
         calcularTiempo,
+        "call aburrido?",
         "chomon Los habitantes de Teruel se reunieron en torno a ella, y, conforme iban retirando los andamios que cubrían la obra.",
         calcularTiempo,
         "chomon Las gentes se quedaban maravilladas y su arquitecto se mostraba cada vez más orgulloso.",
@@ -818,12 +908,14 @@ monogatari.script({
         "chomon Sin embargo, cuando quedo totalmente descubierta, Omar soltó un grito de horror. Algo había salido mal, su torre estaba ligeramente torcida.",
         "show scene salvador2",
         calcularTiempo,
+        "call aburrido?",
         "chomon Desesperado subió a lo más alto de la torre y ante las gentes de la ciudad se arrojó al vacío.",
         calcularTiempo,
         "chomon Unas semanas después, Abdalá finalizaba su torre, la de El Salvador.",
         calcularTiempo,
         "chomon Cuando el andamio fue retirado y los ciudadanos pudieron contemplar la nueva obra, se quedaron totalmente sorprendidos.",
         calcularTiempo,
+        "call aburrido?",
         "chomon Las dos torres, salvo algunos detalles, eran muy parecidas.",
         calcularTiempo,
         "chomon Los motivos decorativos son muy parecidos a los que hemos visto antes en la torre de San Martín.",
@@ -835,6 +927,7 @@ monogatari.script({
         "chomon Alberga en su interior el Centro de Interpretación de la Arquitectura Mudéjar Turolense.",
         "hide image sanmartin2 with fadeOut",
         calcularTiempo,
+        "call aburrido?",
         "chomon La Torre El Salvador junto con la torre de San Martín, en 1986 fueron declarados Patrimonio de la Humanidad por la Unesco.",
         calcularTiempo,
         "show scene salvadorcartel",
@@ -884,6 +977,7 @@ monogatari.script({
             });
             return true;
         },
+        setTiempo,
         "chomon Ahora conoceremos uno de los monumentos más emblemáticos de Teruel.",
         "show scene escalinata1",
         calcularTiempo,
@@ -1051,6 +1145,7 @@ monogatari.script({
             });
             return true;
         },
+        setTiempo,
         "chomon Para conocer más de la historia de los amantes, vamos a ver el sitio perfecto.",
         calcularTiempo,
         "show scene mausoleo1",

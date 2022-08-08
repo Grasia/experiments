@@ -37,5 +37,7 @@ monogatari.storage ({
         escalinata: false,
         mausoleo: false,
         cadena: "", 
-    }
+    }, 
+    aburrido:false,
+    totalAburrido: 0,
 });
