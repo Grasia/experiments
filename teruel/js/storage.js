@@ -25,6 +25,30 @@ monogatari.storage ({
             "Escalinata",
             "Catedral"
         ],
+        aburrimientoDetectado: {
+            Torico: [],
+            Catedral: [],
+            SanMartin: [],
+            Salvador: [],
+            Escalinata: [],
+            Mausoleo: [],
+        },
+        aburrimientoConfirmado: {
+            Torico: [],
+            Catedral: [],
+            SanMartin: [],
+            Salvador: [],
+            Escalinata: [],
+            Mausoleo: [],
+        },
+        conocidas: {
+            Torico: [],
+            Catedral: [],
+            SanMartin: [],
+            Salvador: [],
+            Escalinata: [],
+            Mausoleo: [],
+        },
         actual: "Start",
         siguiente: "",
         cadenaTiempos: "",
@@ -40,4 +64,5 @@ monogatari.storage ({
     }, 
     aburrido:false,
     totalAburrido: 0,
+    totalDetectado: 0,
 });

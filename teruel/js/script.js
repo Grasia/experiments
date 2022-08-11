@@ -599,17 +599,20 @@ function calcularAburrimiento () {
     var seccion = this.storage().secciones.actual;
     // Ver los tres últimos tiempos
     var tiempos = Object.values(this.storage().secciones.tiempos[seccion]).slice(-3);
+    var cont = Object.keys(this.storage().secciones.tiempos[seccion]).length;
     // Compararlos y guardar variable para mostrar menu de aburrimiento
     
     if(tiempos[0] < 10 || tiempos[1] < 10 || tiempos[2] < 10) {
         this.storage().aburrido = true;
+        this.storage().totalDetectado = this.storage().totalDetectado + 1;
         this.storage().totalAburrido = this.storage().totalAburrido + 1;
+        this.storage().secciones.aburrimientoDetectado[this.storage().secciones.actual].push(this.storage().secciones.actual + cont);
     } else {
         // Siempre se reinicia
         this.storage().aburrido = false;
     }
-    console.log(tiempos);
-    console.log(tiempos[0] < 10 || tiempos[1] < 10 || tiempos[2] < 10);
+    console.log(this.storage().totalDetectado);
+    console.log(this.storage().totalAburrido);
 }
 /**
  * Se guarda el tiempo inicial
@@ -657,18 +660,29 @@ function aburrimiento(monogatari, etiqueta) {
                     'Conditional': {
                         'Condition': 
                             function () {
-                                return this.storage().totalAburrido < 3;
+                                return this.storage().totalAburrido <= 4 || this.storage().totalDetectado <= 8;
                             },
                             'True': {
                                 "Choice":{
                                     Class: "wrapMenu",
                                     "text":{
-                                        "Text": "¿Marca las partes que conocías?",
+                                        "Text": "¿Te ha aburrido?",
                                         Class: "text",
                                         "Clickable": function() {return},
-                                    },               
+                                    },
                                     "siaburrido":{
                                         "Text": "Sí",
+                                        "onChosen": function() {
+                                            var cont = Object.keys(this.storage().secciones.tiempos[this.storage().secciones.actual]).length;
+                                            this.storage().secciones.aburrimientoConfirmado[this.storage().secciones.actual].push(this.storage().secciones.actual + cont);
+                                             // Cuando no hay más secciones va al final
+                                            if(this.storage().secciones.orden.length == 0) {
+                                                this.storage().secciones.siguiente = "Final";
+                                            } else {
+                                                // Se obtiene el primer sitio y se elimina de la lista, asignandolo a siguienete sección
+                                                this.storage().secciones.siguiente = this.storage().secciones.orden.shift();
+                                            }
+                                        },                               
                                         "Do": {
                                             "Choice":{
                                                 Class: "wrapMenu",
@@ -676,15 +690,15 @@ function aburrimiento(monogatari, etiqueta) {
                                                     "Text": "¿Marca las partes que conocías?",
                                                     Class: "text",
                                                     "Clickable": function() {return},
-                                                },               
-                                                "siaburrido":{
-                                                    "Text": "PEP",
-                                                    "Do": "return",
+                                                },
+                                                "siconocia":{
+                                                    "Text": "Sí",
+                                                    "Do": "jump {{secciones.siguiente}}",
                                                     Class: "buttonMenu1",
                                                 },
-                                                "noaburrido":{
-                                                    "Text": "NPOP",
-                                                    "Do": "return",
+                                                "noconocia":{
+                                                    "Text": "No",
+                                                    "Do": "jump {{secciones.siguiente}}",
                                                     Class: "buttonMenu2",
                                                 },
                                             },
@@ -693,8 +707,31 @@ function aburrimiento(monogatari, etiqueta) {
                                     },
                                     "noaburrido":{
                                         "Text": "No",
-
-                                        "Do": "return",
+                                        "onChosen": function(){ this.storage().totalAburrido = this.storage().totalAburrido - 1; },
+                                        "Do": {
+                                            "Choice":{
+                                                Class: "wrapMenu",
+                                                "text":{
+                                                    "Text": "¿Conocías esta historia?",
+                                                    Class: "text",
+                                                    "Clickable": function() {return},
+                                                },
+                                                "siconocia":{
+                                                    "Text": "Sí",
+                                                    "onChosen": function() {
+                                                        var cont = Object.keys(this.storage().secciones.tiempos[this.storage().secciones.actual]).length;
+                                                        this.storage().secciones.conocidas[this.storage().secciones.actual].push(this.storage().secciones.actual + cont);
+                                                    }, 
+                                                    "Do": "return",
+                                                    Class: "buttonMenu1",
+                                                },
+                                                "noconocia":{
+                                                    "Text": "No",
+                                                    "Do": "return",
+                                                    Class: "buttonMenu2",
+                                                },
+                                            },
+                                        },
                                         Class: "buttonMenu2",
                                     },
                                 },
