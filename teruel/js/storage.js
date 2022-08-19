@@ -18,13 +18,14 @@ monogatari.storage ({
             Mausoleo: {},
         },
         orden: [
-            "Salvador",
-            "SanMartin",
-            "Mausoleo",
-            "Torico",
-            "Escalinata",
+            // "Salvador",
+            // "SanMartin",
+            // "Mausoleo",
+            // "Torico",
+            // "Escalinata",
             "Catedral"
         ],
+        ordenSeguido: [],
         aburrimientoDetectado: {
             Torico: [],
             Catedral: [],
@@ -51,7 +52,6 @@ monogatari.storage ({
         },
         actual: "Start",
         siguiente: "",
-        cadenaTiempos: "",
     },
     menuConocidas: {
         torico: false,
@@ -60,9 +60,14 @@ monogatari.storage ({
         salvador: false,
         escalinata: false,
         mausoleo: false,
-        cadena: "", 
     }, 
     aburrido:false,
     totalAburrido: 0,
     totalDetectado: 0,
+    cadenaTiempos: "",
+    cadenaConocidas: "", 
+    cadenaAburrimientoDetectados: "",
+    cadenaAburrimientoConfirmados: "",
+    cadenaAburrimientoConocidas: "",
+    cadenaTotales: "",
 });

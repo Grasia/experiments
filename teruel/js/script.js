@@ -55,6 +55,8 @@ monogatari.assets("images", {
     campanas: "campanas.jpg",
     torico3: "torico3.jpg",
     mausoleointerior: "mausoleo_interior.jpg",
+    andaquilla: "andaquilla.jpeg",
+    interiortorres: "interiortorres.png",
 });
 
 // Define the backgrounds for each scene.
@@ -443,7 +445,7 @@ function menuConocidas(monogatari, etiqueta) {
                     Class: "text",
                     "Clickable": function() {return},
                 },
-                "cancelar":{
+                "Aceptar":{
                     "Text": "Aceptar",
                     "Do": "jump Final",
                     Class: "buttonAceptar",
@@ -573,7 +575,7 @@ function calcularTiempo() {
     this.storage().tiempo.actual = Date.now();
     // En el index guardaremos el id que será la sección + el número que le toque (cont)
     var index = 0;
-    var orden = this.storage().secciones.orden;
+    var orden = this.storage().secciones.ordenSeguido;
     if(cont == undefined) {
         index = seccion + 0;
     } else {
@@ -586,10 +588,10 @@ function calcularTiempo() {
     // Controlamos el orden en el que el usuario va viendo las secciones
     if(orden != undefined) {
         if(orden.pop() != seccion || orden.lenght != 0) {
-            this.storage().secciones.orden.push(seccion);
+            this.storage().secciones.ordenSeguido.push(seccion);
         }
     } else {
-        this.storage().secciones.orden.push(seccion);
+        this.storage().secciones.ordenSeguido.push(seccion);
     }
     return true;
 }
@@ -597,12 +599,13 @@ function calcularTiempo() {
 function calcularAburrimiento () {
     // En que sección estoy
     var seccion = this.storage().secciones.actual;
+    var tiempoMin = 4;
     // Ver los tres últimos tiempos
     var tiempos = Object.values(this.storage().secciones.tiempos[seccion]).slice(-3);
     var cont = Object.keys(this.storage().secciones.tiempos[seccion]).length;
     // Compararlos y guardar variable para mostrar menu de aburrimiento
     
-    if(tiempos[0] < 10 || tiempos[1] < 10 || tiempos[2] < 10) {
+    if(tiempos[0] < tiempoMin || tiempos[1] < tiempoMin || tiempos[2] < tiempoMin) {
         this.storage().aburrido = true;
         this.storage().totalDetectado = this.storage().totalDetectado + 1;
         this.storage().totalAburrido = this.storage().totalAburrido + 1;
@@ -611,8 +614,7 @@ function calcularAburrimiento () {
         // Siempre se reinicia
         this.storage().aburrido = false;
     }
-    console.log(this.storage().totalDetectado);
-    console.log(this.storage().totalAburrido);
+    console.table(this.storage().secciones.tiempos);
 }
 /**
  * Se guarda el tiempo inicial
@@ -639,7 +641,12 @@ function setTiempo() {
 function changeSection() {
     // Cuando no hay más secciones va al final
     if(this.storage().secciones.orden.length == 0) {
-        this.storage().secciones.siguiente = "Final";
+        // Comprobacion si se ha aburrido para mostrar o no el menu de conocidas
+        if(this.storage().totalAburrido == 0) {
+            this.storage().secciones.siguiente = "Conocidas";
+        } else {
+            this.storage().secciones.siguiente = "Final";
+        }
     } else {
         // Se obtiene el primer sitio y se elimina de la lista, asignandolo a siguienete sección
         this.storage().secciones.siguiente = this.storage().secciones.orden.shift();
@@ -687,12 +694,16 @@ function aburrimiento(monogatari, etiqueta) {
                                             "Choice":{
                                                 Class: "wrapMenu",
                                                 "text":{
-                                                    "Text": "¿Marca las partes que conocías?",
+                                                    "Text": "¿Conocías esta historia?",
                                                     Class: "text",
                                                     "Clickable": function() {return},
                                                 },
                                                 "siconocia":{
                                                     "Text": "Sí",
+                                                    "onChosen": function() {
+                                                        var cont = Object.keys(this.storage().secciones.tiempos[this.storage().secciones.actual]).length;
+                                                        this.storage().secciones.conocidas[this.storage().secciones.actual].push(this.storage().secciones.actual + cont);
+                                                    }, 
                                                     "Do": "jump {{secciones.siguiente}}",
                                                     Class: "buttonMenu1",
                                                 },
@@ -776,14 +787,10 @@ monogatari.script({
         "Para ello vamos a ver varios lugares emblemáticos en la historia de Teruel.",
         "Pero antes, me gustaría que rellenases un cuestionario para saber un poco más de tí.",
         "Tienes que saber que no se van a recoger tus datos personales y que lo que vas a ver a continuación tiene un proposito de investigación.",
-        // "sendaction teruel inicio_encuesta_usuario",
+        "sendaction teruel inicio_encuesta_usuario",
         "hide character chomon",
-        // "call caracterizacion1",
+        "call caracterizacion1",
         "show character chomon lookright at left with fadeIn end-fadeOut",
-        // "Para comenzar necesito que te dirijas al siguiente destino",
-        // "sendaction teruel empezando_torico",
-        // "call primersitio",
-        // "sendaction teruel llegado_torico",
         changeSection,
         "jump {{secciones.siguiente}}",
     ],
@@ -805,14 +812,15 @@ monogatari.script({
         calcularTiempo,
         "chomon Su forma tiene que ver con las pendientes naturales por donde discurría el agua de lluvia",
         calcularTiempo,
-        calcularAburrimiento,
+        "call aburrido?",
         "chomon En el año 1858 tiene lugar un hecho significativo.",
         calcularTiempo,
         "chomon Se levanta la nueva fuente del Torico situada en una zona más céntrica que no entorpecía el tránsito de los carros por la plaza.",
         calcularTiempo,
         "show scene torico2",
         "chomon Es una fuente circular con una columna de piedra anillada en la que se ven incrustadas cuatro cabezas de toro por las que mana el agua.",
-        calcularTiempo,        
+        calcularTiempo,
+        "call aburrido?",
         "show image torico3 center with fadeIn",
         "chomon En la parte alta del pedestal, a siete metros de altura, descansa la figura de El Torico.",
         calcularTiempo,        
@@ -820,6 +828,7 @@ monogatari.script({
         calcularTiempo,        
         "chomon Esta pequeña escultura de bronce fundido es maciza y pesa nada menos que 54,5 kilos.",
         calcularTiempo,
+        "call aburrido?",
         "chomon Se emplaza sobre una base rectangular de piedra.",
         calcularTiempo,
         "chomon Tiene una altura de 37 centímetros.",
@@ -827,11 +836,13 @@ monogatari.script({
         "show scene torico1",
         calcularTiempo,        
         "chomon Desde el año 1858 en que fue colocado sólo dos veces ha sido bajado de su emplazamiento.",
-        calcularTiempo,        
+        calcularTiempo,      
+        "call aburrido?",
         "chomon La primera vez los propios vecinos lo quitaron para guardarlo en un lugar seguro y protegerlo durante la Guerra Civil.",
         calcularTiempo,
         "chomon La segunda vez en 2003 se volvió a bajar para una restauración.",
         calcularTiempo,
+        "call aburrido?",
         changeSection,
         "jump {{secciones.siguiente}}",
     ],
@@ -845,9 +856,6 @@ monogatari.script({
             return true;
         },
         "show scene catedral1",
-        // "sendaction teruel empezando_catedral",
-        // "call segundositio",
-        // "sendaction teruel llegado_catedral",
         setTiempo,
         "chomon La Catedral de Teruel tiene su origen en la iglesia de Santa María de Mediavilla.",
         calcularTiempo,
@@ -855,18 +863,21 @@ monogatari.script({
         calcularTiempo,
         "chomon En la segunda mitad del siglo XIII, se reestructura la antigua obra románica y se le añaden tres naves mudéjares de mampostería y ladrillo",
         calcularTiempo,
+        "call aburrido?",
         "chomon Que mejoran y elevan la estructura románica del siglo XII.",
         calcularTiempo,
         "chomon En el mismo estilo gótico-mudéjar, se van realizando cambios en toda la iglesia.",
         calcularTiempo,
         "chomon Ya en estilo plateresco-mudéjar, fue construido en 1538 el cimborrio de la nave central, obra de Martín de Montalbán.",
         calcularTiempo,
+        "call aburrido?",
         "show scene catedral3",
         calcularTiempo,
         "chomon Más tarde, en 1587, con la creación de la diócesis de Teruel, fue promovida a Catedral y consagrada como tal.",
         calcularTiempo,
         "chomon La torre, techumbre y cimborrio de la Catedral de Teruel fueron declarados Patrimonio de la Humanidad por la Unesco en 1986.",
         calcularTiempo,
+        "call aburrido?",
         changeSection,
         "jump {{secciones.siguiente}}",
     ],
@@ -880,33 +891,39 @@ monogatari.script({
             return true;
         },
         "show scene sanmartin1",
-        // "sendaction teruel empezando_sanmartin",
-        // "call tercersitio",
-        // "sendaction teruel llegado_sanmartin",
         setTiempo,
         "chomon La Torre de San Martín se edificó entre 1315 y 1316.",
         calcularTiempo,
         "chomon Está adosada a la iglesia de San Martín, construida en 1706 y que sustituyó a la anterior mudéjar.",
         calcularTiempo,
+        "show image andaquilla center with fadeIn",
         "chomon A los pies de esta torre discurre, la Cuesta de la Andaquilla, testigo de una de las escenas de la Historia de los Amantes.",
         calcularTiempo,
+        "call aburrido?",
+        "hide image andaquilla with fadeOut",
         "chomon Es ejemplo de la tipología de torre alminar almohade.",
         calcularTiempo,
+        "show image interiortorres center with fadeIn",
         "chomon Siguiendo esta estructura posee dos torres concéntricas, separadas casi un metro, entre las que se desarrollan pasillos y escaleras.",
         calcularTiempo,
         "chomon Que llevan a un campanario, cubiertos por bóveda de ladrillo.",
+        "hide image interiortorres with fadeOut",
         calcularTiempo,
+        "call aburrido?",
         "chomon De planta cuadrada, da paso a una calle bajo su bóveda de cañón apuntado.",
         calcularTiempo,
         "show scene sanmartin3",
         calcularTiempo,
         "chomon El exterior, de ladrillo, aparece decorado con cerámica vidriada en verde y blanco y paños horizontales de distintas alturas.",
         calcularTiempo,
+        "call aburrido?",
         "chomon Presenta un gran repertorio decorativo.",
         calcularTiempo,
         "chomon El motivo decorativo que predomina es el de estrellas de 8 puntas blancas y con orla verde.",
         calcularTiempo,
         "chomon Como en otros lugares de esta provincia esta torre tiene una leyenda sobre su construcción que, como no podía ser menos, es de amor.",
+        calcularTiempo,
+        "call aburrido?",
         changeSection,
         "jump {{secciones.siguiente}}",
     ],
@@ -920,9 +937,6 @@ monogatari.script({
             return true;
         },
         "show scene salvador1",
-        // "sendaction teruel empezando_salvador",
-        // "call cuartositio",
-        // "sendaction teruel llegado_salvador",
         setTiempo,
         "chomon Allá por el siglo XIV los alarifes mudéjares, Omar y Abdalá, constructores de las torres de San Martín y El Salvador respectivamente.",
         calcularTiempo,
@@ -943,7 +957,6 @@ monogatari.script({
         "chomon Las gentes se quedaban maravilladas y su arquitecto se mostraba cada vez más orgulloso.",
         calcularTiempo,
         "chomon Sin embargo, cuando quedo totalmente descubierta, Omar soltó un grito de horror. Algo había salido mal, su torre estaba ligeramente torcida.",
-        "show scene salvador2",
         calcularTiempo,
         "call aburrido?",
         "chomon Desesperado subió a lo más alto de la torre y ante las gentes de la ciudad se arrojó al vacío.",
@@ -955,52 +968,53 @@ monogatari.script({
         "call aburrido?",
         "chomon Las dos torres, salvo algunos detalles, eran muy parecidas.",
         calcularTiempo,
-        "chomon Los motivos decorativos son muy parecidos a los que hemos visto antes en la torre de San Martín.",
+        "chomon Los motivos decorativos son muy parecidos a los que se pueden ver en la torre de San Martín.",
         "show scene salvador1",
-        "show image sanmartin2 center with fadeIn",
+        "show image campanas center with fadeIn",
         calcularTiempo,
         "chomon La torre es usada como campanario de la iglesia a la que está adosada, la Iglesia del Salvador.",
         calcularTiempo,
-        "chomon Alberga en su interior el Centro de Interpretación de la Arquitectura Mudéjar Turolense.",
-        "hide image sanmartin2 with fadeOut",
-        calcularTiempo,
         "call aburrido?",
+        "chomon Alberga en su interior el Centro de Interpretación de la Arquitectura Mudéjar Turolense.",
+        "hide image campanas with fadeOut",
+        calcularTiempo,
         "chomon La Torre El Salvador junto con la torre de San Martín, en 1986 fueron declarados Patrimonio de la Humanidad por la Unesco.",
         calcularTiempo,
+        "call aburrido?",
         "show scene salvadorcartel",
-        // "sendaction teruel inicio_encuesta_locucion",
-        // {
-        //     Choice: {
-        //         Dialog: "chomon ¿Crees que la locución de la historia te facilitaría el acceso al contenido de este cartel?",
-        //         Class: "navigationBox",
-        //         locucionSi: {
-        //             Text: "Sí",
-        //             Do: "sendaction teruel locucion_si",
-        //             Class: "button1",
-        //         },
-        //         locucionNo: {
-        //             Text: "No",
-        //             Do: "sendaction teruel locucion_no",
-        //             Class: "button2",
-        //         },
-        //     },
-        // },
-        // {
-        //     Choice: {
-        //         Dialog: "chomon ¿Dónde te gustaría escuchar la historia?.",
-        //         Class: "navigationBox",
-        //         salvadorMovil: {
-        //             Text: "En mi móvil",
-        //             Do: "sendaction teruel locucion_movil",
-        //             Class: "button1",
-        //         },
-        //         salvadorAltavoz: {
-        //             Text: "En un altavoz",
-        //             Do: "sendaction teruel locucion_altavoz",
-        //             Class: "button2",
-        //         },
-        //     },
-        // },
+        "sendaction teruel inicio_encuesta_locucion",
+        {
+            Choice: {
+                Dialog: "chomon ¿Crees que la locución de la historia te facilitaría el acceso al contenido de este cartel?",
+                Class: "navigationBox",
+                locucionSi: {
+                    Text: "Sí",
+                    Do: "sendaction teruel locucion_si",
+                    Class: "button1",
+                },
+                locucionNo: {
+                    Text: "No",
+                    Do: "sendaction teruel locucion_no",
+                    Class: "button2",
+                },
+            },
+        },
+        {
+            Choice: {
+                Dialog: "chomon ¿Dónde te gustaría escuchar la historia?.",
+                Class: "navigationBox",
+                salvadorMovil: {
+                    Text: "En mi móvil",
+                    Do: "sendaction teruel locucion_movil",
+                    Class: "button1",
+                },
+                salvadorAltavoz: {
+                    Text: "En un altavoz",
+                    Do: "sendaction teruel locucion_altavoz",
+                    Class: "button2",
+                },
+            },
+        },
         "chomon Gracias por tu respuesta.",
         changeSection,
         "jump {{secciones.siguiente}}",
@@ -1018,14 +1032,12 @@ monogatari.script({
         "chomon Ahora conoceremos uno de los monumentos más emblemáticos de Teruel.",
         "show scene escalinata1",
         calcularTiempo,
-        // "sendaction teruel empezando_escalinata",
-        // "call quintositio",
-        // "sendaction teruel llegado_escalinata",
         "chomon Desde donde mejor se ve la escalinata es desde abajo, dejame que te lo enseñe.",
         calcularTiempo,
         "show scene escalinata4",
         "chomon Se construyó a comienzo de los años veinte, para salvar el desnivel existente entre la estación de ferrocarril y el Casco Histórico de la ciudad.",
         calcularTiempo,
+        "call aburrido?",
         "chomon La zona de la escalinata está adaptada con un ascensor para que personas con movilidad reducida superen ese desnivel.",
         calcularTiempo,
         "show scene escalinataaclaracion",
@@ -1033,6 +1045,7 @@ monogatari.script({
         calcularTiempo,
         "chomon Aquí puedes ver donde se encuentran.",
         calcularTiempo,
+        "call aburrido?",
         "show scene escalinata2",
         "chomon La construcción de la escalinata se inspiró en elementos intrínsecos a la ciudad como la arquitectura mudéjar, el gótico y el modernismo.",
         calcularTiempo,
@@ -1040,6 +1053,7 @@ monogatari.script({
         calcularTiempo,
         "chomon Por Decreto del Gobierno de Aragón, la Escalinata de Teruel fue declara da Bien de Interés Cultural, en la categoría de Monumento.",
         calcularTiempo,
+        "call aburrido?",
         "show scene escalinata1",
         "chomon La Escalinata es en definitiva la imagen resumida de Teruel para el viajero que llegaba a la ciudad.",
         calcularTiempo,
@@ -1047,6 +1061,7 @@ monogatari.script({
         calcularTiempo,
         "chomon Su desarrollo es perpendicular al Paseo del Óvalo y salva los 26 metros de desnivel existente.",
         calcularTiempo,
+        "call aburrido?",
         "chomon El recorrido de la Escalinata se estructura en tres partes bien diferenciadas, articuladas entre sí por dos pequeñas plazas.",
         calcularTiempo,
         "show image escalinata2 center with fadeIn",
@@ -1058,117 +1073,118 @@ monogatari.script({
         calcularTiempo,
         "chomon En total habremos subido 140 escalones de una forma suave y agradable.",
         calcularTiempo,
-        // "sendaction teruel inicio_encuesta_modif_escalinata",
-        // {
-        //     Choice: {
-        //         Dialog: "chomon Las personas con movilidad reducida no pueden acceder al frontal de los amantes. ¿Cómo crees que se podría adaptar mejor?",
-        //         Class: "navigationBox",
-        //         escalinataRampa: {
-        //             Text: "Una rampa",
-        //             Do: "sendaction teruel modif_rampa",
-        //             Class: "button1",
-        //             onChosen: function() {
-        //                 this.storage().modif_escalinata = "rampa";
-        //             },
-        //         },
-        //         escalinataSalvaescaleras: {
-        //             Text: "Un salvaescaleras",
-        //             Do: "sendaction teruel modif_salvaescaleras",
-        //             Class: "button2",
-        //             onChosen: function() {
-        //                 this.storage().modif_escalinata = "salvaescaleras";
-        //             },
-        //         },
-        //     },
-        // },
-        // {
-        //     Conditional: {
-        //         Condition: function() {
-        //             return this.storage().modif_escalinata == "rampa";
-        //         },
-        //         True: "show scene escalinatarampa",
-        //         False: "show scene escalinatasalva",
-        //     },
-        // },
-        // {
-        //     Choice: {
-        //         Dialog: "chomon Esta es una simulación de como quedaría. ¿Todavía crees que estaría bien que se modifique?",
-        //         Class: "navigationBox",
-        //         escalinataRampa: {
-        //             Text: "Sí",
-        //             Do: "sendaction teruel escalinata_modif_si",
-        //             Class: "button1",
-        //         },
-        //         escalinataSalvaescaleras: {
-        //             Text: "No",
-        //             Do: "sendaction teruel escalinata_modif_no",
-        //             Class: "button2",
-        //         },
-        //     },
-        // },
-        // {
-        //     Choice: {
-        //         Dialog: "chomon De todas formas, te queremos ofrecer otra opción. Reconstruir el mural en otro sitio al que se pueda acceder sin problemas. Elige un sitio.",
-        //         Class: "navigationBox",
-        //         muralArriba: {
-        //             Text: "Parte de arriba",
-        //             Do: "sendaction teruel mural_arriba",
-        //             Class: "button1",
-        //             onChosen: function() {
-        //                 this.storage().posicion_cartel = "arriba";
-        //             },
-        //         },
-        //         muralAbajo: {
-        //             Text: "Parte de abajo",
-        //             Do: "sendaction teruel mural_abajo",
-        //             Class: "button2",
-        //             onChosen: function() {
-        //                 this.storage().posicion_cartel = "abajo";
-        //             },
-        //         },
-        //     },
-        // },
-        // {
-        //     Conditional: {
-        //         Condition: function() {
-        //             return this.storage().posicion_cartel == "arriba";
-        //         },
-        //         True: "show scene escalinataarriba",
-        //         False: "show scene escalinataabajo",
-        //     },
-        // },
-        // {
-        //     Choice: {
-        //         Dialog: "chomon ¿Crees que está bien el mural en esta posición?",
-        //         Class: "navigationBox",
-        //         muralSi: {
-        //             Text: "Sí",
-        //             Do: "sendaction teruel mural_si",
-        //             Class: "button1",
-        //         },
-        //         muralNo: {
-        //             Text: "No",
-        //             Do: "sendaction teruel mural_no",
-        //             Class: "button2",
-        //         },
-        //     },
-        // },
-        // {
-        //     Choice: {
-        //         Dialog: "chomon ¿Te parece mejor opción que la de modificar la escalinata?",
-        //         Class: "navigationBox",
-        //         muralSi: {
-        //             Text: "Sí",
-        //             Do: "sendaction teruel mural_mejor",
-        //             Class: "button1",
-        //         },
-        //         muralNo: {
-        //             Text: "No",
-        //             Do: "sendaction teruel mural_peor",
-        //             Class: "button2",
-        //         },
-        //     },
-        // },
+        "call aburrido?",
+        "sendaction teruel inicio_encuesta_modif_escalinata",
+        {
+            Choice: {
+                Dialog: "chomon Las personas con movilidad reducida no pueden acceder al frontal de los amantes. ¿Cómo crees que se podría adaptar mejor?",
+                Class: "navigationBox",
+                escalinataRampa: {
+                    Text: "Una rampa",
+                    Do: "sendaction teruel modif_rampa",
+                    Class: "button1",
+                    onChosen: function() {
+                        this.storage().modif_escalinata = "rampa";
+                    },
+                },
+                escalinataSalvaescaleras: {
+                    Text: "Un salvaescaleras",
+                    Do: "sendaction teruel modif_salvaescaleras",
+                    Class: "button2",
+                    onChosen: function() {
+                        this.storage().modif_escalinata = "salvaescaleras";
+                    },
+                },
+            },
+        },
+        {
+            Conditional: {
+                Condition: function() {
+                    return this.storage().modif_escalinata == "rampa";
+                },
+                True: "show scene escalinatarampa",
+                False: "show scene escalinatasalva",
+            },
+        },
+        {
+            Choice: {
+                Dialog: "chomon Esta es una simulación de como quedaría. ¿Todavía crees que estaría bien que se modifique?",
+                Class: "navigationBox",
+                escalinataRampa: {
+                    Text: "Sí",
+                    Do: "sendaction teruel escalinata_modif_si",
+                    Class: "button1",
+                },
+                escalinataSalvaescaleras: {
+                    Text: "No",
+                    Do: "sendaction teruel escalinata_modif_no",
+                    Class: "button2",
+                },
+            },
+        },
+        {
+            Choice: {
+                Dialog: "chomon De todas formas, te queremos ofrecer otra opción. Reconstruir el mural en otro sitio al que se pueda acceder sin problemas. Elige un sitio.",
+                Class: "navigationBox",
+                muralArriba: {
+                    Text: "Parte de arriba",
+                    Do: "sendaction teruel mural_arriba",
+                    Class: "button1",
+                    onChosen: function() {
+                        this.storage().posicion_cartel = "arriba";
+                    },
+                },
+                muralAbajo: {
+                    Text: "Parte de abajo",
+                    Do: "sendaction teruel mural_abajo",
+                    Class: "button2",
+                    onChosen: function() {
+                        this.storage().posicion_cartel = "abajo";
+                    },
+                },
+            },
+        },
+        {
+            Conditional: {
+                Condition: function() {
+                    return this.storage().posicion_cartel == "arriba";
+                },
+                True: "show scene escalinataarriba",
+                False: "show scene escalinataabajo",
+            },
+        },
+        {
+            Choice: {
+                Dialog: "chomon ¿Crees que está bien el mural en esta posición?",
+                Class: "navigationBox",
+                muralSi: {
+                    Text: "Sí",
+                    Do: "sendaction teruel mural_si",
+                    Class: "button1",
+                },
+                muralNo: {
+                    Text: "No",
+                    Do: "sendaction teruel mural_no",
+                    Class: "button2",
+                },
+            },
+        },
+        {
+            Choice: {
+                Dialog: "chomon ¿Te parece mejor opción que la de modificar la escalinata?",
+                Class: "navigationBox",
+                muralSi: {
+                    Text: "Sí",
+                    Do: "sendaction teruel mural_mejor",
+                    Class: "button1",
+                },
+                muralNo: {
+                    Text: "No",
+                    Do: "sendaction teruel mural_peor",
+                    Class: "button2",
+                },
+            },
+        },
         "chomon Gracias por tu respuesta.",
         changeSection,
         "jump {{secciones.siguiente}}",
@@ -1184,70 +1200,65 @@ monogatari.script({
         },
         setTiempo,
         "chomon Para conocer más de la historia de los amantes, vamos a ver el sitio perfecto.",
-        calcularTiempo,
         "show scene mausoleo1",
-        // "sendaction teruel empezando_mausoleo",
-        // "call sextositio",
-        // "sendaction teruel llegado_mausoleo",
         "chomon Para acceder a esta ubicación, solo hay una entrada para personas con movilidad reducida. Te vamos a mostrar dos propuestas.",
-        calcularTiempo,
         "show scene mausoleomodifder",
-        // "sendaction teruel inicio_encuesta_modif_mausoleo",
-        // {
-        //     Choice: {
-        //         Dialog: "chomon ¿Crees que está bien adaptada?.",
-        //         Class: "navigationBox",
-        //         mausoleoModif1Si: {
-        //             Text: "Sí",
-        //             Do: "sendaction teruel mausoleo_modif1_si",
-        //             Class: "button1",
-        //         },
-        //         mausoleoModif1No: {
-        //             Text: "No",
-        //             Do: "sendaction teruel mausoleo_modif1_no",
-        //             Class: "button2",
-        //         },
-        //     },
-        // },
-        // "show scene mausoleomodifizq",
-        // {
-        //     Choice: {
-        //         Dialog: "chomon ¿Crees que está bien adaptada?.",
-        //         Class: "navigationBox",
-        //         mausoleoModif2Si: {
-        //             Text: "Sí",
-        //             Do: "sendaction teruel mausoleo_modif2_si",
-        //             Class: "button1",
-        //         },
-        //         mausoleoModif2No: {
-        //             Text: "No",
-        //             Do: "sendaction teruel mausoleo_modif2_no",
-        //             Class: "button2",
-        //         },
-        //     },
-        // },
+        "sendaction teruel inicio_encuesta_modif_mausoleo",
+        {
+            Choice: {
+                Dialog: "chomon ¿Crees que está bien adaptada?.",
+                Class: "navigationBox",
+                mausoleoModif1Si: {
+                    Text: "Sí",
+                    Do: "sendaction teruel mausoleo_modif1_si",
+                    Class: "button1",
+                },
+                mausoleoModif1No: {
+                    Text: "No",
+                    Do: "sendaction teruel mausoleo_modif1_no",
+                    Class: "button2",
+                },
+            },
+        },
+        "show scene mausoleomodifizq",
+        {
+            Choice: {
+                Dialog: "chomon ¿Crees que está bien adaptada?.",
+                Class: "navigationBox",
+                mausoleoModif2Si: {
+                    Text: "Sí",
+                    Do: "sendaction teruel mausoleo_modif2_si",
+                    Class: "button1",
+                },
+                mausoleoModif2No: {
+                    Text: "No",
+                    Do: "sendaction teruel mausoleo_modif2_no",
+                    Class: "button2",
+                },
+            },
+        },
         "show scene mausoleomodifambas",
-        // {
-        //     Choice: {
-        //         Dialog: "chomon ¿Cuál te parece la mejor opción?.",
-        //         Class: "navigationBox",
-        //         mausoleoIzquierda: {
-        //             Text: "Izquierda",
-        //             Do: "sendaction teruel mausoleo_modif_izquierda",
-        //             Class: "button1",
-        //         },
-        //         mausoleoAmbas: {
-        //             Text: "Ambas",
-        //             Do: "sendaction teruel mausoleo_modif_ambas",
-        //             Class: "button2",
-        //         },
-        //         mausoleoDerecha: {
-        //             Text: "Derecha",
-        //             Do: "sendaction teruel mausoleo_modif_derecha",
-        //             Class: "button3",
-        //         },
-        //     },
-        // },
+        {
+            Choice: {
+                Dialog: "chomon ¿Cuál te parece la mejor opción?.",
+                Class: "navigationBox",
+                mausoleoIzquierda: {
+                    Text: "Izquierda",
+                    Do: "sendaction teruel mausoleo_modif_izquierda",
+                    Class: "button1",
+                },
+                mausoleoAmbas: {
+                    Text: "Ambas",
+                    Do: "sendaction teruel mausoleo_modif_ambas",
+                    Class: "button2",
+                },
+                mausoleoDerecha: {
+                    Text: "Derecha",
+                    Do: "sendaction teruel mausoleo_modif_derecha",
+                    Class: "button3",
+                },
+            },
+        },
         "show scene mausoleo1",
         "chomon Gracias por tu respuesta.",
         calcularTiempo,
@@ -1255,12 +1266,14 @@ monogatari.script({
         calcularTiempo,
         "chomon El proyecto del edificio, diseñado por el arquitecto Alejandro Cañada.",
         calcularTiempo,
+        "call aburrido?",
         "chomon Dispone de diferentes salas expositivas que pretenden acercar la Historia de los Amantes al visitante.",
         calcularTiempo,
         "chomon Desde el punto de vista conceptual, la organización del recorrido expositivo se articula en torno a cuatro sectores:",
         calcularTiempo,
         "chomon En el primer sector se explican las características sociales, políticas y culturales.",
         calcularTiempo,
+        "call aburrido?",
         "chomon Que rodearon los acontecimientos en el Teruel de principios del siglo XIII.",
         calcularTiempo,
         "show image mausoleointerior center with fadeIn",
@@ -1269,6 +1282,7 @@ monogatari.script({
         "chomon También se habla del debate histórico que este relato ha generado a través de los siglos.",
         "hide image mausoleointerior center with fadeOut",
         calcularTiempo,
+        "call aburrido?",
         "chomon El tercer sector está destinado a explicar la influencia de los Amantes en el mundo de las artes a lo largo de la historia.",
         "show scene mausoleo2",
         calcularTiempo,
@@ -1278,35 +1292,47 @@ monogatari.script({
         calcularTiempo,
         "chomon Así como el emplazamiento que ha tenido a lo largo del tiempo.",
         calcularTiempo,
+        "call aburrido?",
         changeSection,
         "jump {{secciones.siguiente}}",
+    ],
+    Conocidas: [
+        "call menuConocidas",
     ],
     Final: [
         "show scene panoramica2",
         "show character chomon normal2 at right with fadeIn end-fadeOut",
         "Este es el final del recorrido",
+
+        // Guardar en bd lo recogido en storage (relevante) a lo largo de la novela
         function () {
             monogatari.storage ({
-                menuConocidas: {
-                    cadena: JSON.stringify(monogatari.storage().menuConocidas)
-                },
-                secciones: {
-                    cadenaTiempos: JSON.stringify(monogatari.storage().secciones.tiempos)
-                }
+                cadenaConocidas: JSON.stringify(monogatari.storage().menuConocidas),
+                cadenaTiempos: JSON.stringify(monogatari.storage().secciones.tiempos),
+                cadenaOrden: JSON.stringify(monogatari.storage().secciones.ordenSeguido),
+                cadenaAburrimientoDetectados: JSON.stringify(monogatari.storage().secciones.aburrimientoDetectado),
+                cadenaAburrimientoConfirmados: JSON.stringify(monogatari.storage().secciones.aburrimientoConfirmado),
+                cadenaAburrimientoConocidas: JSON.stringify(monogatari.storage().secciones.conocidas),
+                cadenaTotales: {"totalAburrido": monogatari.storage().totalAburrido, "totalDetectado": monogatari.storage().totalDetectado},
             });
             return true;
         },
-        // "sendaction prueba {{menuConocidas.cadena}}",
-        // "sendaction prueba {{secciones.cadenaTiempos}}",
+        "sendaction teruel {{cadenaConocidas}}",
+        "sendaction teruel {{cadenaTiempos}}",
+        "sendaction teruel {{cadenaOrden}}",
+        "sendaction teruel {{cadenaAburrimientoDetectados}}",
+        "sendaction teruel {{cadenaAburrimientoConocidas}}",
+        "sendaction teruel {{cadenaTotales}}",
+        
         "Espero que te haya resultado interesante conocer más de la historia de Teruel",
         "Ahora, te pediría que rellenases un pequeño cuestionario de satisfacción para ayudarnos a mejorar la guía.",
-        // "sendaction teruel inicio_encuesta_opinion",
+        "sendaction teruel inicio_encuesta_opinion",
         "show scene panoramica2",
-        // "call opinion1",
-        // "call opinion2",
-        // "call opinion3",
-        // "call opinion4",
-        // "call opinion5",
+        "call opinion1",
+        "call opinion2",
+        "call opinion3",
+        "call opinion4",
+        "call opinion5",
         "¡Hasta pronto!",
         "call finalhistoria",
         "end",
