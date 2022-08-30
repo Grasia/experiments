@@ -470,3 +470,35 @@ input[type=range]::-ms-fill-upper {
 	margin: 0px;
 	pointer-events: none;
 }
+
+.buttonMenu1{
+	background: #3DD1E7;
+	background-size:50%;
+	border: 0 solid #E5E7EB;
+	box-sizing: border-box;
+	color: #000000;
+    position: absolute;
+	text-align: right;
+    top: 25%;
+    left: 2%;
+	width: 40%;
+	margin: 0px;
+	overflow:hidden;
+}
+
+.buttonMenu2{
+	background: #3DD1E7;
+	background-size:50%;
+	border: 0 solid #E5E7EB;
+	box-sizing: border-box;
+	color: #000000;
+    position: absolute;
+	text-align: right;
+    top: 50%;
+    left: 2%;
+	width: 40%;
+	margin: 0px;
+	overflow:hidden;
+}
+
+/* file:///Volumes/jnavarroSSD/Proyectos/UCM%20-%20Colbici/Teruel/experiments/teruel/index.html */

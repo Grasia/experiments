@@ -642,7 +642,7 @@ function changeSection() {
     // Cuando no hay más secciones va al final
     if(this.storage().secciones.orden.length == 0) {
         // Comprobacion si se ha aburrido para mostrar o no el menu de conocidas
-        if(this.storage().totalAburrido == 0) {
+        if(this.storage().totalAburrido == 0 && this.storage().totalDetectado == 0) {
             this.storage().secciones.siguiente = "Conocidas";
         } else {
             this.storage().secciones.siguiente = "Final";
@@ -1313,7 +1313,7 @@ monogatari.script({
                 cadenaAburrimientoDetectados: JSON.stringify(monogatari.storage().secciones.aburrimientoDetectado),
                 cadenaAburrimientoConfirmados: JSON.stringify(monogatari.storage().secciones.aburrimientoConfirmado),
                 cadenaAburrimientoConocidas: JSON.stringify(monogatari.storage().secciones.conocidas),
-                cadenaTotales: {"totalAburrido": monogatari.storage().totalAburrido, "totalDetectado": monogatari.storage().totalDetectado},
+                cadenaTotales: JSON.stringify({"totalAburrido": monogatari.storage().totalAburrido, "totalDetectado": monogatari.storage().totalDetectado}),
             });
             return true;
         },
