@@ -667,7 +667,7 @@ function aburrimiento(monogatari, etiqueta) {
                     'Conditional': {
                         'Condition': 
                             function () {
-                                return this.storage().totalAburrido <= 4 || this.storage().totalDetectado <= 8;
+                                return this.storage().totalAburrido <= 4 && this.storage().totalDetectado <= 8;
                             },
                             'True': {
                                 "Choice":{
@@ -787,9 +787,9 @@ monogatari.script({
         "Para ello vamos a ver varios lugares emblemáticos en la historia de Teruel.",
         "Pero antes, me gustaría que rellenases un cuestionario para saber un poco más de tí.",
         "Tienes que saber que no se van a recoger tus datos personales y que lo que vas a ver a continuación tiene un proposito de investigación.",
-        "sendaction teruel inicio_encuesta_usuario",
+        // "sendaction teruel inicio_encuesta_usuario",
         "hide character chomon",
-        "call caracterizacion1",
+        // "call caracterizacion1",
         "show character chomon lookright at left with fadeIn end-fadeOut",
         changeSection,
         "jump {{secciones.siguiente}}",
