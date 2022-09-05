@@ -667,7 +667,7 @@ function aburrimiento(monogatari, etiqueta) {
                     'Conditional': {
                         'Condition': 
                             function () {
-                                return this.storage().totalAburrido <= 4 && this.storage().totalDetectado <= 8;
+                                return this.storage().totalAburrido < 4 && this.storage().totalDetectado < 8;
                             },
                             'True': {
                                 "Choice":{
@@ -1317,12 +1317,13 @@ monogatari.script({
             });
             return true;
         },
-        "sendaction teruel {{cadenaConocidas}}",
-        "sendaction teruel {{cadenaTiempos}}",
-        "sendaction teruel {{cadenaOrden}}",
-        "sendaction teruel {{cadenaAburrimientoDetectados}}",
-        "sendaction teruel {{cadenaAburrimientoConocidas}}",
-        "sendaction teruel {{cadenaTotales}}",
+        "sendaction teruel {\"conocidas\":{{cadenaConocidas}}}",
+        "sendaction teruel {\"tiempos\":{{cadenaTiempos}}}",
+        "sendaction teruel {\"orden\":{{cadenaOrden}}}",
+        "sendaction teruel {\"detectados\":{{cadenaAburrimientoDetectados}}}",
+        "sendaction teruel {\"confirmados\":{{cadenaAburrimientoDetectados}}}",
+        "sendaction teruel {\"aburrimiento_conocidas\":{{cadenaAburrimientoConocidas}}}",
+        "sendaction teruel {\"totales\":{{cadenaTotales}}}",
         
         "Espero que te haya resultado interesante conocer más de la historia de Teruel",
         "Ahora, te pediría que rellenases un pequeño cuestionario de satisfacción para ayudarnos a mejorar la guía.",
