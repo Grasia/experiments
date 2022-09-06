@@ -779,8 +779,8 @@ function asyncFunction () {
 monogatari.script({
     Start: [
         // _Introducción
-        "play music mainTheme with loop volume 10",
         "show scene panoramica",
+        "play music mainTheme with loop volume 15",
         setTiempoInicial,
         "show character chomon normal2 at right with fadeIn end-fadeOut",
         "Hola soy Segundo de Chomón y voy a contarte la historia del casco antiguo de Teruel!",
@@ -804,7 +804,6 @@ monogatari.script({
             });
             return true;
         },
-        "play voice despedida with volume 85",
         setTiempo,
         "chomon La antigua plaza mayor fue siempre el centro neurálgico de la ciudad.",
         calcularTiempo,
@@ -872,7 +871,6 @@ monogatari.script({
         calcularTiempo,
         "call aburrido?",
         "show scene catedral3",
-        calcularTiempo,
         "chomon Más tarde, en 1587, con la creación de la diócesis de Teruel, fue promovida a Catedral y consagrada como tal.",
         calcularTiempo,
         "chomon La torre, techumbre y cimborrio de la Catedral de Teruel fueron declarados Patrimonio de la Humanidad por la Unesco en 1986.",
@@ -911,7 +909,6 @@ monogatari.script({
         calcularTiempo,
         "call aburrido?",
         "chomon De planta cuadrada, da paso a una calle bajo su bóveda de cañón apuntado.",
-        calcularTiempo,
         "show scene sanmartin3",
         calcularTiempo,
         "chomon El exterior, de ladrillo, aparece decorado con cerámica vidriada en verde y blanco y paños horizontales de distintas alturas.",
