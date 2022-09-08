@@ -130,12 +130,21 @@ monogatari.characters({
 monogatari.customForms({
     caracterizacion1: {
         schema: {
-            description: "¿Qué usuario se te ha asignado?",
+            description: "Edad",
             type: "object",
             properties: {
-                usuario: {
+                edad: {
+                    type: "number",
+                    title: "Edad",
+                },
+                genero: {
                     type: "string",
-                    title: "Usuario",
+                    title: "Género",
+                    enum: [
+                        "Hombre",
+                        "Mujer",
+                        "No binario",                        
+                    ],
                 },
             },
         },
