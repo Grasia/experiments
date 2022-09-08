@@ -596,7 +596,7 @@ function calcularTiempo() {
     
     // Controlamos el orden en el que el usuario va viendo las secciones
     if(orden != undefined) {
-        if(orden.pop() != seccion || orden.lenght != 0) {
+        if(!orden.includes(seccion) || orden.lenght == 0) {
             this.storage().secciones.ordenSeguido.push(seccion);
         }
     } else {
@@ -608,7 +608,7 @@ function calcularTiempo() {
 function calcularAburrimiento () {
     // En que sección estoy
     var seccion = this.storage().secciones.actual;
-    var tiempoMin = 4;
+    var tiempoMin = 3;
     // Ver los tres últimos tiempos
     var tiempos = Object.values(this.storage().secciones.tiempos[seccion]).slice(-3);
     var cont = Object.keys(this.storage().secciones.tiempos[seccion]).length;
@@ -792,7 +792,9 @@ monogatari.script({
         "play music mainTheme with loop volume 15",
         setTiempoInicial,
         "show character chomon normal2 at right with fadeIn end-fadeOut",
-        "Hola soy Segundo de Chomón y voy a contarte la historia del casco antiguo de Teruel!",
+        "Hola soy Segundo de Chomón,",
+        "un conocido cineasta turolense,",
+        "y voy a contarte la historia del casco antiguo de Teruel",
         "Para ello vamos a ver varios lugares emblemáticos en la historia de Teruel.",
         "Pero antes, me gustaría que rellenases un cuestionario para saber un poco más de tí.",
         "Tienes que saber que no se van a recoger tus datos personales y que lo que vas a ver a continuación tiene un proposito de investigación.",
@@ -1327,7 +1329,7 @@ monogatari.script({
         "sendaction teruel {\"tiempos\":{{cadenaTiempos}}}",
         "sendaction teruel {\"orden\":{{cadenaOrden}}}",
         "sendaction teruel {\"detectados\":{{cadenaAburrimientoDetectados}}}",
-        "sendaction teruel {\"confirmados\":{{cadenaAburrimientoDetectados}}}",
+        "sendaction teruel {\"confirmados\":{{cadenaAburrimientoConfirmados}}}",
         "sendaction teruel {\"aburrimiento_conocidas\":{{cadenaAburrimientoConocidas}}}",
         "sendaction teruel {\"totales\":{{cadenaTotales}}}",
         

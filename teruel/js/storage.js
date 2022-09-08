@@ -18,12 +18,12 @@ monogatari.storage ({
             Mausoleo: {},
         },
         orden: [
-            "Salvador",
-            "SanMartin",
-            "Mausoleo",
             "Torico",
+            "Catedral",
+            "SanMartin",
+            "Salvador",
             "Escalinata",
-            "Catedral"
+            "Mausoleo",
         ],
         ordenSeguido: [],
         aburrimientoDetectado: {
