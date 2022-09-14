@@ -1342,6 +1342,7 @@ monogatari.script({
         "call opinion3",
         "call opinion4",
         "call opinion5",
+        "sendaction teruel finished",
         "¡Hasta pronto!",
         "call finalhistoria",
         "end",
