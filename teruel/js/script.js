@@ -1068,7 +1068,7 @@ monogatari.script({
         "chomon Ahora conoceremos uno de los monumentos más emblemáticos de Teruel.",
         "show scene escalinata1",
         calcularTiempo,
-        "chomon Desde donde mejor se ve la escalinata es desde abajo, dejame que te lo enseñe.",
+        "chomon Desde donde mejor se ve la escalinata es desde abajo, déjame que te lo enseñe.",
         calcularTiempo,
         "show scene escalinata4",
         "chomon Se construyó a comienzo de los años veinte, para salvar el desnivel existente entre la estación de ferrocarril y el Casco Histórico de la ciudad.",
