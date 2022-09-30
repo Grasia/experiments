@@ -1,5 +1,208 @@
 [
   {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-21T07:31:17.250+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:31:24.992+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "inicio_encuesta_locucion",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:35:18.321+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "locucion_si",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:35:22.901+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "locucion_movil",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:35:24.878+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "inicio_encuesta_modif_escalinata",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:36:50.503+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "modif_salvaescaleras",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:36:55.401+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "escalinata_modif_no",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:36:59.380+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "mural_arriba",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:37:07.088+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "mural_si",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:37:13.151+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "mural_mejor",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:37:16.450+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "inicio_encuesta_modif_mausoleo",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:37:24.839+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "mausoleo_modif1_si",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:37:28.908+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "mausoleo_modif2_si",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:37:33.782+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "mausoleo_modif_ambas",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:37:36.057+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "{\"conocidas\":{\"torico\":false,\"catedral\":false,\"sanmartin\":false,\"salvador\":false,\"escalinata\":false,\"mausoleo\":false}}",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:38:38.505+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "{\"tiempos\":{\"Torico\":{\"Torico0\":\"3\",\"Torico1\":\"3\",\"Torico2\":\"4\",\"Torico3\":\"4\",\"Torico4\":\"5\",\"Torico5\":\"5\",\"Torico6\":\"4\",\"Torico7\":\"3\",\"Torico8\":\"4\",\"Torico9\":\"3\",\"Torico10\":\"3\",\"Torico11\":\"4\",\"Torico12\":\"5\",\"Torico13\":\"3\"},\"Catedral\":{\"Catedral0\":\"4\",\"Catedral1\":\"5\",\"Catedral2\":\"5\",\"Catedral3\":\"4\",\"Catedral4\":\"4\",\"Catedral5\":\"5\",\"Catedral6\":\"5\",\"Catedral7\":\"6\"},\"SanMartin\":{\"SanMartin0\":\"5\",\"SanMartin1\":\"7\",\"SanMartin2\":\"6\",\"SanMartin3\":\"3\",\"SanMartin4\":\"8\",\"SanMartin5\":\"5\",\"SanMartin6\":\"5\",\"SanMartin7\":\"6\",\"SanMartin8\":\"5\",\"SanMartin9\":\"4\",\"SanMartin10\":\"7\"},\"Salvador\":{\"Salvador0\":\"7\",\"Salvador1\":\"6\",\"Salvador2\":\"5\",\"Salvador3\":\"5\",\"Salvador4\":\"4\",\"Salvador5\":\"4\",\"Salvador6\":\"5\",\"Salvador7\":\"4\",\"Salvador8\":\"5\",\"Salvador9\":\"4\",\"Salvador10\":\"4\",\"Salvador11\":\"5\",\"Salvador12\":\"4\",\"Salvador13\":\"4\",\"Salvador14\":\"4\",\"Salvador15\":\"4\",\"Salvador16\":\"5\"},\"Escalinata\":{\"Escalinata0\":\"2\",\"Escalinata1\":\"4\",\"Escalinata2\":\"5\",\"Escalinata3\":\"12\",\"Escalinata4\":\"4\",\"Escalinata5\":\"3\",\"Escalinata6\":\"6\",\"Escalinata7\":\"3\",\"Escalinata8\":\"6\",\"Escalinata9\":\"5\",\"Escalinata10\":\"4\",\"Escalinata11\":\"4\",\"Escalinata12\":\"6\",\"Escalinata13\":\"7\",\"Escalinata14\":\"9\",\"Escalinata15\":\"4\"},\"Mausoleo\":{\"Mausoleo0\":\"20\",\"Mausoleo1\":\"4\",\"Mausoleo2\":\"6\",\"Mausoleo3\":\"5\",\"Mausoleo4\":\"5\",\"Mausoleo5\":\"4\",\"Mausoleo6\":\"3\",\"Mausoleo7\":\"7\",\"Mausoleo8\":\"5\",\"Mausoleo9\":\"5\",\"Mausoleo10\":\"5\",\"Mausoleo11\":\"5\",\"Mausoleo12\":\"4\"}}}",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:38:38.740+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "{\"orden\":[\"Torico\",\"Catedral\",\"SanMartin\",\"Salvador\",\"Escalinata\",\"Mausoleo\"]}",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:38:38.931+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "{\"detectados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[\"Escalinata3\"],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:38:39.154+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "{\"confirmados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:38:39.409+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "{\"aburrimiento_conocidas\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[\"Escalinata3\"],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:38:39.618+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "{\"totales\":{\"totalAburrido\":0,\"totalDetectado\":1}}",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:38:39.847+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "inicio_encuesta_opinion",
+    "content": "{\"edad\":32,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-21T07:38:48.645+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "opinion1",
+    "content": "{\"atencion\":\"4. De acuerdo\",\"concentrado\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-21T07:39:02.291+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "opinion2",
+    "content": "{\"consciente\":\"3. Neutral\",\"experimentando\":\"4. De acuerdo\"}",
+    "date": "2022-09-21T07:39:14.492+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "opinion3",
+    "content": "{\"dejarlo\":\"2. En desacuerdo\",\"interesado\":\"4. De acuerdo\"}",
+    "date": "2022-09-21T07:39:25.445+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "opinion4",
+    "content": "{\"disfrutar\":\"4. De acuerdo\",\"hacerotra\":\"4. De acuerdo\"}",
+    "date": "2022-09-21T07:39:37.388+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "opinion5",
+    "content": "{\"interesante\":\"Es interesante la forma de contarlo, puede ser una alternativa para las guías presenciales.\",\"problemas\":\"Ninguno\"}",
+    "date": "2022-09-21T07:41:03.543+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "e8683b58-81c4-4707-b541-eb9500ba6cd9:1663745476938",
+    "action": "finished",
+    "content": "{\"interesante\":\"Es interesante la forma de contarlo, puede ser una alternativa para las guías presenciales.\",\"problemas\":\"Ninguno\"}",
+    "date": "2022-09-21T07:41:03.821+0000",
+    "game": "teruel"
+  },
+  {
     "token": "fa51bf86-2d87-4ede-afb1-f49c7108407c:1662632417823",
     "action": "inicio_encuesta_usuario",
     "content": null,
@@ -886,6 +1089,2561 @@
     "action": "finished",
     "content": null,
     "date": "2022-09-19T08:33:07.531+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-20T18:45:20.516+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":23,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-20T18:45:29.047+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "{\"conocidas\":{\"torico\":false,\"catedral\":false,\"sanmartin\":false,\"salvador\":false,\"escalinata\":false,\"mausoleo\":false}}",
+    "content": "{\"edad\":23,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-20T18:47:16.136+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "{\"tiempos\":{\"Torico\":{\"Torico0\":\"3\",\"Torico1\":\"3\",\"Torico2\":\"4\",\"Torico3\":\"2\",\"Torico4\":\"4\",\"Torico5\":\"4\",\"Torico6\":\"6\",\"Torico7\":\"2\",\"Torico8\":\"2\",\"Torico9\":\"5\",\"Torico10\":\"1\",\"Torico11\":\"2\",\"Torico12\":\"6\",\"Torico13\":\"2\"},\"Catedral\":{\"Catedral0\":\"2\",\"Catedral1\":\"4\",\"Catedral2\":\"4\",\"Catedral3\":\"4\",\"Catedral4\":\"2\",\"Catedral5\":\"3\",\"Catedral6\":\"7\",\"Catedral7\":\"3\"},\"SanMartin\":{\"SanMartin0\":\"3\",\"SanMartin1\":\"6\",\"SanMartin2\":\"3\",\"SanMartin3\":\"2\",\"SanMartin4\":\"6\",\"SanMartin5\":\"2\",\"SanMartin6\":\"3\",\"SanMartin7\":\"2\"},\"Salvador\":{},\"Escalinata\":{},\"Mausoleo\":{}}}",
+    "content": "{\"edad\":23,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-20T18:47:20.957+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "{\"orden\":[\"Torico\",\"Catedral\",\"SanMartin\"]}",
+    "content": "{\"edad\":23,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-20T18:47:21.139+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "{\"detectados\":{\"Torico\":[\"Torico6\",\"Torico9\",\"Torico12\",\"Torico14\"],\"Catedral\":[\"Catedral3\",\"Catedral6\"],\"SanMartin\":[\"SanMartin6\",\"SanMartin8\"],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":23,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-20T18:47:21.334+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "{\"confirmados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":23,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-20T18:47:21.679+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "{\"aburrimiento_conocidas\":{\"Torico\":[\"Torico9\"],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":23,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-20T18:47:22.130+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "{\"totales\":{\"totalAburrido\":1,\"totalDetectado\":8}}",
+    "content": "{\"edad\":23,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-20T18:47:22.374+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "inicio_encuesta_opinion",
+    "content": "{\"edad\":23,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-20T18:47:26.545+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "opinion1",
+    "content": "{\"atencion\":\"4. De acuerdo\",\"concentrado\":\"4. De acuerdo\"}",
+    "date": "2022-09-20T18:47:38.041+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "opinion2",
+    "content": "{\"consciente\":\"4. De acuerdo\",\"experimentando\":\"3. Neutral\"}",
+    "date": "2022-09-20T18:47:50.871+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "opinion3",
+    "content": "{\"dejarlo\":\"2. En desacuerdo\",\"interesado\":\"4. De acuerdo\"}",
+    "date": "2022-09-20T18:47:58.778+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "opinion4",
+    "content": "{\"disfrutar\":\"3. Neutral\",\"hacerotra\":\"3. Neutral\"}",
+    "date": "2022-09-20T18:48:06.956+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "opinion5",
+    "content": "{\"interesante\":\"La historia de mi ciudad\",\"problemas\":\"Al iniciar el tour \"}",
+    "date": "2022-09-20T18:48:44.328+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "02b2ded7-acaf-4afb-9312-e8f9feeb9508:1663699520307",
+    "action": "finished",
+    "content": "{\"interesante\":\"La historia de mi ciudad\",\"problemas\":\"Al iniciar el tour \"}",
+    "date": "2022-09-20T18:48:44.499+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-22T18:07:13.595+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:07:30.757+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "inicio_encuesta_locucion",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:13:22.626+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "locucion_si",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:13:33.142+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "locucion_movil",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:13:38.244+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "inicio_encuesta_modif_escalinata",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:16:11.594+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "modif_rampa",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:16:46.460+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "escalinata_modif_si",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:17:00.543+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "mural_abajo",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:17:30.090+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "mural_si",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:17:34.698+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "mural_mejor",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:17:49.487+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "inicio_encuesta_modif_mausoleo",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:18:28.513+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "mausoleo_modif1_si",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:18:34.841+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "mausoleo_modif2_si",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:19:02.504+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "mausoleo_modif_izquierda",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:19:22.690+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "{\"conocidas\":{\"torico\":true,\"catedral\":false,\"sanmartin\":true,\"salvador\":true,\"escalinata\":true,\"mausoleo\":false}}",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:22:54.951+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "{\"tiempos\":{\"Torico\":{\"Torico0\":\"12\",\"Torico1\":\"9\",\"Torico2\":\"5\",\"Torico3\":\"4\",\"Torico4\":\"9\",\"Torico5\":\"8\",\"Torico6\":\"5\",\"Torico7\":\"3\",\"Torico8\":\"6\",\"Torico9\":\"3\",\"Torico10\":\"3\",\"Torico11\":\"8\",\"Torico12\":\"6\",\"Torico13\":\"6\"},\"Catedral\":{\"Catedral0\":\"9\",\"Catedral1\":\"4\",\"Catedral2\":\"8\",\"Catedral3\":\"5\",\"Catedral4\":\"4\",\"Catedral5\":\"7\",\"Catedral6\":\"8\",\"Catedral7\":\"7\"},\"SanMartin\":{\"SanMartin0\":\"3\",\"SanMartin1\":\"6\",\"SanMartin2\":\"8\",\"SanMartin3\":\"4\",\"SanMartin4\":\"9\",\"SanMartin5\":\"5\",\"SanMartin6\":\"5\",\"SanMartin7\":\"7\",\"SanMartin8\":\"3\",\"SanMartin9\":\"6\",\"SanMartin10\":\"16\"},\"Salvador\":{\"Salvador0\":\"14\",\"Salvador1\":\"22\",\"Salvador2\":\"17\",\"Salvador3\":\"6\",\"Salvador4\":\"4\",\"Salvador5\":\"5\",\"Salvador6\":\"8\",\"Salvador7\":\"8\",\"Salvador8\":\"9\",\"Salvador9\":\"6\",\"Salvador10\":\"6\",\"Salvador11\":\"7\",\"Salvador12\":\"4\",\"Salvador13\":\"5\",\"Salvador14\":\"6\",\"Salvador15\":\"6\",\"Salvador16\":\"8\"},\"Escalinata\":{\"Escalinata0\":\"7\",\"Escalinata1\":\"6\",\"Escalinata2\":\"8\",\"Escalinata3\":\"8\",\"Escalinata4\":\"5\",\"Escalinata5\":\"10\",\"Escalinata6\":\"14\",\"Escalinata7\":\"4\",\"Escalinata8\":\"9\",\"Escalinata9\":\"11\",\"Escalinata10\":\"5\",\"Escalinata11\":\"7\",\"Escalinata12\":\"9\",\"Escalinata13\":\"22\",\"Escalinata14\":\"12\",\"Escalinata15\":\"6\"},\"Mausoleo\":{\"Mausoleo0\":\"117\",\"Mausoleo1\":\"12\",\"Mausoleo2\":\"12\",\"Mausoleo3\":\"11\",\"Mausoleo4\":\"9\",\"Mausoleo5\":\"8\",\"Mausoleo6\":\"6\",\"Mausoleo7\":\"11\",\"Mausoleo8\":\"8\",\"Mausoleo9\":\"31\",\"Mausoleo10\":\"8\",\"Mausoleo11\":\"21\",\"Mausoleo12\":\"11\"}}}",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:22:55.217+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "{\"orden\":[\"Torico\",\"Catedral\",\"SanMartin\",\"Salvador\",\"Escalinata\",\"Mausoleo\"]}",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:22:55.410+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "{\"detectados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:22:55.607+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "{\"confirmados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:22:55.800+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "{\"aburrimiento_conocidas\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:22:55.999+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "{\"totales\":{\"totalAburrido\":0,\"totalDetectado\":0}}",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:22:56.266+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "inicio_encuesta_opinion",
+    "content": "{\"edad\":52,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:23:20.103+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "opinion1",
+    "content": "{\"atencion\":\"6. NSNC\",\"concentrado\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-22T18:23:33.102+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "opinion2",
+    "content": "{\"consciente\":\"6. NSNC\",\"experimentando\":\"4. De acuerdo\"}",
+    "date": "2022-09-22T18:23:50.321+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "opinion3",
+    "content": "{\"dejarlo\":\"1. Totalmente en desacuerdo\",\"interesado\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-22T18:24:07.059+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "opinion4",
+    "content": "{\"disfrutar\":\"6. NSNC\",\"hacerotra\":\"6. NSNC\"}",
+    "date": "2022-09-22T18:24:09.374+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "opinion5",
+    "content": "{\"interesante\":\"Muy visual.bien explicado\",\"problemas\":\"No\"}",
+    "date": "2022-09-22T18:24:54.605+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "56132b7d-6c7c-4821-b9b4-b30834ba213a:1663870033470",
+    "action": "finished",
+    "content": "{\"interesante\":\"Muy visual.bien explicado\"}",
+    "date": "2022-09-22T18:24:54.871+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-22T18:36:23.494+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:36:50.068+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "inicio_encuesta_locucion",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:42:55.016+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "locucion_si",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:43:17.894+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "locucion_movil",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:43:31.271+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "inicio_encuesta_modif_escalinata",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:46:05.955+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "modif_salvaescaleras",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:46:22.914+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "escalinata_modif_no",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:46:40.556+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "mural_arriba",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:47:06.570+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "mural_no",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:47:13.956+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "mural_mejor",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:47:22.739+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "inicio_encuesta_modif_mausoleo",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:47:41.391+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "mausoleo_modif1_si",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:47:54.322+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "mausoleo_modif2_no",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:48:06.153+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "mausoleo_modif_derecha",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:48:18.254+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "{\"conocidas\":{\"torico\":true,\"catedral\":true,\"sanmartin\":true,\"salvador\":true,\"escalinata\":true,\"mausoleo\":true}}",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:50:18.772+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "{\"tiempos\":{\"Torico\":{\"Torico0\":\"8\",\"Torico1\":\"3\",\"Torico2\":\"7\",\"Torico3\":\"4\",\"Torico4\":\"10\",\"Torico5\":\"11\",\"Torico6\":\"7\",\"Torico7\":\"3\",\"Torico8\":\"7\",\"Torico9\":\"9\",\"Torico10\":\"3\",\"Torico11\":\"7\",\"Torico12\":\"12\",\"Torico13\":\"5\"},\"Catedral\":{\"Catedral0\":\"6\",\"Catedral1\":\"7\",\"Catedral2\":\"9\",\"Catedral3\":\"4\",\"Catedral4\":\"5\",\"Catedral5\":\"8\",\"Catedral6\":\"7\",\"Catedral7\":\"8\"},\"SanMartin\":{\"SanMartin0\":\"5\",\"SanMartin1\":\"8\",\"SanMartin2\":\"9\",\"SanMartin3\":\"5\",\"SanMartin4\":\"10\",\"SanMartin5\":\"5\",\"SanMartin6\":\"6\",\"SanMartin7\":\"7\",\"SanMartin8\":\"3\",\"SanMartin9\":\"6\",\"SanMartin10\":\"9\"},\"Salvador\":{\"Salvador0\":\"10\",\"Salvador1\":\"13\",\"Salvador2\":\"10\",\"Salvador3\":\"11\",\"Salvador4\":\"4\",\"Salvador5\":\"6\",\"Salvador6\":\"10\",\"Salvador7\":\"5\",\"Salvador8\":\"10\",\"Salvador9\":\"8\",\"Salvador10\":\"6\",\"Salvador11\":\"9\",\"Salvador12\":\"5\",\"Salvador13\":\"7\",\"Salvador14\":\"9\",\"Salvador15\":\"7\",\"Salvador16\":\"10\"},\"Escalinata\":{\"Escalinata0\":\"6\",\"Escalinata1\":\"15\",\"Escalinata2\":\"12\",\"Escalinata3\":\"13\",\"Escalinata4\":\"9\",\"Escalinata5\":\"5\",\"Escalinata6\":\"13\",\"Escalinata7\":\"4\",\"Escalinata8\":\"7\",\"Escalinata9\":\"9\",\"Escalinata10\":\"6\",\"Escalinata11\":\"8\",\"Escalinata12\":\"10\",\"Escalinata13\":\"10\",\"Escalinata14\":\"12\",\"Escalinata15\":\"9\"},\"Mausoleo\":{\"Mausoleo0\":\"57\",\"Mausoleo1\":\"5\",\"Mausoleo2\":\"4\",\"Mausoleo3\":\"7\",\"Mausoleo4\":\"8\",\"Mausoleo5\":\"6\",\"Mausoleo6\":\"5\",\"Mausoleo7\":\"10\",\"Mausoleo8\":\"7\",\"Mausoleo9\":\"10\",\"Mausoleo10\":\"8\",\"Mausoleo11\":\"8\",\"Mausoleo12\":\"4\"}}}",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:50:18.955+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "{\"orden\":[\"Torico\",\"Catedral\",\"SanMartin\",\"Salvador\",\"Escalinata\",\"Mausoleo\"]}",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:50:19.147+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "{\"detectados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:50:19.316+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "{\"confirmados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:50:19.494+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "{\"aburrimiento_conocidas\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:50:19.703+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "{\"totales\":{\"totalAburrido\":0,\"totalDetectado\":0}}",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:50:19.906+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "inicio_encuesta_opinion",
+    "content": "{\"edad\":53,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T18:50:41.694+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "opinion1",
+    "content": "{\"atencion\":\"4. De acuerdo\",\"concentrado\":\"4. De acuerdo\"}",
+    "date": "2022-09-22T18:53:38.583+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "opinion2",
+    "content": null,
+    "date": "2022-09-22T18:54:14.923+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "opinion3",
+    "content": "{\"dejarlo\":\"1. Totalmente en desacuerdo\",\"interesado\":\"4. De acuerdo\"}",
+    "date": "2022-09-22T18:54:39.158+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "opinion4",
+    "content": "{\"disfrutar\":\"4. De acuerdo\",\"hacerotra\":\"4. De acuerdo\"}",
+    "date": "2022-09-22T18:55:03.167+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "opinion5",
+    "content": "{\"interesante\":\"Muy clara y resumida\",\"problemas\":\"No\"}",
+    "date": "2022-09-22T18:55:58.298+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f61c159c-5b2e-432a-8f52-adeead0711af:1663871783322",
+    "action": "finished",
+    "content": "{\"interesante\":\"Muy clara y resumida\",\"problemas\":\"No\"}",
+    "date": "2022-09-22T18:55:58.475+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-22T19:15:25.405+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:15:51.359+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "inicio_encuesta_locucion",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:20:19.663+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "locucion_si",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:20:33.659+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "locucion_altavoz",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:20:37.222+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "inicio_encuesta_modif_escalinata",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:22:06.640+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "modif_rampa",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:22:15.668+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "escalinata_modif_si",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:22:40.672+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "mural_abajo",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:22:46.824+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "mural_si",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:22:53.046+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "mural_peor",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:23:02.358+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "inicio_encuesta_modif_mausoleo",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:23:21.245+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "mausoleo_modif1_si",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:23:28.288+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "mausoleo_modif2_no",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:23:36.124+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "mausoleo_modif_derecha",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:23:42.443+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "{\"conocidas\":{\"torico\":false,\"catedral\":false,\"sanmartin\":false,\"salvador\":false,\"escalinata\":false,\"mausoleo\":false}}",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:24:46.739+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "{\"tiempos\":{\"Torico\":{\"Torico0\":\"5\",\"Torico1\":\"4\",\"Torico2\":\"6\",\"Torico3\":\"3\",\"Torico4\":\"10\",\"Torico5\":\"7\",\"Torico6\":\"8\",\"Torico7\":\"3\",\"Torico8\":\"7\",\"Torico9\":\"3\",\"Torico10\":\"2\",\"Torico11\":\"8\",\"Torico12\":\"13\",\"Torico13\":\"4\"},\"Catedral\":{\"Catedral0\":\"4\",\"Catedral1\":\"7\",\"Catedral2\":\"9\",\"Catedral3\":\"4\",\"Catedral4\":\"5\",\"Catedral5\":\"9\",\"Catedral6\":\"8\",\"Catedral7\":\"7\"},\"SanMartin\":{\"SanMartin0\":\"4\",\"SanMartin1\":\"5\",\"SanMartin2\":\"6\",\"SanMartin3\":\"3\",\"SanMartin4\":\"8\",\"SanMartin5\":\"4\",\"SanMartin6\":\"6\",\"SanMartin7\":\"7\",\"SanMartin8\":\"3\",\"SanMartin9\":\"5\",\"SanMartin10\":\"11\"},\"Salvador\":{\"Salvador0\":\"4\",\"Salvador1\":\"3\",\"Salvador2\":\"4\",\"Salvador3\":\"4\",\"Salvador4\":\"3\",\"Salvador5\":\"4\",\"Salvador6\":\"4\",\"Salvador7\":\"4\",\"Salvador8\":\"5\",\"Salvador9\":\"4\",\"Salvador10\":\"3\",\"Salvador11\":\"5\",\"Salvador12\":\"3\",\"Salvador13\":\"4\",\"Salvador14\":\"5\",\"Salvador15\":\"4\",\"Salvador16\":\"5\"},\"Escalinata\":{\"Escalinata0\":\"3\",\"Escalinata1\":\"7\",\"Escalinata2\":\"6\",\"Escalinata3\":\"5\",\"Escalinata4\":\"7\",\"Escalinata5\":\"3\",\"Escalinata6\":\"9\",\"Escalinata7\":\"3\",\"Escalinata8\":\"5\",\"Escalinata9\":\"5\",\"Escalinata10\":\"3\",\"Escalinata11\":\"4\",\"Escalinata12\":\"5\",\"Escalinata13\":\"7\",\"Escalinata14\":\"6\",\"Escalinata15\":\"4\"},\"Mausoleo\":{\"Mausoleo0\":\"41\",\"Mausoleo1\":\"4\",\"Mausoleo2\":\"3\",\"Mausoleo3\":\"4\",\"Mausoleo4\":\"5\",\"Mausoleo5\":\"4\",\"Mausoleo6\":\"3\",\"Mausoleo7\":\"7\",\"Mausoleo8\":\"4\",\"Mausoleo9\":\"5\",\"Mausoleo10\":\"4\",\"Mausoleo11\":\"4\",\"Mausoleo12\":\"3\"}}}",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:24:46.908+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "{\"orden\":[\"Torico\",\"Catedral\",\"SanMartin\",\"Salvador\",\"Escalinata\",\"Mausoleo\"]}",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:24:49.972+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "{\"detectados\":{\"Torico\":[\"Torico12\"],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:24:50.156+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "{\"confirmados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:24:50.312+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "{\"aburrimiento_conocidas\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:24:50.518+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "{\"totales\":{\"totalAburrido\":0,\"totalDetectado\":1}}",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:24:50.703+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "inicio_encuesta_opinion",
+    "content": "{\"edad\":51,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:25:00.322+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "opinion1",
+    "content": "{\"atencion\":\"4. De acuerdo\",\"concentrado\":\"4. De acuerdo\"}",
+    "date": "2022-09-22T19:25:31.604+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "opinion2",
+    "content": "{\"consciente\":\"4. De acuerdo\",\"experimentando\":\"4. De acuerdo\"}",
+    "date": "2022-09-22T19:25:59.843+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "opinion3",
+    "content": "{\"dejarlo\":\"4. De acuerdo\",\"interesado\":\"4. De acuerdo\"}",
+    "date": "2022-09-22T19:26:25.091+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "opinion4",
+    "content": "{\"disfrutar\":\"4. De acuerdo\",\"hacerotra\":\"4. De acuerdo\"}",
+    "date": "2022-09-22T19:26:43.349+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "opinion5",
+    "content": "{\"interesante\":\"Todo\",\"problemas\":\"No\"}",
+    "date": "2022-09-22T19:27:24.988+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "f90183d6-e9ae-4925-bb14-ed00f4067fc4:1663874125322",
+    "action": "finished",
+    "content": "{\"interesante\":\"Todo\",\"problemas\":\"No\"}",
+    "date": "2022-09-22T19:27:25.148+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "25a8b669-f475-47eb-8306-0fc9d59d98c0:1663876757716",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-22T19:59:17.825+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "25a8b669-f475-47eb-8306-0fc9d59d98c0:1663876757716",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":59,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T19:59:41.291+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "25a8b669-f475-47eb-8306-0fc9d59d98c0:1663876757716",
+    "action": "inicio_encuesta_locucion",
+    "content": "{\"edad\":59,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:04:22.526+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "25a8b669-f475-47eb-8306-0fc9d59d98c0:1663876757716",
+    "action": "locucion_si",
+    "content": "{\"edad\":59,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:05:06.980+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "25a8b669-f475-47eb-8306-0fc9d59d98c0:1663876757716",
+    "action": "locucion_movil",
+    "content": "{\"edad\":59,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:05:19.180+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "25a8b669-f475-47eb-8306-0fc9d59d98c0:1663876757716",
+    "action": "inicio_encuesta_modif_escalinata",
+    "content": "{\"edad\":59,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:07:09.941+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "25a8b669-f475-47eb-8306-0fc9d59d98c0:1663876757716",
+    "action": "modif_salvaescaleras",
+    "content": "{\"edad\":59,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:07:47.053+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-22T20:12:01.901+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:12:26.157+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "inicio_encuesta_locucion",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:16:12.776+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "locucion_si",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:16:22.326+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "locucion_movil",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:16:24.715+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "inicio_encuesta_modif_escalinata",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:17:51.181+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "modif_salvaescaleras",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:17:55.422+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "escalinata_modif_no",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:18:15.048+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "mural_abajo",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:18:34.457+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "mural_si",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:18:43.748+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "mural_mejor",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:18:48.931+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "inicio_encuesta_modif_mausoleo",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:19:00.698+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "mausoleo_modif1_si",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:19:10.395+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "mausoleo_modif2_si",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:19:15.912+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "mausoleo_modif_derecha",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:19:35.944+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "{\"conocidas\":{\"torico\":false,\"catedral\":false,\"sanmartin\":false,\"salvador\":false,\"escalinata\":false,\"mausoleo\":false}}",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:20:27.698+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "{\"tiempos\":{\"Torico\":{\"Torico0\":\"3\",\"Torico1\":\"3\",\"Torico2\":\"4\",\"Torico3\":\"3\",\"Torico4\":\"5\",\"Torico5\":\"5\",\"Torico6\":\"5\",\"Torico7\":\"5\",\"Torico8\":\"12\",\"Torico9\":\"3\",\"Torico10\":\"2\",\"Torico11\":\"3\",\"Torico12\":\"15\",\"Torico13\":\"3\"},\"Catedral\":{\"Catedral0\":\"3\",\"Catedral1\":\"4\",\"Catedral2\":\"5\",\"Catedral3\":\"6\",\"Catedral4\":\"4\",\"Catedral5\":\"10\",\"Catedral6\":\"5\",\"Catedral7\":\"5\"},\"SanMartin\":{\"SanMartin0\":\"4\",\"SanMartin1\":\"4\",\"SanMartin2\":\"5\",\"SanMartin3\":\"3\",\"SanMartin4\":\"6\",\"SanMartin5\":\"4\",\"SanMartin6\":\"3\",\"SanMartin7\":\"4\",\"SanMartin8\":\"4\",\"SanMartin9\":\"3\",\"SanMartin10\":\"4\"},\"Salvador\":{\"Salvador0\":\"4\",\"Salvador1\":\"5\",\"Salvador2\":\"4\",\"Salvador3\":\"4\",\"Salvador4\":\"3\",\"Salvador5\":\"4\",\"Salvador6\":\"4\",\"Salvador7\":\"4\",\"Salvador8\":\"5\",\"Salvador9\":\"4\",\"Salvador10\":\"4\",\"Salvador11\":\"4\",\"Salvador12\":\"3\",\"Salvador13\":\"4\",\"Salvador14\":\"4\",\"Salvador15\":\"3\",\"Salvador16\":\"3\"},\"Escalinata\":{\"Escalinata0\":\"3\",\"Escalinata1\":\"3\",\"Escalinata2\":\"4\",\"Escalinata3\":\"4\",\"Escalinata4\":\"3\",\"Escalinata5\":\"2\",\"Escalinata6\":\"15\",\"Escalinata7\":\"2\",\"Escalinata8\":\"5\",\"Escalinata9\":\"11\",\"Escalinata10\":\"3\",\"Escalinata11\":\"4\",\"Escalinata12\":\"7\",\"Escalinata13\":\"10\",\"Escalinata14\":\"6\",\"Escalinata15\":\"3\"},\"Mausoleo\":{\"Mausoleo0\":\"47\",\"Mausoleo1\":\"3\",\"Mausoleo2\":\"3\",\"Mausoleo3\":\"4\",\"Mausoleo4\":\"4\",\"Mausoleo5\":\"3\",\"Mausoleo6\":\"3\",\"Mausoleo7\":\"5\",\"Mausoleo8\":\"5\",\"Mausoleo9\":\"5\",\"Mausoleo10\":\"4\",\"Mausoleo11\":\"4\",\"Mausoleo12\":\"3\"}}}",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:20:27.900+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "{\"orden\":[\"Torico\",\"Catedral\",\"SanMartin\",\"Salvador\",\"Escalinata\",\"Mausoleo\"]}",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:20:28.084+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "{\"detectados\":{\"Torico\":[\"Torico12\"],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[\"Escalinata6\",\"Escalinata9\"],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:20:28.274+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "{\"confirmados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:20:28.478+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "{\"aburrimiento_conocidas\":{\"Torico\":[\"Torico12\"],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:20:28.684+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "{\"totales\":{\"totalAburrido\":0,\"totalDetectado\":3}}",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:20:29.265+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "inicio_encuesta_opinion",
+    "content": "{\"edad\":58,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-22T20:20:37.454+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "opinion1",
+    "content": "{\"atencion\":\"6. NSNC\",\"concentrado\":\"6. NSNC\"}",
+    "date": "2022-09-22T20:21:33.444+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "opinion2",
+    "content": "{\"consciente\":\"6. NSNC\",\"experimentando\":\"6. NSNC\"}",
+    "date": "2022-09-22T20:21:46.035+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "opinion3",
+    "content": "{\"dejarlo\":\"6. NSNC\",\"interesado\":\"4. De acuerdo\"}",
+    "date": "2022-09-22T20:22:00.234+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "opinion4",
+    "content": "{\"disfrutar\":\"5. Totalmente de acuerdo\",\"hacerotra\":\"4. De acuerdo\"}",
+    "date": "2022-09-22T20:22:17.958+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "opinion5",
+    "content": "{}",
+    "date": "2022-09-22T20:22:27.532+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "2bb2af27-1532-494b-87c1-eb7f1d0318ab:1663877521795",
+    "action": "finished",
+    "content": "{}",
+    "date": "2022-09-22T20:22:27.724+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-23T11:34:04.418+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:34:13.425+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "inicio_encuesta_locucion",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:37:43.404+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "locucion_si",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:37:55.329+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "locucion_movil",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:37:58.324+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "inicio_encuesta_modif_escalinata",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:39:19.260+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "modif_salvaescaleras",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:39:29.435+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "escalinata_modif_si",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:39:41.945+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "mural_arriba",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:39:53.284+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "mural_no",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:40:00.443+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "mural_mejor",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:40:07.411+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "inicio_encuesta_modif_mausoleo",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:40:24.122+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "mausoleo_modif1_no",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:40:29.450+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "mausoleo_modif2_no",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:40:38.029+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "mausoleo_modif_izquierda",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:40:49.664+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "{\"conocidas\":{\"torico\":false,\"catedral\":false,\"sanmartin\":false,\"salvador\":false,\"escalinata\":false,\"mausoleo\":false}}",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:41:38.830+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "{\"tiempos\":{\"Torico\":{\"Torico0\":\"4\",\"Torico1\":\"3\",\"Torico2\":\"4\",\"Torico3\":\"3\",\"Torico4\":\"5\",\"Torico5\":\"6\",\"Torico6\":\"4\",\"Torico7\":\"2\",\"Torico8\":\"4\",\"Torico9\":\"7\",\"Torico10\":\"2\",\"Torico11\":\"4\",\"Torico12\":\"8\",\"Torico13\":\"3\"},\"Catedral\":{\"Catedral0\":\"3\",\"Catedral1\":\"4\",\"Catedral2\":\"5\",\"Catedral3\":\"3\",\"Catedral4\":\"3\",\"Catedral5\":\"5\",\"Catedral6\":\"5\",\"Catedral7\":\"5\"},\"SanMartin\":{\"SanMartin0\":\"3\",\"SanMartin1\":\"4\",\"SanMartin2\":\"5\",\"SanMartin3\":\"3\",\"SanMartin4\":\"5\",\"SanMartin5\":\"3\",\"SanMartin6\":\"4\",\"SanMartin7\":\"5\",\"SanMartin8\":\"2\",\"SanMartin9\":\"4\",\"SanMartin10\":\"5\"},\"Salvador\":{\"Salvador0\":\"7\",\"Salvador1\":\"5\",\"Salvador2\":\"5\",\"Salvador3\":\"4\",\"Salvador4\":\"3\",\"Salvador5\":\"4\",\"Salvador6\":\"4\",\"Salvador7\":\"4\",\"Salvador8\":\"5\",\"Salvador9\":\"4\",\"Salvador10\":\"3\",\"Salvador11\":\"5\",\"Salvador12\":\"3\",\"Salvador13\":\"4\",\"Salvador14\":\"4\",\"Salvador15\":\"4\",\"Salvador16\":\"5\"},\"Escalinata\":{\"Escalinata0\":\"3\",\"Escalinata1\":\"5\",\"Escalinata2\":\"6\",\"Escalinata3\":\"5\",\"Escalinata4\":\"5\",\"Escalinata5\":\"2\",\"Escalinata6\":\"10\",\"Escalinata7\":\"3\",\"Escalinata8\":\"5\",\"Escalinata9\":\"4\",\"Escalinata10\":\"3\",\"Escalinata11\":\"4\",\"Escalinata12\":\"7\",\"Escalinata13\":\"7\",\"Escalinata14\":\"6\",\"Escalinata15\":\"3\"},\"Mausoleo\":{\"Mausoleo0\":\"42\",\"Mausoleo1\":\"3\",\"Mausoleo2\":\"3\",\"Mausoleo3\":\"3\",\"Mausoleo4\":\"5\",\"Mausoleo5\":\"3\",\"Mausoleo6\":\"3\",\"Mausoleo7\":\"5\",\"Mausoleo8\":\"4\",\"Mausoleo9\":\"5\",\"Mausoleo10\":\"4\",\"Mausoleo11\":\"5\",\"Mausoleo12\":\"3\"}}}",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:41:38.991+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "{\"orden\":[\"Torico\",\"Catedral\",\"SanMartin\",\"Salvador\",\"Escalinata\",\"Mausoleo\"]}",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:41:39.148+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "{\"detectados\":{\"Torico\":[\"Torico9\",\"Torico12\"],\"Catedral\":[],\"SanMartin\":[\"SanMartin11\"],\"Salvador\":[],\"Escalinata\":[\"Escalinata6\"],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:41:39.307+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "{\"confirmados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:41:39.590+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "{\"aburrimiento_conocidas\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:41:39.744+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "{\"totales\":{\"totalAburrido\":0,\"totalDetectado\":4}}",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:41:39.958+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "inicio_encuesta_opinion",
+    "content": "{\"edad\":36,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T11:41:47.904+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "opinion1",
+    "content": "{\"atencion\":\"5. Totalmente de acuerdo\",\"concentrado\":\"4. De acuerdo\"}",
+    "date": "2022-09-23T11:42:02.018+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "opinion2",
+    "content": "{\"consciente\":\"4. De acuerdo\",\"experimentando\":\"4. De acuerdo\"}",
+    "date": "2022-09-23T11:42:19.798+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "opinion3",
+    "content": "{\"dejarlo\":\"3. Neutral\",\"interesado\":\"3. Neutral\"}",
+    "date": "2022-09-23T11:42:30.919+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "opinion4",
+    "content": "{\"disfrutar\":\"3. Neutral\",\"hacerotra\":\"3. Neutral\"}",
+    "date": "2022-09-23T11:42:37.568+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "opinion5",
+    "content": "{\"interesante\":\"Las imágenes me hagan gustado\",\"problemas\":\"Ninguno\"}",
+    "date": "2022-09-23T11:42:59.156+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "ff9fb1ae-f1d8-4b9d-a477-7fe93df24c55:1663932844366",
+    "action": "finished",
+    "content": "{\"interesante\":\"Las imágenes me hagan gustado\",\"problemas\":\"Ninguno\"}",
+    "date": "2022-09-23T11:42:59.459+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-23T19:29:08.996+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:29:20.475+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "inicio_encuesta_locucion",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:34:46.062+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "locucion_si",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:35:04.920+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "locucion_movil",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:35:21.595+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "inicio_encuesta_modif_mausoleo",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:36:48.219+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "mausoleo_modif1_no",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:36:51.817+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "mausoleo_modif2_no",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:36:58.250+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "mausoleo_modif_ambas",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:37:23.834+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "{\"conocidas\":{\"torico\":false,\"catedral\":false,\"sanmartin\":false,\"salvador\":false,\"escalinata\":false,\"mausoleo\":false}}",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:37:35.744+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "{\"tiempos\":{\"Torico\":{\"Torico0\":\"8\",\"Torico1\":\"5\",\"Torico2\":\"6\",\"Torico3\":\"4\",\"Torico4\":\"8\",\"Torico5\":\"8\",\"Torico6\":\"6\",\"Torico7\":\"3\",\"Torico8\":\"5\",\"Torico9\":\"3\",\"Torico10\":\"3\",\"Torico11\":\"6\",\"Torico12\":\"10\",\"Torico13\":\"10\"},\"Catedral\":{\"Catedral0\":\"8\",\"Catedral1\":\"3\",\"Catedral2\":\"2\",\"Catedral3\":\"8\",\"Catedral4\":\"3\",\"Catedral5\":\"7\",\"Catedral6\":\"6\",\"Catedral7\":\"7\"},\"SanMartin\":{\"SanMartin0\":\"4\",\"SanMartin1\":\"6\",\"SanMartin2\":\"8\",\"SanMartin3\":\"4\",\"SanMartin4\":\"9\",\"SanMartin5\":\"5\",\"SanMartin6\":\"4\",\"SanMartin7\":\"7\",\"SanMartin8\":\"3\",\"SanMartin9\":\"6\",\"SanMartin10\":\"8\"},\"Salvador\":{\"Salvador0\":\"14\",\"Salvador1\":\"12\",\"Salvador2\":\"12\",\"Salvador3\":\"7\",\"Salvador4\":\"5\",\"Salvador5\":\"7\",\"Salvador6\":\"8\",\"Salvador7\":\"6\",\"Salvador8\":\"9\",\"Salvador9\":\"6\",\"Salvador10\":\"5\",\"Salvador11\":\"7\",\"Salvador12\":\"5\",\"Salvador13\":\"6\",\"Salvador14\":\"7\",\"Salvador15\":\"6\",\"Salvador16\":\"8\"},\"Escalinata\":{\"Escalinata0\":\"5\",\"Escalinata1\":\"8\",\"Escalinata2\":\"9\",\"Escalinata3\":\"8\",\"Escalinata4\":\"6\",\"Escalinata5\":\"3\",\"Escalinata6\":\"21\",\"Escalinata7\":\"4\",\"Escalinata8\":\"4\",\"Escalinata9\":\"2\",\"Escalinata10\":\"2\",\"Escalinata11\":\"2\"},\"Mausoleo\":{\"Mausoleo0\":\"42\",\"Mausoleo1\":\"2\",\"Mausoleo2\":\"1\"}}}",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:37:35.951+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "{\"orden\":[\"Torico\",\"Catedral\",\"SanMartin\",\"Salvador\",\"Escalinata\",\"Mausoleo\"]}",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:37:36.142+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "{\"detectados\":{\"Torico\":[],\"Catedral\":[\"Catedral3\"],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[\"Escalinata12\"],\"Mausoleo\":[\"Mausoleo3\"]}}",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:37:36.352+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "{\"confirmados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[\"Escalinata12\"],\"Mausoleo\":[\"Mausoleo3\"]}}",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:37:36.539+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "{\"aburrimiento_conocidas\":{\"Torico\":[],\"Catedral\":[\"Catedral3\"],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[\"Escalinata12\"],\"Mausoleo\":[\"Mausoleo3\"]}}",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:37:36.738+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "{\"totales\":{\"totalAburrido\":2,\"totalDetectado\":3}}",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:37:36.923+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "inicio_encuesta_opinion",
+    "content": "{\"edad\":61,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-23T19:37:47.202+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "opinion1",
+    "content": "{\"atencion\":\"3. Neutral\",\"concentrado\":\"4. De acuerdo\"}",
+    "date": "2022-09-23T19:38:07.565+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "opinion2",
+    "content": "{\"consciente\":\"4. De acuerdo\",\"experimentando\":\"3. Neutral\"}",
+    "date": "2022-09-23T19:38:23.487+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "opinion3",
+    "content": "{\"dejarlo\":\"5. Totalmente de acuerdo\",\"interesado\":\"3. Neutral\"}",
+    "date": "2022-09-23T19:38:46.912+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "opinion4",
+    "content": "{\"disfrutar\":\"3. Neutral\",\"hacerotra\":\"3. Neutral\"}",
+    "date": "2022-09-23T19:39:01.494+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "opinion5",
+    "content": "{\"interesante\":\"La veo interesante para quienes no conocen la ciudad \",\"problemas\":\"Ninguno\"}",
+    "date": "2022-09-23T19:40:33.850+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "7379dbab-a32d-4da7-9f69-11865cfa6d2c:1663961348892",
+    "action": "finished",
+    "content": "{\"interesante\":\"La veo interesante para quienes no conocen la ciudad \",\"problemas\":\"Ninguno\"}",
+    "date": "2022-09-23T19:40:34.082+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-25T12:44:38.868+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:44:55.983+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "inicio_encuesta_locucion",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:49:20.471+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "locucion_si",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:49:29.897+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "locucion_movil",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:49:38.149+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "inicio_encuesta_modif_escalinata",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:52:10.179+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "modif_salvaescaleras",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:52:31.229+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "escalinata_modif_si",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:52:42.312+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "mural_arriba",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:53:01.896+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "mural_no",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:53:10.590+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "mural_mejor",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:53:18.771+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "inicio_encuesta_modif_mausoleo",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:53:37.519+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "mausoleo_modif1_si",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:54:04.574+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "mausoleo_modif2_si",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:54:08.935+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "mausoleo_modif_izquierda",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:54:32.386+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "{\"conocidas\":{\"torico\":false,\"catedral\":false,\"sanmartin\":false,\"salvador\":false,\"escalinata\":false,\"mausoleo\":false}}",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:56:11.734+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "{\"tiempos\":{\"Torico\":{\"Torico0\":\"5\",\"Torico1\":\"8\",\"Torico2\":\"11\",\"Torico3\":\"3\",\"Torico4\":\"5\",\"Torico5\":\"6\",\"Torico6\":\"8\",\"Torico7\":\"2\",\"Torico8\":\"4\",\"Torico9\":\"13\",\"Torico10\":\"3\",\"Torico11\":\"4\",\"Torico12\":\"4\",\"Torico13\":\"3\"},\"Catedral\":{\"Catedral0\":\"3\",\"Catedral1\":\"4\",\"Catedral2\":\"6\",\"Catedral3\":\"3\",\"Catedral4\":\"3\",\"Catedral5\":\"5\",\"Catedral6\":\"4\",\"Catedral7\":\"5\"},\"SanMartin\":{\"SanMartin0\":\"3\",\"SanMartin1\":\"4\",\"SanMartin2\":\"7\",\"SanMartin3\":\"6\",\"SanMartin4\":\"5\",\"SanMartin5\":\"3\",\"SanMartin6\":\"3\",\"SanMartin7\":\"8\",\"SanMartin8\":\"8\",\"SanMartin9\":\"9\",\"SanMartin10\":\"9\"},\"Salvador\":{\"Salvador0\":\"5\",\"Salvador1\":\"5\",\"Salvador2\":\"4\",\"Salvador3\":\"9\",\"Salvador4\":\"7\",\"Salvador5\":\"8\",\"Salvador6\":\"8\",\"Salvador7\":\"3\",\"Salvador8\":\"5\",\"Salvador9\":\"4\",\"Salvador10\":\"3\",\"Salvador11\":\"4\",\"Salvador12\":\"3\",\"Salvador13\":\"3\",\"Salvador14\":\"4\",\"Salvador15\":\"4\",\"Salvador16\":\"4\"},\"Escalinata\":{\"Escalinata0\":\"3\",\"Escalinata1\":\"9\",\"Escalinata2\":\"8\",\"Escalinata3\":\"4\",\"Escalinata4\":\"13\",\"Escalinata5\":\"14\",\"Escalinata6\":\"12\",\"Escalinata7\":\"11\",\"Escalinata8\":\"10\",\"Escalinata9\":\"10\",\"Escalinata10\":\"9\",\"Escalinata11\":\"12\",\"Escalinata12\":\"9\",\"Escalinata13\":\"9\",\"Escalinata14\":\"10\",\"Escalinata15\":\"7\"},\"Mausoleo\":{\"Mausoleo0\":\"70\",\"Mausoleo1\":\"6\",\"Mausoleo2\":\"11\",\"Mausoleo3\":\"9\",\"Mausoleo4\":\"8\",\"Mausoleo5\":\"10\",\"Mausoleo6\":\"5\",\"Mausoleo7\":\"7\",\"Mausoleo8\":\"6\",\"Mausoleo9\":\"10\",\"Mausoleo10\":\"7\",\"Mausoleo11\":\"8\",\"Mausoleo12\":\"4\"}}}",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:56:11.941+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "{\"orden\":[\"Torico\",\"Catedral\",\"SanMartin\",\"Salvador\",\"Escalinata\",\"Mausoleo\"]}",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:56:12.321+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "{\"detectados\":{\"Torico\":[\"Torico9\"],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:56:12.547+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "{\"confirmados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:56:12.754+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "{\"aburrimiento_conocidas\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:56:13.547+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "{\"totales\":{\"totalAburrido\":0,\"totalDetectado\":1}}",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:56:13.834+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "inicio_encuesta_opinion",
+    "content": "{\"edad\":45,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T12:56:31.533+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "opinion1",
+    "content": "{\"atencion\":\"4. De acuerdo\",\"concentrado\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-25T12:56:58.712+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "opinion2",
+    "content": "{\"consciente\":\"5. Totalmente de acuerdo\",\"experimentando\":\"4. De acuerdo\"}",
+    "date": "2022-09-25T12:57:17.767+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "opinion3",
+    "content": "{\"dejarlo\":\"1. Totalmente en desacuerdo\",\"interesado\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-25T12:57:31.524+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "opinion4",
+    "content": "{\"disfrutar\":\"5. Totalmente de acuerdo\",\"hacerotra\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-25T12:57:42.150+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "opinion5",
+    "content": "{\"interesante\":\"Conocer más a fondo la historia de Teruel \"}",
+    "date": "2022-09-25T12:58:19.102+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d9891cf4-154a-4e9c-a696-1f897b1f5785:1664109878651",
+    "action": "finished",
+    "content": "{\"interesante\":\"Conocer más a fondo la historia de Teruel \"}",
+    "date": "2022-09-25T12:58:19.307+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-25T13:05:01.014+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:05:21.191+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-25T13:07:59.064+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:08:10.116+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "inicio_encuesta_locucion",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:10:39.815+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "locucion_si",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:10:49.384+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "locucion_movil",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:10:56.230+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "inicio_encuesta_modif_escalinata",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:12:53.120+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "modif_salvaescaleras",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:13:03.612+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "escalinata_modif_no",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:13:12.235+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "mural_abajo",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:13:25.998+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "mural_si",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:13:31.802+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "mural_mejor",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:13:37.038+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "inicio_encuesta_modif_mausoleo",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:13:51.953+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "mausoleo_modif1_no",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:14:03.220+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "mausoleo_modif2_si",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:14:18.210+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "inicio_encuesta_locucion",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:14:20.942+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "mausoleo_modif_izquierda",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:14:29.930+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "locucion_no",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:14:30.387+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "locucion_movil",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:14:35.540+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "{\"conocidas\":{\"torico\":false,\"catedral\":false,\"sanmartin\":false,\"salvador\":false,\"escalinata\":false,\"mausoleo\":false}}",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:15:47.855+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "{\"tiempos\":{\"Torico\":{\"Torico0\":\"5\",\"Torico1\":\"3\",\"Torico2\":\"4\",\"Torico3\":\"4\",\"Torico4\":\"7\",\"Torico5\":\"7\",\"Torico6\":\"7\",\"Torico7\":\"4\",\"Torico8\":\"7\",\"Torico9\":\"3\",\"Torico10\":\"6\",\"Torico11\":\"6\",\"Torico12\":\"7\",\"Torico13\":\"10\"},\"Catedral\":{\"Catedral0\":\"5\",\"Catedral1\":\"8\",\"Catedral2\":\"5\",\"Catedral3\":\"4\",\"Catedral4\":\"6\",\"Catedral5\":\"12\",\"Catedral6\":\"7\",\"Catedral7\":\"7\"},\"SanMartin\":{\"SanMartin0\":\"4\",\"SanMartin1\":\"6\",\"SanMartin2\":\"7\",\"SanMartin3\":\"5\",\"SanMartin4\":\"7\",\"SanMartin5\":\"5\",\"SanMartin6\":\"5\",\"SanMartin7\":\"7\",\"SanMartin8\":\"3\",\"SanMartin9\":\"7\",\"SanMartin10\":\"7\"},\"Salvador\":{\"Salvador0\":\"12\",\"Salvador1\":\"9\",\"Salvador2\":\"8\",\"Salvador3\":\"7\",\"Salvador4\":\"7\",\"Salvador5\":\"7\",\"Salvador6\":\"8\",\"Salvador7\":\"6\",\"Salvador8\":\"8\",\"Salvador9\":\"6\",\"Salvador10\":\"5\",\"Salvador11\":\"7\",\"Salvador12\":\"4\",\"Salvador13\":\"6\",\"Salvador14\":\"6\",\"Salvador15\":\"6\",\"Salvador16\":\"7\"},\"Escalinata\":{\"Escalinata0\":\"5\",\"Escalinata1\":\"7\",\"Escalinata2\":\"9\",\"Escalinata3\":\"7\",\"Escalinata4\":\"8\",\"Escalinata5\":\"3\",\"Escalinata6\":\"10\",\"Escalinata7\":\"4\",\"Escalinata8\":\"8\",\"Escalinata9\":\"9\",\"Escalinata10\":\"7\",\"Escalinata11\":\"6\",\"Escalinata12\":\"8\",\"Escalinata13\":\"5\",\"Escalinata14\":\"8\",\"Escalinata15\":\"2\"},\"Mausoleo\":{\"Mausoleo0\":\"55\",\"Mausoleo1\":\"4\",\"Mausoleo2\":\"3\",\"Mausoleo3\":\"5\",\"Mausoleo4\":\"5\",\"Mausoleo5\":\"2\",\"Mausoleo6\":\"11\",\"Mausoleo7\":\"11\",\"Mausoleo8\":\"4\",\"Mausoleo9\":\"8\",\"Mausoleo10\":\"4\",\"Mausoleo11\":\"6\",\"Mausoleo12\":\"3\"}}}",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:15:48.088+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "{\"orden\":[\"Torico\",\"Catedral\",\"SanMartin\",\"Salvador\",\"Escalinata\",\"Mausoleo\"]}",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:15:48.263+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "{\"detectados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[\"Escalinata16\"],\"Mausoleo\":[\"Mausoleo6\"]}}",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:15:48.511+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "{\"confirmados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:15:48.661+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "{\"aburrimiento_conocidas\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[\"Escalinata16\"],\"Mausoleo\":[\"Mausoleo6\"]}}",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:15:48.837+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "{\"totales\":{\"totalAburrido\":0,\"totalDetectado\":2}}",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:15:49.031+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "inicio_encuesta_modif_escalinata",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:16:04.961+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "inicio_encuesta_opinion",
+    "content": "{\"edad\":42,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T13:16:10.998+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "modif_rampa",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:16:15.111+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "escalinata_modif_si",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:16:26.806+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "opinion1",
+    "content": "{\"atencion\":\"5. Totalmente de acuerdo\",\"concentrado\":\"4. De acuerdo\"}",
+    "date": "2022-09-25T13:16:37.453+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "mural_abajo",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:16:38.251+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "mural_si",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:16:51.152+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "mural_mejor",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:16:57.423+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "opinion2",
+    "content": "{\"consciente\":\"4. De acuerdo\",\"experimentando\":\"3. Neutral\"}",
+    "date": "2022-09-25T13:17:04.957+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "opinion3",
+    "content": "{\"dejarlo\":\"2. En desacuerdo\",\"interesado\":\"1. Totalmente en desacuerdo\"}",
+    "date": "2022-09-25T13:17:22.515+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "inicio_encuesta_modif_mausoleo",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:17:25.141+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "mausoleo_modif1_no",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:17:30.870+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "opinion4",
+    "content": "{\"disfrutar\":\"4. De acuerdo\",\"hacerotra\":\"4. De acuerdo\"}",
+    "date": "2022-09-25T13:17:32.784+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "mausoleo_modif2_si",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:17:36.508+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "mausoleo_modif_izquierda",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:17:47.170+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "{\"conocidas\":{\"torico\":false,\"catedral\":false,\"sanmartin\":false,\"salvador\":false,\"escalinata\":false,\"mausoleo\":false}}",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:19:00.761+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "{\"tiempos\":{\"Torico\":{\"Torico0\":\"10\",\"Torico1\":\"4\",\"Torico2\":\"6\",\"Torico3\":\"5\",\"Torico4\":\"7\",\"Torico5\":\"8\",\"Torico6\":\"6\",\"Torico7\":\"3\",\"Torico8\":\"42\",\"Torico9\":\"4\",\"Torico10\":\"3\",\"Torico11\":\"6\",\"Torico12\":\"7\",\"Torico13\":\"5\"},\"Catedral\":{\"Catedral0\":\"5\",\"Catedral1\":\"7\",\"Catedral2\":\"8\",\"Catedral3\":\"4\",\"Catedral4\":\"5\",\"Catedral5\":\"8\",\"Catedral6\":\"7\",\"Catedral7\":\"7\"},\"SanMartin\":{\"SanMartin0\":\"4\",\"SanMartin1\":\"6\",\"SanMartin2\":\"8\",\"SanMartin3\":\"5\",\"SanMartin4\":\"8\",\"SanMartin5\":\"4\",\"SanMartin6\":\"3\",\"SanMartin7\":\"2\",\"SanMartin8\":\"58\",\"SanMartin9\":\"2\",\"SanMartin10\":\"1\"},\"Salvador\":{\"Salvador0\":\"5\",\"Salvador1\":\"3\",\"Salvador2\":\"6\",\"Salvador3\":\"3\",\"Salvador4\":\"4\",\"Salvador5\":\"4\",\"Salvador6\":\"4\",\"Salvador7\":\"5\",\"Salvador8\":\"9\",\"Salvador9\":\"6\",\"Salvador10\":\"5\",\"Salvador11\":\"8\",\"Salvador12\":\"5\",\"Salvador13\":\"6\",\"Salvador14\":\"7\",\"Salvador15\":\"6\",\"Salvador16\":\"8\"},\"Escalinata\":{\"Escalinata0\":\"5\",\"Escalinata1\":\"6\",\"Escalinata2\":\"15\",\"Escalinata3\":\"6\",\"Escalinata4\":\"4\",\"Escalinata5\":\"3\",\"Escalinata6\":\"5\",\"Escalinata7\":\"4\",\"Escalinata8\":\"3\",\"Escalinata9\":\"6\",\"Escalinata10\":\"4\",\"Escalinata11\":\"5\",\"Escalinata12\":\"5\",\"Escalinata13\":\"3\",\"Escalinata14\":\"2\",\"Escalinata15\":\"4\"},\"Mausoleo\":{\"Mausoleo0\":\"50\",\"Mausoleo1\":\"5\",\"Mausoleo2\":\"5\",\"Mausoleo3\":\"3\",\"Mausoleo4\":\"3\",\"Mausoleo5\":\"4\",\"Mausoleo6\":\"5\",\"Mausoleo7\":\"5\",\"Mausoleo8\":\"5\",\"Mausoleo9\":\"8\",\"Mausoleo10\":\"8\",\"Mausoleo11\":\"8\",\"Mausoleo12\":\"5\"}}}",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:19:01.010+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "{\"orden\":[\"Torico\",\"Catedral\",\"SanMartin\",\"Salvador\",\"Escalinata\",\"Mausoleo\"]}",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:19:01.274+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "{\"detectados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[\"SanMartin8\",\"SanMartin11\"],\"Salvador\":[],\"Escalinata\":[\"Escalinata16\"],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:19:01.595+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "{\"confirmados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:19:01.845+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "{\"aburrimiento_conocidas\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[\"SanMartin8\"],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:19:02.106+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "{\"totales\":{\"totalAburrido\":0,\"totalDetectado\":3}}",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:19:02.356+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "inicio_encuesta_opinion",
+    "content": "{\"edad\":41,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-25T13:19:13.706+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "opinion1",
+    "content": "{\"atencion\":\"3. Neutral\",\"concentrado\":\"4. De acuerdo\"}",
+    "date": "2022-09-25T13:19:35.670+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "opinion5",
+    "content": null,
+    "date": "2022-09-25T13:19:42.291+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "d635cf7f-3052-4ece-9c9e-105208d39a79:1664111100918",
+    "action": "finished",
+    "content": null,
+    "date": "2022-09-25T13:19:42.460+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "opinion2",
+    "content": "{\"consciente\":\"5. Totalmente de acuerdo\",\"experimentando\":\"2. En desacuerdo\"}",
+    "date": "2022-09-25T13:19:56.753+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "opinion3",
+    "content": "{\"dejarlo\":\"3. Neutral\",\"interesado\":\"4. De acuerdo\"}",
+    "date": "2022-09-25T13:20:10.772+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "opinion4",
+    "content": "{\"disfrutar\":\"3. Neutral\",\"hacerotra\":\"6. NSNC\"}",
+    "date": "2022-09-25T13:20:22.419+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "opinion5",
+    "content": "{\"interesante\":\"Las imagenes de los amantes y el señor que lo presenta\",\"problemas\":\"No\"}",
+    "date": "2022-09-25T13:21:03.458+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "967da3e0-3b94-4a0a-93f8-d0d604161dea:1664111278908",
+    "action": "finished",
+    "content": "{\"interesante\":\"Las imagenes de los amantes y el señor que lo presenta\",\"problemas\":\"No\"}",
+    "date": "2022-09-25T13:21:03.726+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-25T15:46:33.096+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:46:41.475+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "inicio_encuesta_locucion",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:51:40.514+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "locucion_si",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:51:53.203+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "locucion_movil",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:51:59.663+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "inicio_encuesta_modif_escalinata",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:53:57.660+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "modif_salvaescaleras",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:54:06.069+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "escalinata_modif_no",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:54:18.112+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "mural_arriba",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:54:31.730+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "mural_si",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:54:46.059+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "mural_mejor",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:54:51.035+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "inicio_encuesta_modif_mausoleo",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:55:08.790+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "mausoleo_modif1_no",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:55:16.238+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "mausoleo_modif2_no",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:56:01.498+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "mausoleo_modif_derecha",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:56:18.121+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "{\"conocidas\":{\"torico\":false,\"catedral\":false,\"sanmartin\":false,\"salvador\":false,\"escalinata\":false,\"mausoleo\":false}}",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:57:40.202+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "{\"tiempos\":{\"Torico\":{\"Torico0\":\"21\",\"Torico1\":\"4\",\"Torico2\":\"6\",\"Torico3\":\"3\",\"Torico4\":\"7\",\"Torico5\":\"6\",\"Torico6\":\"6\",\"Torico7\":\"3\",\"Torico8\":\"4\",\"Torico9\":\"3\",\"Torico10\":\"2\",\"Torico11\":\"5\",\"Torico12\":\"11\",\"Torico13\":\"3\"},\"Catedral\":{\"Catedral0\":\"5\",\"Catedral1\":\"5\",\"Catedral2\":\"6\",\"Catedral3\":\"3\",\"Catedral4\":\"4\",\"Catedral5\":\"6\",\"Catedral6\":\"8\",\"Catedral7\":\"5\"},\"SanMartin\":{\"SanMartin0\":\"9\",\"SanMartin1\":\"5\",\"SanMartin2\":\"10\",\"SanMartin3\":\"3\",\"SanMartin4\":\"9\",\"SanMartin5\":\"3\",\"SanMartin6\":\"5\",\"SanMartin7\":\"6\",\"SanMartin8\":\"2\",\"SanMartin9\":\"8\",\"SanMartin10\":\"6\"},\"Salvador\":{\"Salvador0\":\"8\",\"Salvador1\":\"5\",\"Salvador2\":\"5\",\"Salvador3\":\"4\",\"Salvador4\":\"3\",\"Salvador5\":\"4\",\"Salvador6\":\"5\",\"Salvador7\":\"4\",\"Salvador8\":\"9\",\"Salvador9\":\"4\",\"Salvador10\":\"3\",\"Salvador11\":\"4\",\"Salvador12\":\"5\",\"Salvador13\":\"4\",\"Salvador14\":\"10\",\"Salvador15\":\"18\",\"Salvador16\":\"6\"},\"Escalinata\":{\"Escalinata0\":\"5\",\"Escalinata1\":\"9\",\"Escalinata2\":\"10\",\"Escalinata3\":\"9\",\"Escalinata4\":\"15\",\"Escalinata5\":\"3\",\"Escalinata6\":\"9\",\"Escalinata7\":\"3\",\"Escalinata8\":\"5\",\"Escalinata9\":\"6\",\"Escalinata10\":\"3\",\"Escalinata11\":\"5\",\"Escalinata12\":\"5\",\"Escalinata13\":\"8\",\"Escalinata14\":\"12\",\"Escalinata15\":\"7\"},\"Mausoleo\":{\"Mausoleo0\":\"88\",\"Mausoleo1\":\"4\",\"Mausoleo2\":\"5\",\"Mausoleo3\":\"5\",\"Mausoleo4\":\"7\",\"Mausoleo5\":\"4\",\"Mausoleo6\":\"4\",\"Mausoleo7\":\"14\",\"Mausoleo8\":\"6\",\"Mausoleo9\":\"5\",\"Mausoleo10\":\"5\",\"Mausoleo11\":\"5\",\"Mausoleo12\":\"4\"}}}",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:57:40.383+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "{\"orden\":[\"Torico\",\"Catedral\",\"SanMartin\",\"Salvador\",\"Escalinata\",\"Mausoleo\"]}",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:57:40.525+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "{\"detectados\":{\"Torico\":[\"Torico12\"],\"Catedral\":[],\"SanMartin\":[\"SanMartin11\"],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:57:40.948+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "{\"confirmados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:57:41.125+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "{\"aburrimiento_conocidas\":{\"Torico\":[\"Torico12\"],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:57:41.283+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "{\"totales\":{\"totalAburrido\":0,\"totalDetectado\":2}}",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:57:41.506+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "inicio_encuesta_opinion",
+    "content": "{\"edad\":54,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T15:57:52.574+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "opinion1",
+    "content": "{\"atencion\":\"5. Totalmente de acuerdo\",\"concentrado\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-25T15:58:09.806+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "opinion2",
+    "content": "{\"consciente\":\"5. Totalmente de acuerdo\",\"experimentando\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-25T15:58:29.715+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "opinion3",
+    "content": "{\"dejarlo\":\"1. Totalmente en desacuerdo\",\"interesado\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-25T15:58:52.814+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "opinion4",
+    "content": "{\"disfrutar\":\"5. Totalmente de acuerdo\",\"hacerotra\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-25T15:59:04.609+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "opinion5",
+    "content": "{\"interesante\":\"Las fotos \",\"problemas\":\"No\"}",
+    "date": "2022-09-25T15:59:56.524+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "5e941cee-883d-425d-a977-c4e95bfff103:1664120793037",
+    "action": "finished",
+    "content": "{\"interesante\":\"Las fotos \",\"problemas\":\"No\"}",
+    "date": "2022-09-25T15:59:56.954+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-25T16:22:37.311+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:23:12.434+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "inicio_encuesta_locucion",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:31:53.810+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "locucion_no",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:33:18.185+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "locucion_movil",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:33:29.577+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "inicio_encuesta_modif_escalinata",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:36:18.771+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "modif_salvaescaleras",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:37:10.382+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "escalinata_modif_no",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:37:41.899+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "mural_abajo",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:38:05.275+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "mural_si",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:38:25.166+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "mural_mejor",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:38:35.978+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "inicio_encuesta_modif_mausoleo",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:39:04.737+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "mausoleo_modif1_no",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:39:48.612+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "mausoleo_modif2_no",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:40:32.331+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "mausoleo_modif_derecha",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:40:55.385+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "{\"conocidas\":{\"torico\":true,\"catedral\":true,\"sanmartin\":true,\"salvador\":true,\"escalinata\":true,\"mausoleo\":true}}",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:44:34.267+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "{\"tiempos\":{\"Torico\":{\"Torico0\":\"16\",\"Torico1\":\"6\",\"Torico2\":\"8\",\"Torico3\":\"5\",\"Torico4\":\"36\",\"Torico5\":\"11\",\"Torico6\":\"8\",\"Torico7\":\"4\",\"Torico8\":\"10\",\"Torico9\":\"5\",\"Torico10\":\"4\",\"Torico11\":\"9\",\"Torico12\":\"9\",\"Torico13\":\"8\"},\"Catedral\":{\"Catedral0\":\"11\",\"Catedral1\":\"14\",\"Catedral2\":\"12\",\"Catedral3\":\"7\",\"Catedral4\":\"13\",\"Catedral5\":\"18\",\"Catedral6\":\"10\",\"Catedral7\":\"8\"},\"SanMartin\":{\"SanMartin0\":\"8\",\"SanMartin1\":\"14\",\"SanMartin2\":\"8\",\"SanMartin3\":\"6\",\"SanMartin4\":\"23\",\"SanMartin5\":\"8\",\"SanMartin6\":\"9\",\"SanMartin7\":\"17\",\"SanMartin8\":\"4\",\"SanMartin9\":\"12\",\"SanMartin10\":\"13\"},\"Salvador\":{\"Salvador0\":\"15\",\"Salvador1\":\"15\",\"Salvador2\":\"10\",\"Salvador3\":\"11\",\"Salvador4\":\"5\",\"Salvador5\":\"9\",\"Salvador6\":\"10\",\"Salvador7\":\"9\",\"Salvador8\":\"14\",\"Salvador9\":\"9\",\"Salvador10\":\"6\",\"Salvador11\":\"8\",\"Salvador12\":\"6\",\"Salvador13\":\"8\",\"Salvador14\":\"11\",\"Salvador15\":\"9\",\"Salvador16\":\"11\"},\"Escalinata\":{\"Escalinata0\":\"7\",\"Escalinata1\":\"10\",\"Escalinata2\":\"14\",\"Escalinata3\":\"8\",\"Escalinata4\":\"9\",\"Escalinata5\":\"4\",\"Escalinata6\":\"15\",\"Escalinata7\":\"6\",\"Escalinata8\":\"11\",\"Escalinata9\":\"9\",\"Escalinata10\":\"7\",\"Escalinata11\":\"11\",\"Escalinata12\":\"8\",\"Escalinata13\":\"19\",\"Escalinata14\":\"14\",\"Escalinata15\":\"7\"},\"Mausoleo\":{\"Mausoleo0\":\"136\",\"Mausoleo1\":\"6\",\"Mausoleo2\":\"7\",\"Mausoleo3\":\"9\",\"Mausoleo4\":\"11\",\"Mausoleo5\":\"69\",\"Mausoleo6\":\"11\",\"Mausoleo7\":\"13\",\"Mausoleo8\":\"10\",\"Mausoleo9\":\"14\",\"Mausoleo10\":\"9\",\"Mausoleo11\":\"8\",\"Mausoleo12\":\"6\"}}}",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:44:34.439+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "{\"orden\":[\"Torico\",\"Catedral\",\"SanMartin\",\"Salvador\",\"Escalinata\",\"Mausoleo\"]}",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:44:34.634+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "{\"detectados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:44:34.794+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "{\"confirmados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:44:34.984+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "{\"aburrimiento_conocidas\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:44:35.164+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "{\"totales\":{\"totalAburrido\":0,\"totalDetectado\":0}}",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:44:35.388+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "inicio_encuesta_opinion",
+    "content": "{\"edad\":55,\"genero\":\"1. Hombre\"}",
+    "date": "2022-09-25T16:44:54.514+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "opinion1",
+    "content": "{\"atencion\":\"6. NSNC\",\"concentrado\":\"4. De acuerdo\"}",
+    "date": "2022-09-25T16:45:17.220+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "opinion2",
+    "content": "{\"consciente\":\"6. NSNC\",\"experimentando\":\"3. Neutral\"}",
+    "date": "2022-09-25T16:45:42.441+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "opinion3",
+    "content": "{\"dejarlo\":\"6. NSNC\",\"interesado\":\"4. De acuerdo\"}",
+    "date": "2022-09-25T16:45:54.265+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "opinion4",
+    "content": "{\"disfrutar\":\"6. NSNC\",\"hacerotra\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-25T16:46:05.670+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "opinion5",
+    "content": null,
+    "date": "2022-09-25T16:48:38.174+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "371e874a-79bf-4d96-b6c5-1ee285bf0608:1664122957239",
+    "action": "finished",
+    "content": null,
+    "date": "2022-09-25T16:48:38.408+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "inicio_encuesta_usuario",
+    "content": null,
+    "date": "2022-09-26T21:32:53.927+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "caracterizacion1",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:33:09.314+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "inicio_encuesta_locucion",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:40:19.103+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "locucion_si",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:40:37.728+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "locucion_movil",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:40:43.906+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "inicio_encuesta_modif_escalinata",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:43:10.135+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "modif_rampa",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:43:24.039+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "escalinata_modif_no",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:43:37.113+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "mural_abajo",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:43:49.260+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "mural_si",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:43:57.755+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "mural_mejor",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:44:04.396+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "inicio_encuesta_modif_mausoleo",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:44:24.683+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "mausoleo_modif1_si",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:44:40.407+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "mausoleo_modif2_no",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:44:52.834+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "mausoleo_modif_derecha",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:45:02.775+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "{\"conocidas\":{\"torico\":true,\"catedral\":false,\"sanmartin\":false,\"salvador\":false,\"escalinata\":false,\"mausoleo\":true}}",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:46:45.171+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "{\"tiempos\":{\"Torico\":{\"Torico0\":\"15\",\"Torico1\":\"7\",\"Torico2\":\"9\",\"Torico3\":\"6\",\"Torico4\":\"9\",\"Torico5\":\"17\",\"Torico6\":\"12\",\"Torico7\":\"6\",\"Torico8\":\"8\",\"Torico9\":\"6\",\"Torico10\":\"7\",\"Torico11\":\"9\",\"Torico12\":\"6\",\"Torico13\":\"6\"},\"Catedral\":{\"Catedral0\":\"12\",\"Catedral1\":\"14\",\"Catedral2\":\"11\",\"Catedral3\":\"5\",\"Catedral4\":\"8\",\"Catedral5\":\"15\",\"Catedral6\":\"8\",\"Catedral7\":\"14\"},\"SanMartin\":{\"SanMartin0\":\"7\",\"SanMartin1\":\"9\",\"SanMartin2\":\"14\",\"SanMartin3\":\"8\",\"SanMartin4\":\"10\",\"SanMartin5\":\"5\",\"SanMartin6\":\"8\",\"SanMartin7\":\"11\",\"SanMartin8\":\"4\",\"SanMartin9\":\"10\",\"SanMartin10\":\"8\"},\"Salvador\":{\"Salvador0\":\"15\",\"Salvador1\":\"8\",\"Salvador2\":\"6\",\"Salvador3\":\"6\",\"Salvador4\":\"4\",\"Salvador5\":\"6\",\"Salvador6\":\"7\",\"Salvador7\":\"5\",\"Salvador8\":\"9\",\"Salvador9\":\"8\",\"Salvador10\":\"6\",\"Salvador11\":\"7\",\"Salvador12\":\"4\",\"Salvador13\":\"6\",\"Salvador14\":\"12\",\"Salvador15\":\"6\",\"Salvador16\":\"9\"},\"Escalinata\":{\"Escalinata0\":\"5\",\"Escalinata1\":\"10\",\"Escalinata2\":\"10\",\"Escalinata3\":\"8\",\"Escalinata4\":\"10\",\"Escalinata5\":\"5\",\"Escalinata6\":\"13\",\"Escalinata7\":\"5\",\"Escalinata8\":\"9\",\"Escalinata9\":\"9\",\"Escalinata10\":\"5\",\"Escalinata11\":\"7\",\"Escalinata12\":\"9\",\"Escalinata13\":\"15\",\"Escalinata14\":\"13\",\"Escalinata15\":\"6\"},\"Mausoleo\":{\"Mausoleo0\":\"58\",\"Mausoleo1\":\"5\",\"Mausoleo2\":\"4\",\"Mausoleo3\":\"6\",\"Mausoleo4\":\"6\",\"Mausoleo5\":\"6\",\"Mausoleo6\":\"4\",\"Mausoleo7\":\"9\",\"Mausoleo8\":\"6\",\"Mausoleo9\":\"7\",\"Mausoleo10\":\"7\",\"Mausoleo11\":\"8\",\"Mausoleo12\":\"5\"}}}",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:46:45.343+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "{\"orden\":[\"Torico\",\"Catedral\",\"SanMartin\",\"Salvador\",\"Escalinata\",\"Mausoleo\"]}",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:46:45.530+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "{\"detectados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:46:45.702+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "{\"confirmados\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:46:45.891+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "{\"aburrimiento_conocidas\":{\"Torico\":[],\"Catedral\":[],\"SanMartin\":[],\"Salvador\":[],\"Escalinata\":[],\"Mausoleo\":[]}}",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:46:46.090+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "{\"totales\":{\"totalAburrido\":0,\"totalDetectado\":0}}",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:46:46.258+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "inicio_encuesta_opinion",
+    "content": "{\"edad\":54,\"genero\":\"2. Mujer\"}",
+    "date": "2022-09-26T21:46:54.698+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "opinion1",
+    "content": "{\"atencion\":\"5. Totalmente de acuerdo\",\"concentrado\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-26T21:47:34.485+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "opinion2",
+    "content": "{\"consciente\":\"5. Totalmente de acuerdo\",\"experimentando\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-26T21:47:59.430+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "opinion3",
+    "content": "{\"dejarlo\":\"1. Totalmente en desacuerdo\",\"interesado\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-26T21:48:22.996+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "opinion4",
+    "content": "{\"disfrutar\":\"5. Totalmente de acuerdo\",\"hacerotra\":\"5. Totalmente de acuerdo\"}",
+    "date": "2022-09-26T21:48:40.975+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "opinion5",
+    "content": "{\"interesante\":\"Conocer Teruel ya que nunca he estado\",\"problemas\":\"Nongun problema. Excelente guia\"}",
+    "date": "2022-09-26T21:49:56.264+0000",
+    "game": "teruel"
+  },
+  {
+    "token": "554a1970-d0f5-496b-b4b3-5b4a2232ec64:1664227973836",
+    "action": "finished",
+    "content": "{\"interesante\":\"Conocer Teruel ya que nunca he estado\",\"problemas\":\"Nongun problema. Excelente guia\"}",
+    "date": "2022-09-26T21:49:56.411+0000",
     "game": "teruel"
   }
 ]

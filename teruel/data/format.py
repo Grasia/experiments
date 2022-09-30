@@ -182,8 +182,9 @@ for x in raw.keys():
                 diff = (datetime.datetime.strptime(y['date'], fmt_str) - init_date_surveys).total_seconds()
                 sesion['encuesta_opinion_time'] = diff
             if y['content'] != None:
-                sesion['opinion_interesante'] = json.loads(y['content'])['interesante']
-                sesion['opinion_problemas'] = json.loads(y['content'])['problemas']
+                if len(y['content']) == 0:
+                    sesion['opinion_interesante'] = json.loads(y['content'])['interesante']
+                    sesion['opinion_problemas'] = json.loads(y['content'])['problemas']
             else:
                 sesion['opinion_interesante'] = ''
                 sesion['opinion_problemas'] = ''
